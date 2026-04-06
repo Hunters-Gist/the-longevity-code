@@ -2,10 +2,10 @@ import { homeContent } from "@/content/homepage";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-line/90 py-10">
+    <footer className="border-t border-line/90 py-12">
       <div className="section-wrap grid gap-8 md:grid-cols-[1fr_auto_auto] md:items-start">
         <div>
-          <p className="text-sm uppercase tracking-[0.2em] text-sage">
+          <p className="eyebrow">
             The Longevity Code
           </p>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
@@ -18,7 +18,7 @@ export function SiteFooter() {
             <a
               key={link}
               href="#"
-              className="block text-sm text-mist/90 transition hover:text-sage"
+              className="block text-sm text-mist/88 transition duration-300 hover:text-sage"
             >
               {link}
             </a>
@@ -30,7 +30,7 @@ export function SiteFooter() {
             <a
               key={item}
               href="#"
-              className="block text-sm text-muted transition hover:text-bone-white"
+              className="block text-sm text-muted transition duration-300 hover:text-bone-white"
             >
               {item}
             </a>

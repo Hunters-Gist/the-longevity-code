@@ -2,14 +2,12 @@ import { homeContent } from "@/content/homepage";
 
 export function PhilosophySection() {
   return (
-    <section className="py-20 sm:py-28">
+    <section id="about" className="py-24 sm:py-32">
       <div className="section-wrap">
-        <div className="grid items-center gap-8 rounded-3xl border border-line bg-gradient-to-br from-graphite/70 via-surface to-obsidian p-7 sm:p-10 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="luxury-panel grain-overlay grid items-center gap-8 rounded-[32px] p-7 sm:p-10 lg:grid-cols-[1.12fr_0.88fr] lg:p-12">
           <div>
-            <p className="text-xs uppercase tracking-[0.24em] text-sage">
-              Brand Philosophy
-            </p>
-            <h2 className="mt-4 text-3xl font-display font-semibold leading-tight text-heading sm:text-5xl">
+            <p className="eyebrow">Brand Philosophy</p>
+            <h2 className="display-title mt-5 text-5xl font-semibold text-heading sm:text-6xl lg:text-[4.2rem]">
               {homeContent.mission.heading}
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
@@ -17,8 +15,8 @@ export function PhilosophySection() {
             </p>
           </div>
 
-          <blockquote className="rounded-2xl border border-line bg-black/20 p-6">
-            <p className="text-2xl font-display font-medium leading-tight text-bone-white sm:text-3xl">
+          <blockquote className="rounded-3xl border border-line bg-black/24 p-7">
+            <p className="display-title text-4xl font-medium leading-tight text-bone-white sm:text-5xl">
               &ldquo;{homeContent.mission.callout}&rdquo;
             </p>
           </blockquote>

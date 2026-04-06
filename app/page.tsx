@@ -10,7 +10,7 @@ import { SiteFooter } from "@/components/layout/SiteFooter";
 export default function Home() {
   return (
     <div className="site-shell flex flex-col">
-      <main className="pb-10">
+      <main className="pb-14">
         <HeroSection />
         <PillarsSection />
         <ProtocolsSection />

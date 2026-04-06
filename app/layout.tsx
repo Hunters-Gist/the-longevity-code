@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Cormorant_Garamond, Sora } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const sora = Sora({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
 
-const manrope = Manrope({
+const cormorant = Cormorant_Garamond({
   variable: "--font-manrope",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
   display: "swap",
 });
 
@@ -26,7 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${manrope.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${sora.variable} ${cormorant.variable} h-full antialiased`}
+    >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function ProtocolsSection() {
   return (
-    <section id="protocols" className="py-20 sm:py-28">
+    <section id="protocols" className="py-24 sm:py-32">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Premium Protocols"
@@ -11,14 +11,15 @@ export function ProtocolsSection() {
           description="Every protocol starts with intent and assessment, then evolves with your progress."
         />
 
-        <div className="mt-12 grid gap-4 lg:grid-cols-5">
+        <div className="mt-14 grid gap-4 lg:grid-cols-5">
           {homeContent.protocols.map((protocol) => (
             <article
               key={protocol.name}
-              className="group relative overflow-hidden rounded-3xl border border-line bg-surface/90 p-6 transition duration-300 hover:-translate-y-1.5 hover:border-teal/60"
+              className="group luxury-card relative overflow-hidden rounded-[28px] p-6 transition duration-300 hover:-translate-y-1.5 hover:border-teal/50"
             >
-              <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-teal/20 blur-2xl transition group-hover:bg-teal/30" />
-              <h3 className="relative text-lg font-display font-medium text-bone-white">
+              <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gold/16 blur-2xl transition group-hover:bg-gold/26" />
+              <p className="eyebrow relative text-sage/75">Protocol</p>
+              <h3 className="display-title relative mt-4 text-3xl font-medium text-bone-white">
                 {protocol.name}
               </h3>
               <p className="relative mt-3 text-sm leading-relaxed text-muted">
@@ -26,9 +27,10 @@ export function ProtocolsSection() {
               </p>
               <a
                 href="#"
-                className="relative mt-6 inline-flex text-xs font-semibold uppercase tracking-[0.16em] text-teal transition hover:text-sage"
+                className="relative mt-7 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.19em] text-teal transition duration-300 group-hover:translate-x-1 group-hover:text-sage"
               >
                 {protocol.cta}
+                <span aria-hidden="true">{"->"}</span>
               </a>
             </article>
           ))}

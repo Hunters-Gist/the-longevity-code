@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="py-20 sm:py-28">
+    <section id="how-it-works" className="py-24 sm:py-32">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="How It Works"
@@ -12,19 +12,20 @@ export function HowItWorksSection() {
           align="center"
         />
 
-        <ol className="mt-12 grid gap-4 md:grid-cols-2">
+        <ol className="mt-14 grid gap-4 md:grid-cols-2">
           {homeContent.process.map((step, index) => (
             <li
               key={step.title}
-              className="glass-card rounded-3xl p-6 sm:p-7 transition hover:border-sage/50"
+              className="group luxury-card relative overflow-hidden rounded-[28px] p-6 sm:p-7 transition duration-300 hover:-translate-y-1 hover:border-sage/55"
             >
-              <p className="text-xs uppercase tracking-[0.2em] text-teal">
+              <div className="absolute -right-8 top-0 h-24 w-24 rounded-full bg-sage/16 blur-2xl transition duration-300 group-hover:bg-sage/26" />
+              <p className="text-xs uppercase tracking-[0.22em] text-teal">
                 Step {index + 1}
               </p>
-              <h3 className="mt-3 text-2xl font-display font-medium text-bone-white">
+              <h3 className="display-title mt-4 text-4xl font-medium text-bone-white">
                 {step.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted">
+              <p className="mt-3 max-w-[38ch] text-sm leading-relaxed text-muted">
                 {step.description}
               </p>
             </li>
