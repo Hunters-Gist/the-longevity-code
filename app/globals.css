@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --obsidian: #0d0f12;
+  --deep-charcoal: #151922;
+  --graphite: #232833;
+  --stone: #d8d5cf;
+  --mist: #eaecef;
+  --bone-white: #f7f5f0;
+  --sage-glow: #a8c3a0;
+  --muted-teal: #6fc7c0;
+  --pale-gold: #cdba7c;
+  --background: var(--obsidian);
+  --surface: var(--deep-charcoal);
+  --foreground: var(--mist);
+  --heading: var(--bone-white);
+  --muted: #b6bac3;
+  --line: rgba(247, 245, 240, 0.14);
+  --glow: rgba(111, 199, 192, 0.22);
 }
 
 @theme inline {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-manrope);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-heading: var(--heading);
+  --color-sage: var(--sage-glow);
+  --color-teal: var(--muted-teal);
+  --color-gold: var(--pale-gold);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-manrope), var(--font-inter), system-ui, sans-serif;
+  color: var(--heading);
+  letter-spacing: -0.02em;
+}
+
+.site-shell {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.site-shell::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% auto;
+  height: 44rem;
+  z-index: -2;
+  background:
+    radial-gradient(circle at 22% 20%, rgba(111, 199, 192, 0.2), transparent 45%),
+    radial-gradient(circle at 72% 12%, rgba(205, 186, 124, 0.14), transparent 35%),
+    radial-gradient(circle at 48% 65%, rgba(168, 195, 160, 0.12), transparent 42%);
+  filter: blur(30px);
+}
+
+.site-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(to right, rgba(247, 245, 240, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(247, 245, 240, 0.03) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(circle at 50% 10%, black 10%, transparent 70%);
+  opacity: 0.4;
+}
+
+.glass-card {
+  border: 1px solid var(--line);
+  background: linear-gradient(
+    135deg,
+    rgba(35, 40, 51, 0.82),
+    rgba(21, 25, 34, 0.76)
+  );
+  backdrop-filter: blur(12px);
+}
+
+.section-wrap {
+  width: min(1160px, calc(100% - 2.5rem));
+  margin-inline: auto;
+}
+
+@media (max-width: 640px) {
+  .section-wrap {
+    width: calc(100% - 1.5rem);
+  }
 }
