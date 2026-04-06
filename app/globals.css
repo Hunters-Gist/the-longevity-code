@@ -112,7 +112,7 @@ h4 {
     88px 88px,
     88px 88px;
   mask-image: radial-gradient(circle at 50% 0%, black 14%, transparent 80%);
-  opacity: 0.38;
+  opacity: 0.34;
 }
 
 .glass-card {
@@ -160,7 +160,7 @@ h4 {
 }
 
 .section-wrap {
-  width: min(1240px, calc(100% - 3.5rem));
+  width: min(1240px, calc(100% - 1.5rem));
   margin-inline: auto;
 }
 
@@ -171,9 +171,9 @@ h4 {
 }
 
 .eyebrow {
-  font-size: 0.66rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  letter-spacing: 0.26em;
+  letter-spacing: 0.22em;
   color: color-mix(in srgb, var(--sage-glow) 78%, var(--obsidian) 22%);
 }
 
@@ -196,5 +196,42 @@ h4 {
 @media (max-width: 640px) {
   .section-wrap {
     width: calc(100% - 1.5rem);
+  }
+
+  .site-shell::before {
+    opacity: 0.68;
+    filter: blur(34px);
+  }
+
+  .site-shell::after {
+    opacity: 0.26;
+    background-size:
+      auto,
+      auto,
+      66px 66px,
+      66px 66px;
+  }
+
+  .ambient-orb {
+    opacity: 0.24;
+    filter: blur(44px);
+  }
+}
+
+@media (min-width: 640px) {
+  .section-wrap {
+    width: min(1240px, calc(100% - 2.5rem));
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-wrap {
+    width: min(1240px, calc(100% - 3.5rem));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ambient-orb {
+    animation: none;
   }
 }

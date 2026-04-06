@@ -10,11 +10,11 @@ export default function AboutPage() {
         description="The Longevity Code blends assessment, protocol design, and editorial education into a single system for people who treat health as strategy."
       />
 
-      <section className="py-16">
-        <div className="section-wrap grid gap-4 lg:grid-cols-2">
-          <article className="glass-card rounded-[28px] p-7 sm:p-9">
+      <section className="py-12 sm:py-16">
+        <div className="section-wrap grid gap-3 sm:gap-4 lg:grid-cols-2">
+          <article className="glass-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">Our philosophy</p>
-            <h2 className="display-title mt-4 text-4xl font-medium sm:text-5xl">
+            <h2 className="display-title mt-3 text-[2rem] font-medium sm:mt-4 sm:text-5xl">
               Restore the system, not just symptoms.
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">
@@ -23,14 +23,14 @@ export default function AboutPage() {
               years, not weeks.
             </p>
           </article>
-          <article className="luxury-card rounded-[28px] p-7 sm:p-9">
+          <article className="luxury-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">Method</p>
             <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">
               Every journey starts with an assessment baseline. From there, we
               match protocols to priorities, then evolve your plan with
               membership continuity so progress does not plateau.
             </p>
-            <ul className="mt-5 space-y-2 text-sm text-stone">
+            <ul className="mt-5 space-y-2 text-sm text-muted">
               <li>Assessment-first intake</li>
               <li>Protocol mapping by objective</li>
               <li>Membership-led progression</li>

@@ -10,25 +10,25 @@ export default function AssessmentPage() {
         description="Assessment is the fastest way to understand your current baseline and route into the right protocol sequence."
       />
 
-      <section className="py-16">
-        <div className="section-wrap grid gap-4 lg:grid-cols-3">
-          <article className="glass-card rounded-[26px] p-6">
+      <section className="py-12 sm:py-16">
+        <div className="section-wrap grid gap-3 sm:gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <article className="glass-card rounded-[22px] p-5 sm:rounded-[26px] sm:p-6">
             <p className="eyebrow">Step 1</p>
-            <h2 className="display-title mt-3 text-3xl font-medium">Intake</h2>
+            <h2 className="display-title mt-3 text-[1.85rem] font-medium sm:text-3xl">Intake</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
               Recovery, stress, and lifestyle questionnaire.
             </p>
           </article>
-          <article className="luxury-card rounded-[26px] p-6">
+          <article className="luxury-card rounded-[22px] p-5 sm:rounded-[26px] sm:p-6">
             <p className="eyebrow">Step 2</p>
-            <h2 className="display-title mt-3 text-3xl font-medium">Baseline</h2>
+            <h2 className="display-title mt-3 text-[1.85rem] font-medium sm:text-3xl">Baseline</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
               Structured baseline map with high-impact opportunities.
             </p>
           </article>
-          <article className="glass-card rounded-[26px] p-6">
+          <article className="glass-card rounded-[22px] p-5 sm:rounded-[26px] sm:p-6 md:col-span-2 lg:col-span-1">
             <p className="eyebrow">Step 3</p>
-            <h2 className="display-title mt-3 text-3xl font-medium">Plan</h2>
+            <h2 className="display-title mt-3 text-[1.85rem] font-medium sm:text-3xl">Plan</h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
               Protocol recommendation and clear next-step membership path.
             </p>

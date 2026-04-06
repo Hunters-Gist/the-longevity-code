@@ -11,7 +11,7 @@ export function ActionButton({
   ...props
 }: ActionButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold uppercase tracking-[0.14em] transition duration-300 ease-out";
+    "inline-flex min-h-12 w-full items-center justify-center rounded-full px-5 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] transition duration-300 ease-out sm:w-auto sm:px-6 sm:text-sm";
   const styles =
     variant === "primary"
       ? "bg-obsidian text-bone-white shadow-soft hover:-translate-y-0.5 hover:bg-deep-charcoal"

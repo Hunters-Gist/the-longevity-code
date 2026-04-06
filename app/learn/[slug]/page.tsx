@@ -30,10 +30,10 @@ export default async function LearnArticlePage({ params }: LearnArticlePageProps
         description={article.excerpt}
       />
 
-      <section className="py-16">
+      <section className="py-12 sm:py-16">
         <div className="section-wrap">
-          <article className="glass-card rounded-[28px] p-7 sm:p-10">
-            <div className="mb-6 flex items-center gap-3 text-[11px] uppercase tracking-[0.16em] text-stone/80">
+          <article className="glass-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-10">
+            <div className="mb-5 flex flex-wrap items-center gap-2 text-[11px] uppercase tracking-[0.14em] text-stone/80 sm:mb-6 sm:gap-3 sm:tracking-[0.16em]">
               <span>{article.publishedOn}</span>
               <span>-</span>
               <span>{article.readTime}</span>
@@ -44,10 +44,10 @@ export default async function LearnArticlePage({ params }: LearnArticlePageProps
                 </>
               ) : null}
             </div>
-            <div className="space-y-8">
+            <div className="space-y-7 sm:space-y-8">
               {article.sections.map((section) => (
                 <section key={section.heading} className="space-y-3">
-                  <h2 className="display-title text-3xl font-medium sm:text-4xl">
+                  <h2 className="display-title text-[1.8rem] font-medium sm:text-4xl">
                     {section.heading}
                   </h2>
                   <p className="max-w-4xl text-sm leading-relaxed text-muted sm:text-base">

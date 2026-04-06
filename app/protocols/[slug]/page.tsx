@@ -27,17 +27,22 @@ export default async function ProtocolDetailPage({ params }: ProtocolPageProps) 
         description={protocol.summary}
       />
 
-      <section className="py-16">
-        <div className="section-wrap grid gap-4 lg:grid-cols-[1.15fr_0.85fr]">
-          <article className="glass-card rounded-[28px] p-7 sm:p-9">
+      <section className="py-12 sm:py-16">
+        <div className="section-wrap grid gap-3 sm:gap-4 lg:grid-cols-[1.15fr_0.85fr]">
+          <article className="glass-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">Outcomes</p>
             <ul className="mt-4 space-y-3 text-sm leading-relaxed text-muted sm:text-base">
               {protocol.outcomes.map((outcome) => (
-                <li key={outcome}>- {outcome}</li>
+                <li key={outcome} className="flex gap-2">
+                  <span aria-hidden="true" className="text-sage">
+                    -
+                  </span>
+                  <span>{outcome}</span>
+                </li>
               ))}
             </ul>
           </article>
-          <article className="luxury-card rounded-[28px] p-7 sm:p-9">
+          <article className="luxury-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">Protocol profile</p>
             <dl className="mt-4 space-y-3 text-sm text-foreground/85">
               <div>

@@ -32,11 +32,11 @@ export default function FaqPage() {
         description="The essentials on assessment, protocols, membership, and platform boundaries."
       />
 
-      <section className="py-16">
-        <div className="section-wrap grid gap-4">
+      <section className="py-12 sm:py-16">
+        <div className="section-wrap grid gap-3 sm:gap-4">
           {faqs.map((faq) => (
-            <article key={faq.question} className="glass-card rounded-[24px] p-6 sm:p-7">
-              <h2 className="display-title text-3xl font-medium">{faq.question}</h2>
+            <article key={faq.question} className="glass-card rounded-[22px] p-5 sm:rounded-[24px] sm:p-7">
+              <h2 className="display-title text-[1.8rem] font-medium sm:text-3xl">{faq.question}</h2>
               <p className="mt-3 max-w-4xl text-sm leading-relaxed text-muted sm:text-base">
                 {faq.answer}
               </p>

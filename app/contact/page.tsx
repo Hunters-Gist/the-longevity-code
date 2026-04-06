@@ -9,11 +9,11 @@ export default function ContactPage() {
         description="Use this channel for assessment onboarding, membership support, partnerships, or editorial collaboration."
       />
 
-      <section className="py-16">
-        <div className="section-wrap grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
-          <form className="glass-card rounded-[28px] p-7 sm:p-9">
+      <section className="py-12 sm:py-16">
+        <div className="section-wrap grid gap-3 sm:gap-4 md:grid-cols-[1.05fr_0.95fr] lg:grid-cols-[1.1fr_0.9fr]">
+          <form className="glass-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">Concierge form</p>
-            <div className="mt-5 grid gap-3">
+            <div className="mt-4 grid gap-3 sm:mt-5">
               <input
                 type="text"
                 placeholder="Full name"
@@ -32,13 +32,13 @@ export default function ContactPage() {
             </div>
             <button
               type="submit"
-              className="mt-5 inline-flex items-center justify-center rounded-full bg-obsidian px-6 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-bone-white transition hover:bg-deep-charcoal"
+              className="mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-full bg-obsidian px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition hover:bg-deep-charcoal sm:w-auto sm:text-xs sm:tracking-[0.16em]"
             >
               Send inquiry
             </button>
           </form>
 
-          <article className="luxury-card rounded-[28px] p-7 sm:p-9">
+          <article className="luxury-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">Priority channels</p>
             <ul className="mt-5 space-y-3 text-sm text-muted">
               <li>Assessment onboarding: onboarding@longevitycode.com</li>

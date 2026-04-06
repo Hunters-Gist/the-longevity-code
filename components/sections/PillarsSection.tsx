@@ -4,7 +4,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function PillarsSection() {
   return (
-    <section id="pillars" className="py-24 sm:py-32">
+    <section id="pillars" className="py-16 sm:py-24 lg:py-32">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Core Pillars"
@@ -12,11 +12,11 @@ export function PillarsSection() {
           description="Four integrated systems designed to support how you age, recover, and feel over time."
         />
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-12">
+        <div className="mt-10 grid gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-4 lg:mt-14 lg:grid-cols-12">
           {homeContent.pillars.map((pillar, index) => (
             <article
               key={pillar.title}
-              className={`group luxury-card relative overflow-hidden rounded-[28px] p-6 transition duration-300 hover:-translate-y-1.5 hover:border-sage/55 ${
+              className={`group luxury-card relative overflow-hidden rounded-[24px] p-5 transition duration-300 hover:-translate-y-1.5 hover:border-sage/55 sm:rounded-[28px] sm:p-6 ${
                 index === 0 ? "lg:col-span-6 lg:p-8" : "lg:col-span-3"
               }`}
             >
@@ -24,10 +24,10 @@ export function PillarsSection() {
               <div className="mb-5 inline-flex rounded-2xl border border-line/80 bg-bone-white/75 p-3">
                 <PillarIcon icon={pillar.icon} />
               </div>
-              <h3 className="display-title text-3xl font-medium text-heading sm:text-[2rem]">
+              <h3 className="display-title text-[1.8rem] font-medium text-heading sm:text-[2rem]">
                 {pillar.title}
               </h3>
-              <p className="mt-4 max-w-[34ch] text-sm leading-relaxed text-muted">
+              <p className="mt-3 max-w-[34ch] text-sm leading-relaxed text-muted sm:mt-4">
                 {pillar.copy}
               </p>
             </article>
