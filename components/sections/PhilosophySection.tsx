@@ -15,8 +15,8 @@ export function PhilosophySection() {
             </p>
           </div>
 
-          <blockquote className="rounded-3xl border border-line bg-black/24 p-7">
-            <p className="display-title text-4xl font-medium leading-tight text-bone-white sm:text-5xl">
+          <blockquote className="rounded-3xl border border-line bg-bone-white/78 p-7">
+            <p className="display-title text-4xl font-medium leading-tight text-heading sm:text-5xl">
               &ldquo;{homeContent.mission.callout}&rdquo;
             </p>
           </blockquote>

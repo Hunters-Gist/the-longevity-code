@@ -1,5 +1,5 @@
-import { homeContent } from "@/content/homepage";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { protocols } from "@/content/protocols";
 
 export function ProtocolsSection() {
   return (
@@ -12,24 +12,24 @@ export function ProtocolsSection() {
         />
 
         <div className="mt-14 grid gap-4 lg:grid-cols-5">
-          {homeContent.protocols.map((protocol) => (
+          {protocols.map((protocol) => (
             <article
-              key={protocol.name}
-              className="group luxury-card relative overflow-hidden rounded-[28px] p-6 transition duration-300 hover:-translate-y-1.5 hover:border-teal/50"
+              key={protocol.slug}
+              className="group luxury-card relative overflow-hidden rounded-[28px] p-6 transition duration-500 hover:-translate-y-1.5 hover:border-sage/70"
             >
-              <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-gold/16 blur-2xl transition group-hover:bg-gold/26" />
-              <p className="eyebrow relative text-sage/75">Protocol</p>
-              <h3 className="display-title relative mt-4 text-3xl font-medium text-bone-white">
+              <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-teal/18 blur-2xl transition group-hover:bg-teal/28" />
+              <p className="eyebrow relative text-sage/90">Protocol</p>
+              <h3 className="display-title relative mt-4 text-3xl font-medium text-heading">
                 {protocol.name}
               </h3>
               <p className="relative mt-3 text-sm leading-relaxed text-muted">
                 {protocol.summary}
               </p>
               <a
-                href="#"
-                className="relative mt-7 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.19em] text-teal transition duration-300 group-hover:translate-x-1 group-hover:text-sage"
+                href={`/protocols/${protocol.slug}`}
+                className="relative mt-7 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.19em] text-obsidian transition duration-300 group-hover:translate-x-1 group-hover:text-terracotta"
               >
-                {protocol.cta}
+                Learn More
                 <span aria-hidden="true">{"->"}</span>
               </a>
             </article>

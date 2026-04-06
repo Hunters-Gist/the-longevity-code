@@ -1,42 +1,41 @@
-import { homeContent } from "@/content/homepage";
+import Link from "next/link";
+import { siteContent } from "@/content/site";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-line/90 py-12">
+    <footer className="border-t border-line/90 py-14">
       <div className="section-wrap grid gap-8 md:grid-cols-[1fr_auto_auto] md:items-start">
         <div>
-          <p className="eyebrow">
-            The Longevity Code
-          </p>
+          <p className="eyebrow">{siteContent.brand.name}</p>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
-            Premium protocols and education for men who want better recovery, sharper thinking, and a longer performance horizon.
+            {siteContent.brand.description}
           </p>
         </div>
 
         <nav className="space-y-2" aria-label="Footer navigation">
-          {homeContent.nav.map((link) => (
-            <a
-              key={link}
-              href="#"
-              className="block text-sm text-mist/88 transition duration-300 hover:text-sage"
+          {siteContent.nav.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="block text-sm text-foreground/86 transition duration-300 hover:text-obsidian"
             >
-              {link}
-            </a>
+              {link.label}
+            </Link>
           ))}
         </nav>
 
         <div className="space-y-2">
-          {homeContent.footer.legal.map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="block text-sm text-muted transition duration-300 hover:text-bone-white"
+          {siteContent.legal.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="block text-sm text-muted transition duration-300 hover:text-obsidian"
             >
-              {item}
-            </a>
+              {item.label}
+            </Link>
           ))}
           <div className="pt-2 text-xs uppercase tracking-[0.2em] text-muted">
-            {homeContent.footer.social.join(" / ")}
+            {siteContent.social.join(" / ")}
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ export function HowItWorksSection() {
         <SectionHeading
           eyebrow="How It Works"
           title="A clear path to measurable longevity."
-          description="Structured onboarding, intelligent protocols, and progress tracking designed to compound results."
+          description="Structured onboarding, intelligent protocols, and thoughtful progress tracking designed to compound results."
           align="center"
         />
 
@@ -19,10 +19,10 @@ export function HowItWorksSection() {
               className="group luxury-card relative overflow-hidden rounded-[28px] p-6 sm:p-7 transition duration-300 hover:-translate-y-1 hover:border-sage/55"
             >
               <div className="absolute -right-8 top-0 h-24 w-24 rounded-full bg-sage/16 blur-2xl transition duration-300 group-hover:bg-sage/26" />
-              <p className="text-xs uppercase tracking-[0.22em] text-teal">
+              <p className="text-xs uppercase tracking-[0.22em] text-muted">
                 Step {index + 1}
               </p>
-              <h3 className="display-title mt-4 text-4xl font-medium text-bone-white">
+              <h3 className="display-title mt-4 text-4xl font-medium text-heading">
                 {step.title}
               </h3>
               <p className="mt-3 max-w-[38ch] text-sm leading-relaxed text-muted">

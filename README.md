@@ -1,6 +1,6 @@
 # The Longevity Code
 
-Premium Next.js marketing homepage for The Longevity Code, a modern Australian longevity and optimization brand focused on prevention, recovery, skin aging, and cognitive performance.
+Premium Next.js marketing homepage for The Longevity Code, a modern longevity and wellness brand focused on prevention, recovery, skin aging, and cognitive resilience.
 
 ## Local development
 

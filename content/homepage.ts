@@ -34,9 +34,9 @@ export const homeContent = {
     eyebrow: "The Longevity Code",
     heading: "Built for the long game.",
     subheading:
-      "Precision wellness for modern men who want to age better, recover smarter, and think clearer.",
+      "Precision wellness for thoughtful adults who want to age better, recover smarter, and think clearer.",
     supporting:
-      "Restore deeply. Perform longer. Age better. A premium longevity system built around assessment-first protocols and measurable progression.",
+      "Restore deeply. Live steadily. Age well. A premium longevity system built around assessment-first protocols and measurable progression.",
     ctas: [
       { label: "Start Your Assessment", href: "#" },
       { label: "Explore Protocols", href: "#protocols" },
@@ -60,7 +60,7 @@ export const homeContent = {
     },
     {
       title: "Brain & Psychology",
-      copy: "Sharpen focus, regulate stress load, and build mental clarity for high-performance living.",
+      copy: "Sharpen focus, regulate stress load, and build mental clarity for resilient daily living.",
       icon: "mind",
     },
   ] as Pillar[],
@@ -87,7 +87,7 @@ export const homeContent = {
     },
     {
       name: "The Full Code",
-      summary: "A whole-system optimization protocol for serious long-horizon performance.",
+      summary: "A whole-system optimization protocol for serious long-horizon wellbeing.",
       cta: "Unlock Your Baseline",
     },
   ] as Protocol[],
@@ -114,14 +114,14 @@ export const homeContent = {
     },
   ] as ProcessStep[],
   mission: {
-    heading: "Age with intention. Perform with longevity.",
-    body: "The Longevity Code exists for men who treat health as strategy. We focus on resilient energy, clean recovery, cognitive sharpness, and whole-system optimization. This is not symptom chasing. It is precision wellness built for your future runway.",
+    heading: "Age with intention. Restore with intelligence.",
+    body: "The Longevity Code exists for people who treat health as strategy. We focus on resilient energy, clean recovery, cognitive steadiness, and whole-system optimization. This is not symptom chasing. It is precision wellness built for your future runway.",
     callout: "Restore the system, not just the symptoms.",
   },
   journal: [
     {
       category: "Longevity Strategy",
-      title: "How Modern Men Should Think About Longevity",
+      title: "How Thoughtful Adults Can Think About Longevity",
       excerpt: "Why prevention beats correction and how to build a realistic long-term framework.",
       image: "/images/journal/longevity-strategy.svg",
     },
@@ -132,8 +132,8 @@ export const homeContent = {
       image: "/images/journal/recovery-debt.svg",
     },
     {
-      category: "Skin + Performance",
-      title: "Skin Aging in Men: Beyond Surface-Level Fixes",
+      category: "Skin + Longevity",
+      title: "Skin Aging Beyond Surface-Level Fixes",
       excerpt: "A systems view of skin health, stress, inflammation, and repair capacity.",
       image: "/images/journal/skin-aging.svg",
     },

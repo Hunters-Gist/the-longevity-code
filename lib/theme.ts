@@ -1,14 +1,14 @@
 export const brandTheme = {
   colors: {
-    obsidian: "#0D0F12",
-    deepCharcoal: "#151922",
-    graphite: "#232833",
-    stone: "#D8D5CF",
-    mist: "#EAECEF",
-    boneWhite: "#F7F5F0",
-    softSageGlow: "#A8C3A0",
-    mutedTeal: "#6FC7C0",
-    paleGold: "#CDBA7C",
+    obsidian: "#2D3A31",
+    deepCharcoal: "#37453C",
+    graphite: "#45544B",
+    stone: "#E6E2DA",
+    mist: "#F2EFE8",
+    boneWhite: "#F9F8F4",
+    softSageGlow: "#8C9A84",
+    mutedTeal: "#88A39A",
+    paleGold: "#B8AA8C",
   },
   radii: {
     card: "24px",
