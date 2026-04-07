@@ -3,6 +3,7 @@ import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
+import { BRAND_NAME } from "@/content/brand";
 
 const sourceSans = Source_Sans_3({
   variable: "--font-inter",
@@ -19,9 +20,26 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "The Longevity Code",
+  title: {
+    default: BRAND_NAME,
+    template: `%s | ${BRAND_NAME}`,
+  },
+  applicationName: BRAND_NAME,
   description:
     "Premium longevity and wellness protocols for thoughtful adults. Built for the long game.",
+  openGraph: {
+    title: BRAND_NAME,
+    description:
+      "Premium longevity and wellness protocols for thoughtful adults. Built for the long game.",
+    siteName: BRAND_NAME,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: BRAND_NAME,
+    description:
+      "Premium longevity and wellness protocols for thoughtful adults. Built for the long game.",
+  },
 };
 
 export default function RootLayout({

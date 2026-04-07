@@ -1,10 +1,11 @@
 import { LegalPage } from "@/components/layout/LegalPage";
+import { BRAND_NAME } from "@/content/brand";
 
 export default function PrivacyPage() {
   return (
     <LegalPage
       title="Privacy Policy"
-      intro="This page outlines how we collect, use, and protect personal data in The Longevity Code ecosystem."
+      intro={`This page outlines how we collect, use, and protect personal data across the ${BRAND_NAME} ecosystem.`}
       sections={[
         {
           heading: "Information We Collect",

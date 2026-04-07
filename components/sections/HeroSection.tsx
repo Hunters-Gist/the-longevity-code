@@ -62,8 +62,8 @@ export function HeroSection() {
 
             <div className="relative min-h-[19rem] overflow-hidden rounded-[26px] border border-line-strong bg-bone-white/75 sm:min-h-[24rem] sm:rounded-[30px]">
               <Image
-                src="/images/hero/Gemini_Generated_Image_x0gdvex0gdvex0gd.png"
-                alt="Premium longevity vial hero visual"
+                src="/images/hero/VL logo 3.png"
+                alt="Vitalis Labs hero logo visual"
                 fill
                 preload
                 sizes="(max-width: 1024px) 100vw, 48vw"

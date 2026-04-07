@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -12,11 +13,21 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-line/80 bg-bone-white/90 backdrop-blur-xl">
       <div className="section-wrap flex items-center justify-between py-3 sm:py-4">
-        <Link href="/" className="space-y-1 pr-2">
-          <p className="eyebrow">{siteContent.brand.name}</p>
-          <p className="text-[10px] uppercase tracking-[0.16em] text-muted/85">
-            {siteContent.brand.strap}
-          </p>
+        <Link href="/" className="flex items-center gap-3 pr-2">
+          <Image
+            src="/images/hero/VL logo 6.png"
+            alt={`${siteContent.brand.name} logo`}
+            width={40}
+            height={40}
+            priority
+            className="h-10 w-10 rounded-xl border border-line/70 object-cover"
+          />
+          <div className="space-y-1">
+            <p className="eyebrow whitespace-nowrap">{siteContent.brand.name}</p>
+            <p className="whitespace-nowrap text-[10px] uppercase tracking-[0.16em] text-muted/85">
+              {siteContent.brand.strap}
+            </p>
+          </div>
         </Link>
 
         <nav

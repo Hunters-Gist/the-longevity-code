@@ -71,8 +71,8 @@ export const protocols: Protocol[] = [
     ],
   },
   {
-    slug: "full-code",
-    name: "The Full Code",
+    slug: "full-spectrum",
+    name: "The Full Spectrum",
     summary:
       "A complete body-mind-skin optimization architecture for adults playing the long game.",
     positioning: "Comprehensive premium protocol",

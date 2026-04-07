@@ -1,3 +1,5 @@
+import { BRAND_DESCRIPTION, BRAND_NAME, BRAND_STRAP } from "@/content/brand";
+
 export type NavItem = {
   label: string;
   href: string;
@@ -5,10 +7,9 @@ export type NavItem = {
 
 export const siteContent = {
   brand: {
-    name: "The Longevity Code",
-    strap: "Long-horizon vitality design",
-    description:
-      "Premium protocols and education for adults who want better recovery, clearer thinking, and a longer health horizon.",
+    name: BRAND_NAME,
+    strap: BRAND_STRAP,
+    description: BRAND_DESCRIPTION,
   },
   nav: [
     { label: "About", href: "/about" },

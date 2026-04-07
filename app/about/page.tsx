@@ -1,13 +1,14 @@
 import { CtaRail } from "@/components/ui/CtaRail";
 import { PageHero } from "@/components/ui/PageHero";
+import { BRAND_NAME } from "@/content/brand";
 
 export default function AboutPage() {
   return (
     <>
       <PageHero
         eyebrow="About"
-        title="A premium longevity house for thoughtful adults."
-        description="The Longevity Code blends assessment, protocol design, and editorial education into a single system for people who treat health as strategy."
+        title="A premium longevity studio for thoughtful adults."
+        description={`${BRAND_NAME} blends assessment, protocol design, and editorial education into a single system for people who treat health as strategy.`}
       />
 
       <section className="py-12 sm:py-16">

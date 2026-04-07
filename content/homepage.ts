@@ -1,3 +1,5 @@
+import { BRAND_NAME } from "@/content/brand";
+
 export type Pillar = {
   title: string;
   copy: string;
@@ -31,12 +33,12 @@ export const homeContent = {
     "About",
   ],
   hero: {
-    eyebrow: "The Longevity Code",
+    eyebrow: BRAND_NAME,
     heading: "Built for the long game.",
     subheading:
       "Precision wellness for thoughtful adults who want to age better, recover smarter, and think clearer.",
     supporting:
-      "Restore deeply. Live steadily. Age well. A premium longevity system built around assessment-first protocols and measurable progression.",
+      "Restore deeply. Live steadily. Age well. A refined longevity system built around assessment-first protocols and measurable progression.",
     ctas: [
       { label: "Start Your Assessment", href: "#" },
       { label: "Explore Protocols", href: "#protocols" },
@@ -86,7 +88,7 @@ export const homeContent = {
       cta: "Learn More",
     },
     {
-      name: "The Full Code",
+      name: "The Full Spectrum",
       summary: "A whole-system optimization protocol for serious long-horizon wellbeing.",
       cta: "Unlock Your Baseline",
     },
@@ -115,7 +117,7 @@ export const homeContent = {
   ] as ProcessStep[],
   mission: {
     heading: "Age with intention. Restore with intelligence.",
-    body: "The Longevity Code exists for people who treat health as strategy. We focus on resilient energy, clean recovery, cognitive steadiness, and whole-system optimization. This is not symptom chasing. It is precision wellness built for your future runway.",
+    body: `${BRAND_NAME} exists for people who treat health as strategy. We focus on resilient energy, clean recovery, cognitive steadiness, and whole-system optimization. This is not symptom chasing. It is precision wellness built for your future runway.`,
     callout: "Restore the system, not just the symptoms.",
   },
   journal: [
@@ -141,9 +143,9 @@ export const homeContent = {
   finalCta: {
     heading: "Sharper mind. Stronger body. Longer runway.",
     subheading:
-      "Join The Code for protocol updates, education drops, and private release access.",
+      "Stay close to Vitalis Labs for protocol updates, education drops, and private release access.",
     emailPlaceholder: "Enter your email",
-    primary: "Join The Code",
+    primary: "Join the List",
     secondary: "Start Your Assessment",
   },
   footer: {

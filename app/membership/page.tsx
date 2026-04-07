@@ -24,7 +24,7 @@ export default function MembershipPage() {
     <>
       <PageHero
         eyebrow="Membership"
-        title="Direct join membership for the long game."
+        title="Membership designed for the long game."
         description="Choose your level and start immediately. Assessment remains recommended for best-fit protocol sequencing."
       />
 

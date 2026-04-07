@@ -1,10 +1,11 @@
 import { LegalPage } from "@/components/layout/LegalPage";
+import { BRAND_NAME } from "@/content/brand";
 
 export default function MedicalDisclaimerPage() {
   return (
     <LegalPage
       title="Medical Disclaimer"
-      intro="The Longevity Code does not provide medical diagnosis, treatment, or emergency care."
+      intro={`${BRAND_NAME} does not provide medical diagnosis, treatment, or emergency care.`}
       sections={[
         {
           heading: "Not Medical Advice",

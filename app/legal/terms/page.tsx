@@ -1,4 +1,5 @@
 import { LegalPage } from "@/components/layout/LegalPage";
+import { BRAND_NAME } from "@/content/brand";
 
 export default function TermsPage() {
   return (
@@ -8,7 +9,7 @@ export default function TermsPage() {
       sections={[
         {
           heading: "Service Scope",
-          body: "The Longevity Code provides educational wellness content, assessment frameworks, and membership guidance. Access to certain services may require subscription or eligibility checks.",
+          body: `${BRAND_NAME} provides educational wellness content, assessment frameworks, and membership guidance. Access to certain services may require subscription or eligibility checks.`,
         },
         {
           heading: "User Responsibilities",

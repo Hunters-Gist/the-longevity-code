@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteContent } from "@/content/site";
 
 export function SiteFooter() {
@@ -6,7 +7,16 @@ export function SiteFooter() {
     <footer className="border-t border-line/90 py-12 sm:py-14">
       <div className="section-wrap grid gap-8 md:grid-cols-[1fr_auto_auto] md:items-start">
         <div>
-          <p className="eyebrow">{siteContent.brand.name}</p>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/images/hero/VL logo 6.png"
+              alt={`${siteContent.brand.name} logo`}
+              width={40}
+              height={40}
+              className="h-10 w-10 rounded-xl border border-line/70 object-cover"
+            />
+            <p className="eyebrow">{siteContent.brand.name}</p>
+          </div>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
             {siteContent.brand.description}
           </p>
