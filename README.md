@@ -1,6 +1,6 @@
-# Vitalis Labs
+# The Sila Code
 
-Premium Next.js marketing homepage for Vitalis Labs, a modern longevity and wellness brand focused on prevention, recovery, skin aging, and cognitive resilience.
+Premium Next.js marketing homepage for The Sila Code, a modern longevity and wellness brand focused on prevention, recovery, skin aging, and cognitive resilience.
 
 ## Local development
 

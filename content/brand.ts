@@ -1,6 +1,8 @@
-export const BRAND_NAME = "Vitalis Labs";
+export const BRAND_NAME = "The Sila Code";
 
-export const BRAND_STRAP = "Long-horizon vitality design";
+export const BRAND_MEANING = "Sila means strength in Russian.";
+
+export const BRAND_STRAP = "Psychology-backed wellness";
 
 export const BRAND_DESCRIPTION =
-  "Premium protocols and education for adults who want better recovery, clearer thinking, and a longer health horizon.";
+  "Premium, psychology-backed nootropics and digital wellness pathways designed to support focus, mood, and cognitive resilience.";

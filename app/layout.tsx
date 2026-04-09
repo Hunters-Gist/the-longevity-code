@@ -1,21 +1,26 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Source_Sans_3 } from "next/font/google";
+import { DM_Serif_Display, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
-import { BRAND_NAME } from "@/content/brand";
+import { BRAND_DESCRIPTION, BRAND_MEANING, BRAND_NAME } from "@/content/brand";
 
-const sourceSans = Source_Sans_3({
+const bodyFont = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
   display: "swap",
 });
 
-const playfair = Playfair_Display({
+const headingFont = DM_Serif_Display({
   variable: "--font-manrope",
   subsets: ["latin"],
-  weight: ["600", "700"],
-  style: ["normal", "italic"],
+  weight: "400",
+  display: "swap",
+});
+
+const monoFont = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
   display: "swap",
 });
 
@@ -25,20 +30,19 @@ export const metadata: Metadata = {
     template: `%s | ${BRAND_NAME}`,
   },
   applicationName: BRAND_NAME,
-  description:
-    "Premium longevity and wellness protocols for thoughtful adults. Built for the long game.",
+  metadataBase: new URL("https://www.thesilacode.com"),
+  description: `${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
   openGraph: {
     title: BRAND_NAME,
-    description:
-      "Premium longevity and wellness protocols for thoughtful adults. Built for the long game.",
+    description: `${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
     siteName: BRAND_NAME,
     type: "website",
+    locale: "en_AU",
   },
   twitter: {
     card: "summary_large_image",
     title: BRAND_NAME,
-    description:
-      "Premium longevity and wellness protocols for thoughtful adults. Built for the long game.",
+    description: `${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
   },
 };
 
@@ -49,8 +53,8 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
-      className={`${sourceSans.variable} ${playfair.variable} h-full antialiased`}
+      lang="en-AU"
+      className={`${bodyFont.variable} ${headingFont.variable} ${monoFont.variable} h-full antialiased`}
     >
       <body className="min-h-full">
         <div

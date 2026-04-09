@@ -1,4 +1,5 @@
 import { BRAND_DESCRIPTION, BRAND_NAME, BRAND_STRAP } from "@/content/brand";
+import { SILA_HEALTH_DISCLAIMER } from "@/content/sila";
 
 export type NavItem = {
   label: string;
@@ -13,22 +14,31 @@ export const siteContent = {
   },
   nav: [
     { label: "About", href: "/about" },
-    { label: "Protocols", href: "/protocols" },
+    { label: "The Code", href: "/the-code" },
+    { label: "Shop", href: "/shop" },
     { label: "Assessment", href: "/assessment" },
-    { label: "Journal / Learn", href: "/learn" },
-    { label: "Membership", href: "/membership" },
+    { label: "Subscribe", href: "/subscribe" },
+    { label: "Journal", href: "/blog" },
+    { label: "Community", href: "/community" },
     { label: "Contact", href: "/contact" },
     { label: "FAQ", href: "/faq" },
   ] as NavItem[],
   ctas: {
-    primary: { label: "Start Assessment", href: "/assessment" },
-    secondary: { label: "View Membership", href: "/membership" },
+    primary: { label: "Take the Assessment", href: "/assessment" },
+    secondary: { label: "Shop Sila Focus", href: "/shop/sila-focus" },
   },
   legal: [
     { label: "Privacy", href: "/legal/privacy" },
     { label: "Terms", href: "/legal/terms" },
-    { label: "Disclaimer", href: "/legal/disclaimer" },
-    { label: "Medical Disclaimer", href: "/legal/medical-disclaimer" },
+    { label: "Health Disclaimer", href: "/legal/disclaimer" },
   ] as NavItem[],
-  social: ["Instagram", "LinkedIn", "YouTube"],
+  social: [
+    { label: "Instagram", href: "https://www.instagram.com" },
+    { label: "TikTok", href: "https://www.tiktok.com" },
+    { label: "YouTube", href: "https://www.youtube.com" },
+  ],
+  communityUrl: "https://thesilacode.skool.com",
+  company: "The Sila Code Pty Ltd",
+  abn: "[number]",
+  healthDisclaimer: SILA_HEALTH_DISCLAIMER,
 } as const;

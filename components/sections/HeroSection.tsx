@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { homeContent } from "@/content/homepage";
 import { ActionButton } from "@/components/ui/ActionButton";
+import { BRAND_STRAP } from "@/content/brand";
 
 export function HeroSection() {
   return (
@@ -14,7 +15,7 @@ export function HeroSection() {
           <div className="relative border-b border-line pb-4 sm:pb-5">
             <p className="eyebrow">{homeContent.hero.eyebrow}</p>
             <p className="mt-2 text-[10px] uppercase tracking-[0.2em] text-muted/90 sm:text-xs sm:tracking-[0.22em]">
-              Long-horizon vitality design
+              {BRAND_STRAP}
             </p>
           </div>
 
@@ -41,29 +42,29 @@ export function HeroSection() {
               <div className="mt-7 grid max-w-lg grid-cols-1 gap-2.5 sm:mt-8 sm:grid-cols-3 sm:gap-3">
                 <div className="rounded-2xl border border-line/80 bg-bone-white/60 px-4 py-3 sm:p-3">
                   <p className="text-[10px] uppercase tracking-[0.2em] text-muted sm:tracking-[0.22em]">
-                    Programs
+                    Pillars
                   </p>
-                  <p className="mt-1 text-lg font-medium text-obsidian sm:text-xl">12</p>
+                  <p className="mt-1 text-lg font-medium text-obsidian sm:text-xl">5</p>
                 </div>
                 <div className="rounded-2xl border border-line/80 bg-bone-white/60 px-4 py-3 sm:p-3">
                   <p className="text-[10px] uppercase tracking-[0.2em] text-muted sm:tracking-[0.22em]">
-                    Avg Review
+                    Questions
                   </p>
-                  <p className="mt-1 text-lg font-medium text-obsidian sm:text-xl">4.9</p>
+                  <p className="mt-1 text-lg font-medium text-obsidian sm:text-xl">15</p>
                 </div>
                 <div className="rounded-2xl border border-line/80 bg-bone-white/60 px-4 py-3 sm:p-3">
                   <p className="text-[10px] uppercase tracking-[0.2em] text-muted sm:tracking-[0.22em]">
-                    Coach Ratio
+                    Core Tiers
                   </p>
-                  <p className="mt-1 text-lg font-medium text-obsidian sm:text-xl">1:18</p>
+                  <p className="mt-1 text-lg font-medium text-obsidian sm:text-xl">3</p>
                 </div>
               </div>
             </div>
 
             <div className="relative min-h-[19rem] overflow-hidden rounded-[26px] border border-line-strong bg-bone-white/75 sm:min-h-[24rem] sm:rounded-[30px]">
               <Image
-                src="/images/hero/VL logo 3.png"
-                alt="Vitalis Labs hero logo visual"
+                src="/images/hero/QPJmZ.jpg"
+                alt="The Sila Code hero logo visual"
                 fill
                 preload
                 sizes="(max-width: 1024px) 100vw, 48vw"
@@ -73,30 +74,30 @@ export function HeroSection() {
               <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6">
                 <div className="rounded-2xl border border-line bg-bone-white/82 p-4 backdrop-blur-sm sm:p-5">
                   <p className="text-[10px] uppercase tracking-[0.2em] text-sage/95 sm:tracking-[0.24em]">
-                    Precision wellness for modern life
+                    Psychology-backed nootropic platform
                   </p>
                   <p className="mt-2 max-w-sm text-[13px] leading-relaxed text-foreground/86 sm:text-sm">
-                    Better energy. Better resilience. Better aging.
+                    Focus, mood stability, and cognitive resilience in one cohesive system.
                   </p>
                 </div>
               </div>
 
               <div className="absolute right-3 top-3 rounded-full border border-line bg-bone-white/78 px-3 py-1.5 text-[9px] uppercase tracking-[0.18em] text-muted/90 backdrop-blur-sm sm:right-4 sm:top-4 sm:px-4 sm:py-2 sm:text-[10px] sm:tracking-[0.24em]">
-                Editorial care model
+                Sila means strength
               </div>
 
               <div className="absolute bottom-4 right-3 w-28 rounded-2xl border border-line bg-bone-white/90 p-1.5 shadow-[0_18px_34px_-24px_rgba(10,18,15,0.45)] backdrop-blur-sm sm:w-40 sm:rounded-3xl sm:p-2.5">
                 <div className="relative h-28 overflow-hidden rounded-xl border border-line/70 sm:h-36 sm:rounded-2xl">
                   <Image
-                    src="/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp"
-                    alt="Peptides feature visual"
+                    src="/images/hero/QPJmZ.jpg"
+                    alt="The Sila Code emblem"
                     fill
                     sizes="160px"
                     className="object-cover object-center"
                   />
                 </div>
                 <p className="mt-2 text-[8px] uppercase tracking-[0.2em] text-muted sm:text-[9px] sm:tracking-[0.22em]">
-                  Peptide spotlight
+                  Brand emblem
                 </p>
               </div>
             </div>

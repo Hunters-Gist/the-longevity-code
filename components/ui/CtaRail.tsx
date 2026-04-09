@@ -28,14 +28,14 @@ export function CtaRail({
           <div className="mt-6 grid gap-2 sm:mt-8 sm:flex sm:flex-wrap sm:gap-3">
             <Link
               href={primary.href}
-              className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-obsidian px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition hover:bg-deep-charcoal sm:w-auto sm:text-xs sm:tracking-[0.15em]"
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-gold px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition hover:bg-[#d9ba84] sm:w-auto sm:text-xs sm:tracking-[0.15em]"
             >
               {primary.label}
             </Link>
             {secondary ? (
               <Link
                 href={secondary.href}
-                className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-sage/70 bg-bone-white/75 px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition hover:border-terracotta hover:text-terracotta sm:w-auto sm:text-xs sm:tracking-[0.15em]"
+                className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-line bg-transparent px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition hover:border-gold hover:text-gold sm:w-auto sm:text-xs sm:tracking-[0.15em]"
               >
                 {secondary.label}
               </Link>

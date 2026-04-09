@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-3">
             <Image
-              src="/images/hero/VL logo 6.png"
+              src="/images/hero/QPJmZ.jpg"
               alt={`${siteContent.brand.name} logo`}
               width={40}
               height={40}
@@ -20,6 +20,12 @@ export function SiteFooter() {
           <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
             {siteContent.brand.description}
           </p>
+          <p className="mt-4 max-w-md text-xs leading-relaxed text-muted">
+            {siteContent.healthDisclaimer}
+          </p>
+          <p className="mt-4 text-xs uppercase tracking-[0.14em] text-muted">
+            {siteContent.company} | ABN: {siteContent.abn}
+          </p>
         </div>
 
         <div className="grid gap-7 sm:grid-cols-2 sm:gap-10 md:grid-cols-[auto_auto]">
@@ -28,7 +34,7 @@ export function SiteFooter() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block rounded-xl py-1.5 text-sm text-foreground/86 transition duration-300 hover:text-obsidian"
+                className="block rounded-xl py-1.5 text-sm text-foreground/86 transition duration-300 hover:text-gold"
               >
                 {link.label}
               </Link>
@@ -40,13 +46,25 @@ export function SiteFooter() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block rounded-xl py-1.5 text-sm text-muted transition duration-300 hover:text-obsidian"
+                className="block rounded-xl py-1.5 text-sm text-muted transition duration-300 hover:text-gold"
               >
                 {item.label}
               </Link>
             ))}
             <div className="pt-2 text-xs uppercase tracking-[0.2em] text-muted">
-              {siteContent.social.join(" / ")}
+              {siteContent.social.map((social, index) => (
+                <span key={social.label}>
+                  <Link
+                    href={social.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="hover:text-gold"
+                  >
+                    {social.label}
+                  </Link>
+                  {index < siteContent.social.length - 1 ? " / " : ""}
+                </span>
+              ))}
             </div>
           </div>
         </div>

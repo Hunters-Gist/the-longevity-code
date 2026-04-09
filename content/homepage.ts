@@ -1,9 +1,9 @@
-import { BRAND_NAME } from "@/content/brand";
+import { BRAND_MEANING, BRAND_NAME } from "@/content/brand";
 
 export type Pillar = {
   title: string;
   copy: string;
-  icon: "pulse" | "shield" | "spark" | "mind";
+  icon: "pulse" | "shield" | "spark" | "mind" | "rehab";
 };
 
 export type Protocol = {
@@ -34,91 +34,96 @@ export const homeContent = {
   ],
   hero: {
     eyebrow: BRAND_NAME,
-    heading: "Built for the long game.",
+    heading: "Strength, coded for modern wellness.",
     subheading:
-      "Precision wellness for thoughtful adults who want to age better, recover smarter, and think clearer.",
+      "A psychology-backed wellness platform blending nootropics, digital coaching, and measurable behavior change.",
     supporting:
-      "Restore deeply. Live steadily. Age well. A refined longevity system built around assessment-first protocols and measurable progression.",
+      "Start with the 15-question Sila Assessment, receive your Sila Score, and enter the exact pathway for brain, body, skin, longevity, and resilience.",
     ctas: [
-      { label: "Start Your Assessment", href: "#" },
-      { label: "Explore Protocols", href: "#protocols" },
+      { label: "Take the Sila Assessment", href: "/assessment" },
+      { label: "Explore Programs", href: "/protocols" },
     ],
   },
   pillars: [
     {
-      title: "Prevention & Longevity",
-      copy: "Build long-term vitality by reducing future risk and reinforcing metabolic resilience.",
-      icon: "shield",
+      title: "Brain",
+      copy: "Think clearer and stay sharp with structured support for focus, mood stability, and neuroplasticity.",
+      icon: "mind",
     },
     {
-      title: "Body Health & Recovery",
-      copy: "Recover faster, move cleaner, and protect your physical output with precision support.",
-      icon: "pulse",
-    },
-    {
-      title: "Skin & Anti-Aging",
-      copy: "Support cellular repair and skin integrity with modern longevity-driven skin protocols.",
+      title: "Skin",
+      copy: "Support cellular renewal and collagen integrity so skin health improves from the inside out.",
       icon: "spark",
     },
     {
-      title: "Brain & Psychology",
-      copy: "Sharpen focus, regulate stress load, and build mental clarity for resilient daily living.",
-      icon: "mind",
+      title: "Body",
+      copy: "Rebuild and recover with better stress adaptation, energy consistency, and physical readiness.",
+      icon: "pulse",
+    },
+    {
+      title: "Longevity",
+      copy: "Live longer, live better with prevention-focused habits, cellular support, and clear progression.",
+      icon: "shield",
+    },
+    {
+      title: "Rehab",
+      copy: "Rewire your path with practical mental resilience education and a recovery-conscious support ecosystem.",
+      icon: "rehab",
     },
   ] as Pillar[],
   protocols: [
     {
-      name: "The Longevity Baseline",
-      summary: "Establish core biomarkers, recovery score, and next-step strategy.",
-      cta: "Start Assessment",
+      name: "Community",
+      summary: "Free access to weekly education, pillar-based guidance, and the Sila Assessment.",
+      cta: "Join Free",
     },
     {
-      name: "The Recovery Reset",
-      summary: "Repair accumulated fatigue, improve sleep depth, and restore daily output.",
-      cta: "Learn More",
+      name: "The Code Digital",
+      summary: "Full digital course library, monthly masterclasses, and practical implementation tools.",
+      cta: "View Tier",
     },
     {
-      name: "The Skin Rebuild",
-      summary: "Support collagen architecture, skin quality, and visible aging confidence.",
-      cta: "Learn More",
+      name: "Code + Capsule",
+      summary: "Digital access plus monthly delivery of The Sila Code nootropic capsule stack.",
+      cta: "View Tier",
     },
     {
-      name: "The Mental Edge",
-      summary: "Upgrade cognitive stamina, emotional regulation, and strategic focus.",
-      cta: "Learn More",
+      name: "Founding Member",
+      summary: "Launch-only locked pricing, early product access, and long-term loyalty advantages.",
+      cta: "View Tier",
     },
     {
-      name: "The Full Spectrum",
-      summary: "A whole-system optimization protocol for serious long-horizon wellbeing.",
-      cta: "Unlock Your Baseline",
+      name: "Executive Track",
+      summary: "A high-touch pathway for performance leaders requiring deeper strategy and oversight.",
+      cta: "Apply",
     },
   ] as Protocol[],
   process: [
     {
-      title: "Start With Assessment",
+      title: "Take the Sila Assessment",
       description:
-        "Map current recovery, energy patterns, and longevity priorities through our intake.",
+        "Complete a 15-question onboarding flow based on validated stress and wellness frameworks.",
     },
     {
-      title: "Understand Your Baseline",
+      title: "Receive Your Sila Score",
       description:
-        "Get a clear view of where your body and mind are now, and where they can go next.",
+        "Get a clear score across all five Sila pillars with strengths, gaps, and immediate priorities.",
     },
     {
-      title: "Receive Your Protocol",
+      title: "Choose Your Pathway",
       description:
-        "Follow a structured plan built around your goals across body, skin, and cognitive health.",
+        "Enter Community, The Code Digital, Code + Capsule, or Founding Member based on your needs.",
     },
     {
-      title: "Track Your Progress",
+      title: "Track and Compound",
       description:
-        "Refine over time with guided adjustments that keep results compounding.",
+        "Use monthly check-ins and guided content to sustain momentum and compound long-term outcomes.",
     },
   ] as ProcessStep[],
   mission: {
-    heading: "Age with intention. Restore with intelligence.",
-    body: `${BRAND_NAME} exists for people who treat health as strategy. We focus on resilient energy, clean recovery, cognitive steadiness, and whole-system optimization. This is not symptom chasing. It is precision wellness built for your future runway.`,
-    callout: "Restore the system, not just the symptoms.",
+    heading: "A system, not just a supplement.",
+    body: `${BRAND_NAME} exists for people who treat health as strategy. ${BRAND_MEANING} We focus on resilient energy, clean recovery, cognitive steadiness, and whole-system optimisation. This is not symptom chasing. It is precision wellness built for your future runway.`,
+    callout: "Rebuild your baseline. Then raise it.",
   },
   journal: [
     {
@@ -141,12 +146,12 @@ export const homeContent = {
     },
   ] as JournalItem[],
   finalCta: {
-    heading: "Sharper mind. Stronger body. Longer runway.",
+    heading: "Start your Sila journey.",
     subheading:
-      "Stay close to Vitalis Labs for protocol updates, education drops, and private release access.",
+      "Get your Sila Score, unlock the right tier, and build measurable momentum in brain, body, and longevity.",
     emailPlaceholder: "Enter your email",
-    primary: "Join the List",
-    secondary: "Start Your Assessment",
+    primary: "Join the Community",
+    secondary: "Take the Assessment",
   },
   footer: {
     legal: ["Privacy", "Terms", "Disclaimer"],

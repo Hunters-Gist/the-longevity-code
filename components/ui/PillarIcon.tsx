@@ -1,5 +1,5 @@
 type PillarIconProps = {
-  icon: "pulse" | "shield" | "spark" | "mind";
+  icon: "pulse" | "shield" | "spark" | "mind" | "rehab";
 };
 
 export function PillarIcon({ icon }: PillarIconProps) {
@@ -42,6 +42,25 @@ export function PillarIcon({ icon }: PillarIconProps) {
           strokeWidth="1.6"
           strokeLinecap="round"
           strokeLinejoin="round"
+        />
+      </svg>
+    );
+  }
+
+  if (icon === "rehab") {
+    return (
+      <svg viewBox="0 0 24 24" fill="none" className={common} aria-hidden="true">
+        <path
+          d="M4 15c1.7-2.6 3.5-3.9 5.4-3.9 2.2 0 4 1.5 5.1 4.4"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="round"
+        />
+        <path
+          d="M15.8 9.8h4.2M20 7.7v4.2"
+          stroke="currentColor"
+          strokeWidth="1.6"
+          strokeLinecap="round"
         />
       </svg>
     );

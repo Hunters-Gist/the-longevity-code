@@ -7,30 +7,30 @@ export function MembershipSection() {
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Membership"
-          title="Premium continuity for people who value compounding health."
-          description="A direct join model with monthly and annual options, built around strategic progression and editorial-level guidance."
+          title="Subscription paths built for real-world commitment."
+          description="Move from free education into digital structure, then into capsule-backed continuity as your goals mature."
         />
 
         <div className="mt-10 grid gap-3 sm:mt-12 sm:gap-4 md:grid-cols-2 lg:grid-cols-3">
           <article className="glass-card rounded-[22px] p-5 sm:rounded-[26px] sm:p-6">
-            <p className="eyebrow">Foundation</p>
-            <h3 className="display-title mt-3 text-[1.9rem] font-medium sm:text-3xl">Essential</h3>
+            <p className="eyebrow">Digital</p>
+            <h3 className="display-title mt-3 text-[1.9rem] font-medium sm:text-3xl">The Code</h3>
             <p className="mt-3 text-sm text-muted">
-              For building consistency through a clear guided structure.
+              $29/month for the full course library, masterclasses, and pillar implementation tools.
             </p>
           </article>
           <article className="luxury-card rounded-[22px] p-5 sm:rounded-[26px] sm:p-6">
-            <p className="eyebrow">Progression</p>
-            <h3 className="display-title mt-3 text-[1.9rem] font-medium sm:text-3xl">Advanced</h3>
+            <p className="eyebrow">Core Revenue Tier</p>
+            <h3 className="display-title mt-3 text-[1.9rem] font-medium sm:text-3xl">Code + Capsule</h3>
             <p className="mt-3 text-sm text-muted">
-              For health-conscious adults optimizing the next decade.
+              $69/month for digital access plus monthly nootropic capsule supply on auto-ship.
             </p>
           </article>
           <article className="glass-card rounded-[22px] p-5 sm:rounded-[26px] sm:p-6 md:col-span-2 lg:col-span-1">
-            <p className="eyebrow">Private</p>
-            <h3 className="display-title mt-3 text-[1.9rem] font-medium sm:text-3xl">Executive</h3>
+            <p className="eyebrow">Launch Offer</p>
+            <h3 className="display-title mt-3 text-[1.9rem] font-medium sm:text-3xl">Founding Member</h3>
             <p className="mt-3 text-sm text-muted">
-              White-glove oversight for maximal precision and continuity.
+              $49/month locked pricing with early access and long-term member advantages.
             </p>
           </article>
         </div>

@@ -7,8 +7,8 @@ export function HowItWorksSection() {
       <div className="section-wrap">
         <SectionHeading
           eyebrow="How It Works"
-          title="A clear path to measurable longevity."
-          description="Structured onboarding, intelligent protocols, and thoughtful progress tracking designed to compound results."
+          title="The Sila onboarding funnel."
+          description="Assessment first, then personalised pathways and recurring support that compound over time."
           align="center"
         />
 

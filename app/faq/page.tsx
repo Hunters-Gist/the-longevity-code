@@ -1,35 +1,69 @@
 import { PageHero } from "@/components/ui/PageHero";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "FAQ",
+  description:
+    "Frequently asked questions about Sila Focus, assessment scoring, subscriptions, and compliance.",
+  alternates: {
+    canonical: "/faq",
+  },
+};
 
 const faqs = [
   {
-    question: "Should I start with assessment or membership?",
+    question: "What is the Sila Assessment?",
     answer:
-      "Assessment is ideal for precision. Membership supports direct join, but assessment improves fit and speed of results.",
+      "It is a free 15-question onboarding flow that scores you across Brain, Skin, Body, Longevity, and Rehab to guide your best-fit pathway.",
   },
   {
-    question: "Are protocol pages standalone programs?",
+    question: "What does 'Sila' mean?",
     answer:
-      "Yes. Protocols can be run independently or stacked as part of a broader membership progression.",
+      "'Sila' means strength in Russian. It reflects the brand philosophy: build resilient systems that hold under pressure.",
   },
   {
-    question: "Is this medical advice?",
+    question: "Is The Sila Code medical treatment?",
     answer:
-      "No. The platform provides educational and wellness guidance and does not replace licensed medical care.",
+      "No. The platform provides educational wellness guidance and does not replace medical diagnosis, treatment, or emergency care.",
   },
   {
-    question: "Will there be products in the future?",
+    question: "What are the membership tiers?",
     answer:
-      "Yes. Premium wellness products are planned and will be integrated into the editorial and protocol ecosystem.",
+      "Community is free, The Code Digital is $29/month, Code + Capsule is $69/month, and Founding Member is a launch-only $49/month locked offer.",
+  },
+  {
+    question: "How is compliance handled for product claims?",
+    answer:
+      "We use compliant Australian wellness language such as supports cognitive function, helps maintain mental clarity, and supports general wellbeing.",
   },
 ];
 
 export default function FaqPage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
       <PageHero
         eyebrow="FAQ"
-        title="Answers for high-intent decisions."
-        description="The essentials on assessment, protocols, membership, and platform boundaries."
+        title="Clear answers before you commit."
+        description="Key details about products, subscriptions, assessment scoring, and compliance guardrails."
       />
 
       <section className="py-12 sm:py-16">

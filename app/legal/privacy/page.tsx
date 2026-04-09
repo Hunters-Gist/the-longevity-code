@@ -1,5 +1,13 @@
 import { LegalPage } from "@/components/layout/LegalPage";
 import { BRAND_NAME } from "@/content/brand";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  alternates: {
+    canonical: "/legal/privacy",
+  },
+};
 
 export default function PrivacyPage() {
   return (
@@ -9,15 +17,15 @@ export default function PrivacyPage() {
       sections={[
         {
           heading: "Information We Collect",
-          body: "We may collect personal identifiers, assessment responses, and interaction data required to provide protocol recommendations, membership services, and support communication.",
+          body: "We may collect contact details, assessment responses, and site interaction data required to deliver recommendations, support requests, and subscription communication.",
         },
         {
           heading: "How We Use Information",
-          body: "Data is used to improve your platform experience, deliver requested services, and maintain operational quality. We do not sell personal data.",
+          body: "Information is used to deliver requested services, improve site performance, and provide relevant educational content. We do not sell personal information.",
         },
         {
-          heading: "Data Security",
-          body: "We apply commercially reasonable safeguards to protect data against unauthorized access, disclosure, or misuse.",
+          heading: "Your Rights",
+          body: "You may request access, correction, or deletion of your personal information by contacting hello@thesilacode.com.",
         },
       ]}
     />

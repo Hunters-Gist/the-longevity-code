@@ -17,80 +17,80 @@ export type LearnArticle = {
 
 export const learnCategories: LearnCategory[] = [
   {
-    slug: "longevity-strategy",
-    name: "Longevity Strategy",
-    description: "Frameworks for long-horizon health and wellbeing planning.",
+    slug: "brand-architecture",
+    name: "Brand Architecture",
+    description: "How The Sila Code model is structured and why the five-pillar system matters.",
   },
   {
-    slug: "recovery-science",
-    name: "Recovery Science",
-    description: "Evidence-informed guidance for repair, energy, and resilience.",
+    slug: "product-stack",
+    name: "Product Stack",
+    description: "The nootropic formulation logic, audience fit, and value proposition design.",
   },
   {
-    slug: "skin-longevity",
-    name: "Skin + Longevity",
-    description: "Skin health through the lens of systemic resilience and aging.",
+    slug: "launch-operations",
+    name: "Launch Operations",
+    description: "Funnel, subscriptions, compliance guardrails, and the 8-week execution sprint.",
   },
 ];
 
 export const learnArticles: LearnArticle[] = [
   {
-    slug: "modern-longevity-framework",
-    title: "How Thoughtful Adults Can Think About Longevity",
+    slug: "the-sila-code-brand-architecture",
+    title: "The Sila Code Brand Architecture",
     excerpt:
-      "Why prevention beats correction and how to build a realistic long-term framework.",
-    categorySlug: "longevity-strategy",
-    readTime: "7 min read",
+      "How 'Sila' (strength in Russian) anchors a five-pillar wellness system across product, education, and community.",
+    categorySlug: "brand-architecture",
+    readTime: "8 min read",
     publishedOn: "April 2026",
     image: "/images/journal/longevity-strategy.svg",
     sections: [
       {
-        heading: "Shift From Tactics to Architecture",
-        body: "Most people chase tactics. Better outcomes come from architecture. A longevity architecture prioritizes sleep depth, stress regulation, movement quality, and metabolic resilience in a sequence that compounds over decades.",
+        heading: "From Name to Philosophy",
+        body: "Sila means strength in Russian, and that meaning is not cosmetic. It defines a philosophy of resilient health systems that hold under pressure and improve over time. The brand is positioned as a methodology, not just a capsule.",
       },
       {
-        heading: "Measure What Matters",
-        body: "If you cannot see your recovery profile, decision quality, and output consistency over time, you are guessing. Baseline assessment turns optimization from opinion into a strategic process.",
+        heading: "The Five Pillars",
+        body: "Every recommendation maps to Brain, Skin, Body, Longevity, or Rehab. This creates a coherent framework for product design, educational content, and customer journeys rather than disconnected wellness messaging.",
       },
     ],
   },
   {
-    slug: "recovery-debt-burnout-cost",
-    title: "Recovery Debt, Burnout, and the Cost of Chronic Output",
+    slug: "psychology-informed-nootropic-stack",
+    title: "The Psychology-Informed Nootropic Stack",
     excerpt:
-      "Recognize hidden fatigue markers and close the recovery gap before it compounds.",
-    categorySlug: "recovery-science",
-    readTime: "6 min read",
+      "A clear breakdown of the core capsule formula and how each ingredient maps to cognitive and behavioral outcomes.",
+    categorySlug: "product-stack",
+    readTime: "7 min read",
     publishedOn: "April 2026",
     image: "/images/journal/recovery-debt.svg",
     sections: [
       {
-        heading: "The Hidden Tax",
-        body: "Chronic output without deliberate restoration creates recovery debt. It quietly reduces cognitive precision, emotional regulation, and physical readiness before obvious symptoms appear.",
+        heading: "Ingredient Logic",
+        body: "The stack combines L-Theanine for calm clarity, Citicoline and Alpha-GPC for acetylcholine and cognitive drive, and saffron extract for mood support. Together, it targets focus, stability, and resilience with a systems view.",
       },
       {
-        heading: "Closing the Gap",
-        body: "A repair-first protocol improves nervous system flexibility and sleep architecture, then rebuilds movement and workload tolerance. The goal is resilient wellbeing, not temporary relief.",
+        heading: "Dual Audience Positioning",
+        body: "Messaging supports two high-intent audiences: high-performance professionals seeking sustained mental stamina, and recovery-oriented users seeking cognitive rebuilding and emotional steadiness through structured, compliant wellness support.",
       },
     ],
   },
   {
-    slug: "skin-aging-beyond-surface-fixes",
-    title: "Skin Aging Beyond Surface-Level Fixes",
+    slug: "the-8-week-launch-sprint",
+    title: "The 8-Week Launch Sprint",
     excerpt:
-      "A systems view of skin health, stress, inflammation, and repair capacity.",
-    categorySlug: "skin-longevity",
-    readTime: "8 min read",
+      "How digital funnel, subscription mechanics, and regulatory checkpoints are sequenced for commercial launch.",
+    categorySlug: "launch-operations",
+    readTime: "9 min read",
     publishedOn: "April 2026",
     image: "/images/journal/skin-aging.svg",
     sections: [
       {
-        heading: "Skin Is a Signal",
-        body: "Skin quality reflects deeper system behavior: stress chemistry, sleep quality, inflammatory load, and nutrient status. Lasting changes require more than topical products alone.",
+        heading: "Funnel Before Scale",
+        body: "The model starts with a free Sila Assessment, then routes users into personalised results and a tiered subscription path. This creates segmentation, authority, and conversion without relying only on product-first traffic.",
       },
       {
-        heading: "Build the Rebuild Loop",
-        body: "Start with barrier support and inflammation control, then layer strategic interventions tied to lifestyle and recovery. This creates visible results that can be maintained.",
+        heading: "Compliance as Strategy",
+        body: "Australian guardrails shape every claim. The launch plan emphasizes compliant language, evidence readiness, and careful boundaries between wellness education and therapeutic claims.",
       },
     ],
   },

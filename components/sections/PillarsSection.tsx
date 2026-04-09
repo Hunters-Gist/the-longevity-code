@@ -8,8 +8,8 @@ export function PillarsSection() {
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Core Pillars"
-          title="A complete longevity framework."
-          description="Four integrated systems designed to support how you age, recover, and feel over time."
+          title="The five pillars of Sila."
+          description="Every product, lesson, and recommendation maps back to Brain, Skin, Body, Longevity, or Rehab."
         />
 
         <div className="mt-10 grid gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-4 lg:mt-14 lg:grid-cols-12">

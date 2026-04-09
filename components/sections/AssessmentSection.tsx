@@ -7,20 +7,20 @@ export function AssessmentSection() {
       <div className="section-wrap">
         <SectionHeading
           eyebrow="Assessment"
-          title="Begin with precision, not guesswork."
-          description="Our assessment maps recovery patterns, stress profile, and wellbeing priorities before recommending any protocol."
+          title="Begin with the Sila Assessment."
+          description="A 15-question onboarding flow designed around validated psychological frameworks to generate your Sila Score."
         />
 
         <div className="mt-10 grid gap-3 sm:mt-12 sm:gap-4 lg:grid-cols-[1.15fr_0.85fr]">
           <article className="luxury-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-8">
             <p className="eyebrow">Assessment flow</p>
             <h3 className="display-title mt-3 text-[2rem] font-medium sm:mt-4 sm:text-5xl">
-              Your baseline in under 12 minutes.
+              Your Sila Score in under 12 minutes.
             </h3>
             <ul className="mt-5 space-y-3 text-sm text-muted sm:mt-6">
-              <li>01. Recovery and wellbeing intake</li>
-              <li>02. Lifestyle and stress-load mapping</li>
-              <li>03. Strategic protocol recommendation</li>
+              <li>01. Pillar-by-pillar mental wellness intake</li>
+              <li>02. Stress and resilience score mapping</li>
+              <li>03. Personalized pathway recommendation</li>
             </ul>
             <Link
               href="/assessment"
@@ -34,9 +34,9 @@ export function AssessmentSection() {
           <article className="glass-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-8">
             <p className="eyebrow">Why this matters</p>
             <p className="mt-3 text-sm leading-relaxed text-muted sm:mt-4">
-              Most people apply generic routines to specific problems.
-              Assessment lets us match your protocol to your current system
-              state so changes are targeted, measurable, and sustainable.
+              Most people choose wellness products before diagnosing their
+              actual bottleneck. The Sila Assessment segments your needs first
+              so recommendations are targeted, measurable, and sustainable.
             </p>
             <Link
               href="/protocols"

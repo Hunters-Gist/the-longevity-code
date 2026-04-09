@@ -6,9 +6,9 @@ export function ProtocolsSection() {
     <section id="protocols" className="py-16 sm:py-24 lg:py-32">
       <div className="section-wrap">
         <SectionHeading
-          eyebrow="Premium Protocols"
-          title="Goal-based protocols, not generic wellness stacks."
-          description="Every protocol starts with intent and assessment, then evolves with your progress."
+          eyebrow="Programs and Tiers"
+          title="A structured model from free community to full stack."
+          description="Start with assessment, then move into the right level of digital support, capsule access, and continuity."
         />
 
         <div className="mt-10 grid gap-3 sm:mt-12 sm:grid-cols-2 sm:gap-4 lg:mt-14 lg:grid-cols-5">
@@ -18,7 +18,7 @@ export function ProtocolsSection() {
               className="group luxury-card relative overflow-hidden rounded-[24px] p-5 transition duration-500 hover:-translate-y-1.5 hover:border-sage/70 sm:rounded-[28px] sm:p-6"
             >
               <div className="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-teal/18 blur-2xl transition group-hover:bg-teal/28" />
-              <p className="eyebrow relative text-sage/90">Protocol</p>
+              <p className="eyebrow relative text-sage/90">Pathway</p>
               <h3 className="display-title relative mt-3 text-[1.9rem] font-medium text-heading sm:mt-4 sm:text-3xl">
                 {protocol.name}
               </h3>
