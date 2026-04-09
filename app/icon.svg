@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="The Sila Code icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A3A5C" />
+      <stop offset="100%" stop-color="#4A2D6F" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="#0A0A0F" />
+  <rect x="8" y="8" width="112" height="112" rx="22" fill="url(#bg)" />
+  <path
+    d="M38 68c0-15 12-27 27-27h25v10H65c-9 0-17 8-17 17s8 17 17 17h25v10H65c-15 0-27-12-27-27z"
+    fill="#FAFAF8"
+  />
+  <circle cx="89" cy="38" r="6" fill="#C9A96E" />
+</svg>

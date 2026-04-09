@@ -44,6 +44,11 @@ export const metadata: Metadata = {
     title: BRAND_NAME,
     description: `${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
   },
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    shortcut: "/icon.svg",
+    apple: [{ url: "/icon.svg" }],
+  },
 };
 
 export default function RootLayout({
