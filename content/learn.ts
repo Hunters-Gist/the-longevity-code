@@ -42,7 +42,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "brand-architecture",
     readTime: "8 min read",
     publishedOn: "April 2026",
-    image: "/images/journal/longevity-strategy.svg",
+    image: "/images/hero/windows-241bwQl2uWE-unsplash-scaled.webp",
     sections: [
       {
         heading: "From Name to Philosophy",
@@ -62,7 +62,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "product-stack",
     readTime: "7 min read",
     publishedOn: "April 2026",
-    image: "/images/journal/recovery-debt.svg",
+    image: "/images/hero/photo-1559757148-5c350d0d3c56.jpeg",
     sections: [
       {
         heading: "Ingredient Logic",
@@ -82,7 +82,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "launch-operations",
     readTime: "9 min read",
     publishedOn: "April 2026",
-    image: "/images/journal/skin-aging.svg",
+    image: "/images/hero/a-person-walking-down-a-path-in-the-woods.jpg",
     sections: [
       {
         heading: "Funnel Before Scale",

@@ -11,20 +11,23 @@ export function SectionHeading({
   description,
   align = "left",
 }: SectionHeadingProps) {
-  const alignment = align === "center" ? "text-center mx-auto" : "text-left";
+  const alignment = align === "center" ? "mx-auto text-center" : "text-left";
+  const descriptionAlignment = align === "center" ? "mx-auto" : "md:max-w-[52ch]";
 
   return (
-    <header className={`max-w-3xl ${alignment}`}>
+    <header className={`max-w-4xl ${alignment}`}>
       {eyebrow ? (
         <p className="eyebrow mb-3 sm:mb-4">
           {eyebrow}
         </p>
       ) : null}
-      <h2 className="display-title text-[2rem] font-semibold leading-[1.06] text-heading sm:text-5xl lg:text-[3.5rem]">
+      <h2 className="display-title max-w-[15ch] text-[1.74rem] font-semibold leading-[1.08] text-heading min-[430px]:text-[1.92rem] sm:max-w-none sm:text-[2.34rem] md:text-[2.72rem] lg:text-[3.1rem] xl:text-[3.45rem]">
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 max-w-2xl text-[0.98rem] leading-relaxed text-muted sm:mt-5 sm:text-lg">
+        <p
+          className={`mt-4 max-w-[40ch] text-[0.98rem] leading-relaxed text-muted sm:mt-5 sm:max-w-2xl sm:text-[1.02rem] md:text-[1.08rem] ${descriptionAlignment}`}
+        >
           {description}
         </p>
       ) : null}

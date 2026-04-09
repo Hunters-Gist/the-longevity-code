@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BLOG_POSTS, SILA_PILLARS } from "@/content/sila";
 import { PageHero } from "@/components/ui/PageHero";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "The Sila Journal",
@@ -13,6 +14,14 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
+  const coverImages = [
+    "/images/hero/windows-241bwQl2uWE-unsplash-scaled.webp",
+    "/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp",
+    "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
+    "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
+    "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
+  ];
+
   return (
     <>
       <PageHero
@@ -34,16 +43,30 @@ export default function BlogPage() {
             ))}
           </div>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {BLOG_POSTS.map((post) => (
-              <article key={post.slug} className="luxury-card rounded-[24px] p-6">
+            {BLOG_POSTS.map((post, index) => (
+              <article
+                key={post.slug}
+                className={`luxury-card rounded-[24px] p-6 transition duration-500 hover:-translate-y-1 ${
+                  index % 2 === 1 ? "lg:translate-y-6" : ""
+                }`}
+              >
+                <div className="mb-4 overflow-hidden rounded-[20px] border border-line">
+                  <Image
+                    src={coverImages[index % coverImages.length]}
+                    alt={`Journal cover image for ${post.title}`}
+                    width={900}
+                    height={620}
+                    className="h-44 w-full object-cover object-[center_40%] transition duration-700 ease-out hover:scale-105"
+                  />
+                </div>
                 <p className="font-mono text-xs text-muted">
                   {post.publishedOn} | {post.readTime}
                 </p>
-                <h2 className="mt-3 text-2xl text-bone-white">{post.title}</h2>
+                <h2 className="display-title mt-3 text-2xl text-heading">{post.title}</h2>
                 <p className="mt-3 text-sm text-muted">{post.excerpt}</p>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="mt-5 inline-flex min-h-10 items-center rounded-full border border-line px-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition hover:border-gold hover:text-gold"
+                  className="mt-5 inline-flex min-h-10 items-center rounded-full border border-sage/70 bg-bone-white/75 px-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition duration-300 hover:border-terracotta hover:text-terracotta"
                 >
                   Read article
                 </Link>

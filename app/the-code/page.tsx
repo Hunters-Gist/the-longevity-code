@@ -29,7 +29,7 @@ export default function TheCodePage() {
               style={{ borderLeftColor: pillar.accent }}
             >
               <p className="eyebrow">{pillar.name}</p>
-              <h2 className="mt-3 text-3xl text-bone-white sm:text-4xl">
+              <h2 className="display-title mt-3 text-3xl text-heading sm:text-4xl">
                 {pillar.consumerLanguage}
               </h2>
               <p className="mt-3 max-w-4xl text-sm leading-relaxed text-muted sm:text-base">

@@ -34,7 +34,7 @@ export const SILA_PILLARS: Pillar[] = [
     name: "Brain",
     focus: "Cognitive function, focus, neuroplasticity",
     consumerLanguage: "Think clearer, stay sharp",
-    accent: "#1A3A5C",
+    accent: "#2D3A31",
     href: "/the-code#brain",
   },
   {
@@ -42,7 +42,7 @@ export const SILA_PILLARS: Pillar[] = [
     name: "Skin",
     focus: "Anti-ageing, cellular renewal",
     consumerLanguage: "Glow from the inside",
-    accent: "#C9A96E",
+    accent: "#DCCFC2",
     href: "/the-code#skin",
   },
   {
@@ -50,7 +50,7 @@ export const SILA_PILLARS: Pillar[] = [
     name: "Body",
     focus: "Physical recovery, energy, gut health",
     consumerLanguage: "Rebuild and recover",
-    accent: "#6B8F71",
+    accent: "#8C9A84",
     href: "/the-code#body",
   },
   {
@@ -58,7 +58,7 @@ export const SILA_PILLARS: Pillar[] = [
     name: "Longevity",
     focus: "Prevention, cellular health, lifespan",
     consumerLanguage: "Live longer, live better",
-    accent: "#4A2D6F",
+    accent: "#5F6F5F",
     href: "/the-code#longevity",
   },
   {
@@ -66,7 +66,7 @@ export const SILA_PILLARS: Pillar[] = [
     name: "Rehab",
     focus: "Mental resilience, rewiring habits",
     consumerLanguage: "Rewire your path",
-    accent: "#B8763D",
+    accent: "#C27B66",
     href: "/the-code#rehab",
   },
 ];

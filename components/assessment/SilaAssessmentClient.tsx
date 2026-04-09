@@ -122,13 +122,13 @@ export function SilaAssessmentClient() {
       <div className="glass-card rounded-[26px] p-6 sm:p-8">
         <div className="mb-6 flex items-center justify-between">
           <p className="eyebrow">Progress</p>
-          <p className="font-mono text-sm text-bone-white">
+          <p className="font-mono text-sm text-obsidian">
             {answeredCount}/{ASSESSMENT_QUESTIONS.length}
           </p>
         </div>
         <div className="h-2 rounded-full bg-surface">
           <div
-            className="h-full rounded-full bg-gold transition-all duration-500"
+            className="h-full rounded-full bg-sage transition-all duration-500"
             style={{ width: `${(answeredCount / ASSESSMENT_QUESTIONS.length) * 100}%` }}
           />
         </div>
@@ -141,7 +141,7 @@ export function SilaAssessmentClient() {
               {question.id}.{" "}
               {SILA_PILLARS.find((pillar) => pillar.key === question.pillar)?.name}
             </p>
-            <h3 className="mt-2 text-lg leading-snug text-bone-white">{question.text}</h3>
+            <h3 className="mt-2 text-lg leading-snug text-heading">{question.text}</h3>
             <div className="mt-4 grid gap-2 sm:grid-cols-5">
               {OPTIONS.map((option) => {
                 const checked = answers[question.id] === option.value;
@@ -157,8 +157,8 @@ export function SilaAssessmentClient() {
                     }
                     className={`min-h-11 rounded-xl border px-3 text-xs uppercase tracking-[0.12em] transition ${
                       checked
-                        ? "border-gold bg-gold/15 text-gold"
-                        : "border-line text-muted hover:border-gold/70 hover:text-bone-white"
+                        ? "border-sage bg-sage/14 text-obsidian"
+                        : "border-line text-muted hover:border-sage/70 hover:text-obsidian"
                     }`}
                   >
                     {option.label}
@@ -172,7 +172,7 @@ export function SilaAssessmentClient() {
 
       <form onSubmit={onSubmitEmail} className="glass-card rounded-[26px] p-6 sm:p-8">
         <p className="eyebrow">Unlock your result</p>
-        <h3 className="mt-3 text-2xl text-bone-white sm:text-3xl">
+        <h3 className="mt-3 text-2xl text-heading sm:text-3xl">
           Enter your email to unlock your personalised Sila Score and recommendations.
         </h3>
         <div className="mt-5 flex flex-col gap-3 sm:flex-row">
@@ -182,12 +182,12 @@ export function SilaAssessmentClient() {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             placeholder="your@email.com"
-            className="h-12 flex-1 rounded-full border border-line bg-surface px-5 text-sm text-bone-white placeholder:text-muted focus:border-gold focus:outline-none"
+            className="h-12 flex-1 rounded-full border border-line bg-bone-white px-5 text-sm text-obsidian placeholder:text-muted focus:border-sage focus:outline-none"
           />
           <button
             type="submit"
             disabled={!isComplete}
-            className="h-12 rounded-full bg-gold px-6 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition enabled:hover:bg-[#d9ba84] disabled:cursor-not-allowed disabled:opacity-50"
+            className="h-12 rounded-full bg-obsidian px-6 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 enabled:hover:bg-terracotta disabled:cursor-not-allowed disabled:opacity-50"
           >
             Reveal my score
           </button>
@@ -202,9 +202,9 @@ export function SilaAssessmentClient() {
       {showResults ? (
         <section className="luxury-panel rounded-[26px] p-6 sm:p-8">
           <p className="eyebrow">Your results</p>
-          <h3 className="mt-3 text-3xl text-bone-white sm:text-4xl">
+          <h3 className="mt-3 text-3xl text-heading sm:text-4xl">
             Overall Sila Score:{" "}
-            <span className="font-mono text-gold">{scores.overall}</span>
+            <span className="font-mono text-terracotta">{scores.overall}</span>
           </h3>
 
           <div className="mt-8 grid gap-8 lg:grid-cols-[320px_1fr]">
@@ -219,7 +219,7 @@ export function SilaAssessmentClient() {
                       120,
                     )}
                     fill="none"
-                    stroke="rgba(255,255,255,0.14)"
+                    stroke="rgba(45,58,49,0.18)"
                     strokeWidth="1"
                   />
                 ))}
@@ -234,14 +234,14 @@ export function SilaAssessmentClient() {
                       y1="120"
                       x2={x}
                       y2={y}
-                      stroke="rgba(255,255,255,0.14)"
+                      stroke="rgba(45,58,49,0.18)"
                     />
                   );
                 })}
                 <polygon
                   points={radarPoints}
-                  fill="rgba(201,169,110,0.22)"
-                  stroke="#C9A96E"
+                  fill="rgba(140,154,132,0.2)"
+                  stroke="#8C9A84"
                   strokeWidth="2"
                 />
               </svg>
@@ -251,8 +251,8 @@ export function SilaAssessmentClient() {
               {SILA_PILLARS.map((pillar) => (
                 <article key={pillar.key} className="glass-card rounded-xl p-4">
                   <div className="flex items-center justify-between">
-                    <h4 className="text-lg text-bone-white">{pillar.name}</h4>
-                    <p className="font-mono text-gold">
+                    <h4 className="text-lg text-heading">{pillar.name}</h4>
+                    <p className="font-mono text-terracotta">
                       {scores.scoreByPillar[pillar.key]}
                     </p>
                   </div>
@@ -274,19 +274,19 @@ export function SilaAssessmentClient() {
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="https://thesilacode.skool.com"
-              className="inline-flex min-h-11 items-center rounded-full bg-gold px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian"
+              className="inline-flex min-h-11 items-center rounded-full bg-obsidian px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 hover:bg-terracotta"
             >
               Join the free community
             </Link>
             <Link
               href="/shop/sila-focus"
-              className="inline-flex min-h-11 items-center rounded-full border border-line px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white"
+              className="inline-flex min-h-11 items-center rounded-full border border-sage/70 bg-bone-white/75 px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition duration-300 hover:border-terracotta hover:text-terracotta"
             >
               Shop Sila Focus
             </Link>
             <Link
               href="/subscribe"
-              className="inline-flex min-h-11 items-center rounded-full border border-line px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white"
+              className="inline-flex min-h-11 items-center rounded-full border border-sage/70 bg-bone-white/75 px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition duration-300 hover:border-terracotta hover:text-terracotta"
             >
               Start The Code ($29/mo)
             </Link>

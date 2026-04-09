@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BLOG_POSTS } from "@/content/sila";
 import { PageHero } from "@/components/ui/PageHero";
+import Image from "next/image";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -41,6 +42,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
+  const imageByCategory = {
+    brain:
+      "/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp",
+    skin:
+      "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
+    body: "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
+    longevity: "/images/hero/a-person-walking-down-a-path-in-the-woods.jpg",
+    rehab: "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
+  } as const;
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -73,13 +84,22 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <section className="py-12 sm:py-16">
         <div className="section-wrap">
           <article className="glass-card rounded-[24px] p-6 sm:p-10">
+            <div className="mb-6 overflow-hidden rounded-[24px] border border-line">
+              <Image
+                src={imageByCategory[post.category]}
+                alt={`Editorial visual for ${post.title}`}
+                width={900}
+                height={620}
+                className="h-56 w-full object-cover object-[center_40%] transition duration-700 ease-out hover:scale-105 sm:h-72"
+              />
+            </div>
             <p className="font-mono text-xs text-muted">
               {post.publishedOn} | {post.readTime}
             </p>
             <div className="mt-6 space-y-6">
               {post.sections.map((section) => (
                 <section key={section.heading}>
-                  <h2 className="text-2xl text-bone-white sm:text-3xl">
+                  <h2 className="display-title text-2xl text-heading sm:text-3xl">
                     {section.heading}
                   </h2>
                   <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
@@ -91,13 +111,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/blog"
-                className="inline-flex min-h-10 items-center rounded-full border border-line px-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white"
+                className="inline-flex min-h-10 items-center rounded-full border border-sage/70 bg-bone-white/75 px-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition duration-300 hover:border-terracotta hover:text-terracotta"
               >
                 Back to journal
               </Link>
               <Link
                 href="/assessment"
-                className="inline-flex min-h-10 items-center rounded-full bg-gold px-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian"
+                className="inline-flex min-h-10 items-center rounded-full bg-obsidian px-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 hover:bg-terracotta"
               >
                 Take the assessment
               </Link>

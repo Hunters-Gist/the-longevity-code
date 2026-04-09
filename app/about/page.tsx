@@ -2,6 +2,7 @@ import { CtaRail } from "@/components/ui/CtaRail";
 import { PageHero } from "@/components/ui/PageHero";
 import { BRAND_MEANING, BRAND_NAME } from "@/content/brand";
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
@@ -36,6 +37,15 @@ export default function AboutPage() {
               That strength is not performative; it is behavioural, cognitive,
               and built over time.
             </p>
+            <div className="mt-6 overflow-hidden rounded-[26px] border border-line sm:rounded-[30px] lg:rounded-t-[140px]">
+              <Image
+                src="/images/hero/premium_photo-1681882038701-96b1874e3ea8.avif"
+                alt="Founder story editorial portrait"
+                width={900}
+                height={620}
+                className="h-44 w-full object-cover object-[center_28%] transition duration-700 ease-out hover:scale-105 sm:h-56"
+              />
+            </div>
           </article>
           <article className="luxury-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">Mission</p>
@@ -48,6 +58,15 @@ export default function AboutPage() {
               <li>Clinically studied ingredient logic, not trend-driven blends</li>
               <li>Digital support to reinforce consistency over intensity</li>
             </ul>
+            <div className="mt-6 overflow-hidden rounded-[26px] border border-line sm:rounded-[30px] lg:rounded-t-[140px]">
+              <Image
+                src="/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp"
+                alt="Mission strategy editorial visual"
+                width={900}
+                height={620}
+                className="h-44 w-full object-cover object-[center_36%] transition duration-700 ease-out hover:scale-105 sm:h-56"
+              />
+            </div>
           </article>
         </div>
       </section>
@@ -72,6 +91,7 @@ export default function AboutPage() {
             </p>
           </article>
         </div>
+        <div className="vine-line mt-6 sm:mt-8" aria-hidden="true" />
       </section>
 
       <CtaRail

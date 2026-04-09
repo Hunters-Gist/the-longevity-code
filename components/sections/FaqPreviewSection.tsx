@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { sectionPatterns } from "@/components/ui/sectionStyles";
 
 const faqs = [
   {
@@ -19,38 +20,44 @@ const faqs = [
   },
 ];
 
+const faqActions = [
+  { href: "/faq", label: "Read all FAQs", intent: "default" as const },
+  { href: "/contact", label: "Contact concierge", intent: "sage" as const },
+];
+
 export function FaqPreviewSection() {
   return (
-    <section id="faq-preview" className="py-16 sm:py-24 lg:py-32">
+    <section id="faq-preview" className="section-space">
       <div className="section-wrap">
         <SectionHeading
           eyebrow="FAQ"
           title="Clear answers before you commit."
           description="Everything you need to understand assessment, protocols, and membership fit."
         />
-        <div className="mt-10 grid gap-3 sm:mt-12 sm:gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <ul className={`${sectionPatterns.compactGrid} md:grid-cols-2 xl:grid-cols-3`}>
           {faqs.map((faq) => (
-            <article key={faq.question} className="glass-card rounded-[22px] p-5 sm:rounded-[24px] sm:p-6">
-              <h3 className="display-title text-[1.55rem] font-medium sm:text-2xl">{faq.question}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted">{faq.answer}</p>
-            </article>
+            <li key={faq.question} className={`glass-card ${sectionPatterns.cardFrame} sm:rounded-[24px]`}>
+              <h3 className="display-title text-[1.38rem] font-medium leading-[1.08] sm:text-[1.56rem]">
+                {faq.question}
+              </h3>
+              <p className="mt-2.5 text-[0.94rem] leading-relaxed text-muted sm:text-sm">{faq.answer}</p>
+            </li>
           ))}
-        </div>
-        <div className="mt-7 grid gap-2 sm:mt-8 sm:flex sm:flex-wrap sm:gap-3">
-          <Link
-            href="/faq"
-            className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-line bg-bone-white/75 px-4 text-[11px] font-semibold uppercase tracking-[0.15em] text-teal transition hover:translate-x-1 sm:w-auto"
-          >
-            Read all FAQs
-            <span aria-hidden="true">{"->"}</span>
-          </Link>
-          <Link
-            href="/contact"
-            className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full border border-line bg-bone-white/75 px-4 text-[11px] font-semibold uppercase tracking-[0.15em] text-sage transition hover:translate-x-1 sm:w-auto"
-          >
-            Contact concierge
-            <span aria-hidden="true">{"->"}</span>
-          </Link>
+        </ul>
+        <div className={sectionPatterns.ctaRow}>
+          {faqActions.map((action) => (
+            <Link
+              key={action.href}
+              href={action.href}
+              className={`ui-caps inline-flex min-h-12 w-full items-center justify-center rounded-full border border-line bg-bone-white/75 px-5 text-obsidian transition duration-300 sm:w-auto ${
+                action.intent === "sage"
+                  ? "hover:border-sage/80 hover:text-sage"
+                  : "hover:border-terracotta hover:text-terracotta"
+              }`}
+            >
+              {action.label}
+            </Link>
+          ))}
         </div>
       </div>
     </section>

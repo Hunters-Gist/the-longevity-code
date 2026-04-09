@@ -1,20 +1,22 @@
 import type { Metadata } from "next";
-import { DM_Serif_Display, Inter, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono, Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { BRAND_DESCRIPTION, BRAND_MEANING, BRAND_NAME } from "@/content/brand";
 
-const bodyFont = Inter({
+const bodyFont = Source_Sans_3({
   variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
   display: "swap",
 });
 
-const headingFont = DM_Serif_Display({
+const headingFont = Playfair_Display({
   variable: "--font-manrope",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["600", "700"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 

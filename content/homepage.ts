@@ -130,19 +130,20 @@ export const homeContent = {
       category: "Longevity Strategy",
       title: "How Thoughtful Adults Can Think About Longevity",
       excerpt: "Why prevention beats correction and how to build a realistic long-term framework.",
-      image: "/images/journal/longevity-strategy.svg",
+      image: "/images/hero/a-person-walking-down-a-path-in-the-woods.jpg",
     },
     {
       category: "Recovery Science",
       title: "Recovery Debt, Burnout, and the Cost of Chronic Output",
       excerpt: "Recognize hidden fatigue markers and close the recovery gap before it compounds.",
-      image: "/images/journal/recovery-debt.svg",
+      image: "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
     },
     {
       category: "Skin + Longevity",
       title: "Skin Aging Beyond Surface-Level Fixes",
       excerpt: "A systems view of skin health, stress, inflammation, and repair capacity.",
-      image: "/images/journal/skin-aging.svg",
+      image:
+        "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
     },
   ] as JournalItem[],
   finalCta: {

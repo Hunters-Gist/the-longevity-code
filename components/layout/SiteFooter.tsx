@@ -5,36 +5,36 @@ import { siteContent } from "@/content/site";
 export function SiteFooter() {
   return (
     <footer className="border-t border-line/90 py-12 sm:py-14">
-      <div className="section-wrap grid gap-8 md:grid-cols-[1fr_auto_auto] md:items-start">
+      <div className="section-wrap grid gap-10 md:grid-cols-[1fr_auto] md:items-start">
         <div>
-          <div className="flex items-center gap-3">
+          <Link href="/" className="inline-flex min-h-11 items-center">
             <Image
-              src="/images/hero/QPJmZ.jpg"
+              src="/images/hero/the sila code logo.png"
               alt={`${siteContent.brand.name} logo`}
-              width={40}
-              height={40}
-              className="h-10 w-10 rounded-xl border border-line/70 object-cover"
+              width={362}
+              height={79}
+              className="h-auto w-[184px] max-w-full object-contain sm:w-[222px]"
             />
-            <p className="eyebrow">{siteContent.brand.name}</p>
-          </div>
+          </Link>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
             {siteContent.brand.description}
           </p>
           <p className="mt-4 max-w-md text-xs leading-relaxed text-muted">
             {siteContent.healthDisclaimer}
           </p>
-          <p className="mt-4 text-xs uppercase tracking-[0.14em] text-muted">
+          <p className="ui-caps mt-4 text-muted">
             {siteContent.company} | ABN: {siteContent.abn}
           </p>
         </div>
 
-        <div className="grid gap-7 sm:grid-cols-2 sm:gap-10 md:grid-cols-[auto_auto]">
+        <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-[auto_auto]">
           <nav className="space-y-1.5" aria-label="Footer navigation">
+            <p className="ui-caps text-muted">Navigate</p>
             {siteContent.nav.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="block rounded-xl py-1.5 text-sm text-foreground/86 transition duration-300 hover:text-gold"
+                className="inline-flex min-h-11 min-w-11 items-center rounded-xl py-1.5 pr-2 text-sm text-foreground/88 transition duration-300 hover:text-terracotta"
               >
                 {link.label}
               </Link>
@@ -42,27 +42,28 @@ export function SiteFooter() {
           </nav>
 
           <div className="space-y-1.5">
+            <p className="ui-caps text-muted">Legal & Social</p>
             {siteContent.legal.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="block rounded-xl py-1.5 text-sm text-muted transition duration-300 hover:text-gold"
+                className="inline-flex min-h-11 min-w-11 items-center rounded-xl py-1.5 pr-2 text-sm text-muted transition duration-300 hover:text-terracotta"
               >
                 {item.label}
               </Link>
             ))}
-            <div className="pt-2 text-xs uppercase tracking-[0.2em] text-muted">
+            <div className="ui-caps flex flex-wrap gap-2.5 pt-2 text-muted">
               {siteContent.social.map((social, index) => (
-                <span key={social.label}>
+                <span key={social.label} className="inline-flex">
                   <Link
                     href={social.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="hover:text-gold"
+                    className="inline-flex min-h-11 items-center rounded-full border border-line/70 px-3.5 hover:border-terracotta hover:text-terracotta"
                   >
                     {social.label}
                   </Link>
-                  {index < siteContent.social.length - 1 ? " / " : ""}
+                  {index < siteContent.social.length - 1 ? "" : ""}
                 </span>
               ))}
             </div>

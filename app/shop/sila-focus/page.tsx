@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/ui/PageHero";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Sila Focus",
@@ -71,11 +72,41 @@ export default function SilaFocusPage() {
       />
       <section className="py-12 sm:py-16">
         <div className="section-wrap space-y-6">
+          <article className="glass-card rounded-[28px] p-5 sm:p-7">
+            <p className="eyebrow">Product gallery</p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-3">
+              {[
+                "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
+                "/images/hero/photo-1559757148-5c350d0d3c56.jpeg",
+                "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
+              ].map((src, index) => (
+                <div
+                  key={src}
+                  className={`overflow-hidden border border-line ${
+                    index === 0
+                      ? "sm:col-span-2 rounded-[24px] sm:rounded-t-[140px] sm:rounded-b-[26px]"
+                      : "rounded-2xl"
+                  }`}
+                >
+                  <Image
+                    src={src}
+                    alt="Sila Focus product gallery image"
+                    width={900}
+                    height={620}
+                    className={`w-full object-cover transition duration-700 ease-out hover:scale-105 ${
+                      index === 0 ? "h-44 sm:h-56" : "h-40 sm:h-56"
+                    }`}
+                  />
+                </div>
+              ))}
+            </div>
+          </article>
+
           <article className="luxury-card rounded-[28px] p-7 sm:p-10">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
                 <p className="text-sm uppercase tracking-[0.16em] text-muted">Price</p>
-                <h2 className="mt-2 font-mono text-3xl text-bone-white sm:text-4xl">
+                <h2 className="mt-2 font-mono text-3xl text-obsidian sm:text-4xl">
                   $59.95 AUD
                 </h2>
                 <p className="mt-2 text-sm text-muted">
@@ -85,13 +116,13 @@ export default function SilaFocusPage() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/subscribe"
-                  className="inline-flex min-h-11 items-center rounded-full bg-gold px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian"
+                  className="inline-flex min-h-11 items-center rounded-full bg-obsidian px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 hover:bg-terracotta"
                 >
                   Subscribe
                 </Link>
                 <button
                   type="button"
-                  className="inline-flex min-h-11 items-center rounded-full border border-line px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white"
+                  className="inline-flex min-h-11 items-center rounded-full border border-sage/70 bg-bone-white/75 px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition duration-300 hover:border-terracotta hover:text-terracotta"
                 >
                   Add to cart
                 </button>
@@ -105,10 +136,10 @@ export default function SilaFocusPage() {
               {INGREDIENTS.map((ingredient) => (
                 <div key={ingredient.name} className="rounded-xl border border-line p-4">
                   <div className="flex items-baseline justify-between gap-3 border-b border-line pb-2">
-                    <h3 className="font-mono text-sm uppercase tracking-[0.12em] text-bone-white">
+                    <h3 className="font-mono text-sm uppercase tracking-[0.12em] text-heading">
                       {ingredient.name}
                     </h3>
-                    <p className="font-mono text-xs text-gold">{ingredient.dose}</p>
+                    <p className="font-mono text-xs text-terracotta">{ingredient.dose}</p>
                   </div>
                   <p className="mt-3 text-sm leading-relaxed text-muted">{ingredient.body}</p>
                   {ingredient.source ? (
@@ -174,7 +205,7 @@ export default function SilaFocusPage() {
             <p className="eyebrow">Product FAQ</p>
             <div className="mt-4 space-y-4">
               <div>
-                <h3 className="text-sm font-semibold text-bone-white">
+                <h3 className="text-sm font-semibold text-heading">
                   When should I take Sila Focus?
                 </h3>
                 <p className="mt-1 text-sm text-muted">
@@ -183,7 +214,7 @@ export default function SilaFocusPage() {
                 </p>
               </div>
               <div>
-                <h3 className="text-sm font-semibold text-bone-white">
+                <h3 className="text-sm font-semibold text-heading">
                   Is this a stimulant-heavy formula?
                 </h3>
                 <p className="mt-1 text-sm text-muted">

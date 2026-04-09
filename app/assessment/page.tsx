@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SilaAssessmentClient } from "@/components/assessment/SilaAssessmentClient";
 import { PageHero } from "@/components/ui/PageHero";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "The Sila Assessment",
@@ -21,7 +22,21 @@ export default function AssessmentPage() {
       />
 
       <section className="py-12 sm:py-16">
-        <div className="section-wrap">
+        <div className="section-wrap space-y-4">
+          <div className="glass-card overflow-hidden rounded-[26px] border border-line">
+            <Image
+              src="/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp"
+              alt="Assessment neuroscience visual"
+              width={1600}
+              height={1100}
+              className="h-52 w-full object-cover object-[center_45%] transition duration-700 ease-out hover:scale-105 sm:h-60"
+            />
+            <div className="border-t border-line bg-bone-white/70 px-4 py-3">
+              <p className="text-[10px] uppercase tracking-[0.2em] text-muted">
+                Assessment canvas preview
+              </p>
+            </div>
+          </div>
           <SilaAssessmentClient />
         </div>
       </section>

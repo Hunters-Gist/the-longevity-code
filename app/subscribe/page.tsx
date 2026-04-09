@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/ui/PageHero";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Subscribe",
@@ -60,11 +61,25 @@ export default function SubscribePage() {
       />
       <section className="py-12 sm:py-16">
         <div className="section-wrap space-y-6">
+          <article className="glass-card overflow-hidden rounded-[24px] border border-line">
+            <Image
+              src="/images/hero/windows-241bwQl2uWE-unsplash-scaled.webp"
+              alt="Subscription lifestyle visual"
+              width={1600}
+              height={1100}
+              className="h-52 w-full object-cover object-[center_40%] transition duration-700 ease-out hover:scale-105 sm:h-60"
+            />
+          </article>
           <div className="grid gap-4 lg:grid-cols-3">
-            {TIERS.map((tier) => (
-              <article key={tier.name} className="glass-card rounded-[24px] p-6">
+            {TIERS.map((tier, index) => (
+              <article
+                key={tier.name}
+                className={`glass-card rounded-[24px] p-6 transition duration-500 hover:-translate-y-1 ${
+                  index === 1 ? "lg:-translate-y-4" : ""
+                }`}
+              >
                 <p className="eyebrow">{tier.name}</p>
-                <h2 className="mt-3 font-mono text-3xl text-gold">{tier.price}</h2>
+                <h2 className="mt-3 font-mono text-3xl text-terracotta">{tier.price}</h2>
                 <ul className="mt-4 space-y-2 text-sm text-muted">
                   {tier.rows.map((row) => (
                     <li key={row}>{row}</li>
@@ -72,7 +87,7 @@ export default function SubscribePage() {
                 </ul>
                 <button
                   type="button"
-                  className="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-gold px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian"
+                  className="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-obsidian px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 hover:bg-terracotta"
                 >
                   Choose plan
                 </button>
@@ -82,14 +97,14 @@ export default function SubscribePage() {
 
           <article className="luxury-card rounded-[24px] p-6">
             <p className="eyebrow">Founding member callout</p>
-            <h3 className="mt-3 text-2xl text-bone-white">
+            <h3 className="mt-3 text-2xl text-heading">
               The first 100 members lock in $49/month for life.
             </h3>
             <p className="mt-2 text-sm text-muted">
               This launch price never increases once secured.
             </p>
             <div className="mt-4 h-2 rounded-full bg-surface">
-              <div className="h-full w-[68%] rounded-full bg-gold" />
+              <div className="h-full w-[68%] rounded-full bg-sage" />
             </div>
             <p className="mt-2 font-mono text-xs text-muted">32 founding spots remaining</p>
           </article>
@@ -97,13 +112,13 @@ export default function SubscribePage() {
           <div className="flex flex-wrap gap-3">
             <Link
               href="/assessment"
-              className="inline-flex min-h-11 items-center rounded-full border border-line px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white"
+              className="inline-flex min-h-11 items-center rounded-full border border-sage/70 bg-bone-white/75 px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition duration-300 hover:border-terracotta hover:text-terracotta"
             >
               Take the assessment first
             </Link>
             <Link
               href="/shop/sila-focus"
-              className="inline-flex min-h-11 items-center rounded-full bg-gold px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian"
+              className="inline-flex min-h-11 items-center rounded-full bg-obsidian px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 hover:bg-terracotta"
             >
               View Sila Focus
             </Link>
