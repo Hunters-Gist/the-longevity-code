@@ -34,11 +34,11 @@ export const homeContent = {
   ],
   hero: {
     eyebrow: BRAND_NAME,
-    heading: "Strength, coded for modern wellness.",
+    heading: "Where discipline becomes identity.",
     subheading:
-      "A psychology-backed wellness platform blending nootropics, digital coaching, and measurable behavior change.",
+      "Beyond insight, The Sila Code is built for execution through structure, consistency, and environment design.",
     supporting:
-      "Start with the 15-question Sila Assessment, receive your Sila Score, and enter the exact pathway for brain, body, skin, longevity, and resilience.",
+      "Start with the 15-question Sila Assessment, receive your Sila Score, and follow a practical pathway that compounds behavioural strength over time.",
     ctas: [
       { label: "Take the Sila Assessment", href: "/assessment" },
       { label: "Explore Programs", href: "/protocols" },
@@ -121,9 +121,9 @@ export const homeContent = {
     },
   ] as ProcessStep[],
   mission: {
-    heading: "A system, not just a supplement.",
-    body: `${BRAND_NAME} exists for people who treat health as strategy. ${BRAND_MEANING} We focus on resilient energy, clean recovery, cognitive steadiness, and whole-system optimisation. This is not symptom chasing. It is precision wellness built for your future runway.`,
-    callout: "Rebuild your baseline. Then raise it.",
+    heading: "A structured approach to performance.",
+    body: `${BRAND_NAME} translates psychological principles into refined, repeatable systems designed for real-world application. ${BRAND_MEANING} This is where insight becomes disciplined practice and behaviour becomes sustainable over time.`,
+    callout: "This is not motivation. It is structure. It is practice. It is The Sila Code.",
   },
   journal: [
     {

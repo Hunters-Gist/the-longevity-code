@@ -5,7 +5,7 @@ import { PageHero } from "@/components/ui/PageHero";
 export const metadata: Metadata = {
   title: "The Code",
   description:
-    "The five-pillar Sila methodology for cognitive wellness, resilience, and long-term health outcomes.",
+    "A structured approach to human performance, translating psychology into repeatable systems for sustainable change.",
   alternates: {
     canonical: "/the-code",
   },
@@ -17,7 +17,7 @@ export default function TheCodePage() {
       <PageHero
         eyebrow="Methodology"
         title="The Sila Code"
-        description="A psychology-backed system organised across five pillars: Brain, Skin, Body, Longevity, and Rehab."
+        description="A structured approach to human performance, grounded in psychology and built for real-world application across five pillars: Brain, Skin, Body, Longevity, and Rehab."
       />
       <section className="py-12 sm:py-16">
         <div className="section-wrap space-y-4">

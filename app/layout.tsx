@@ -3,7 +3,12 @@ import { JetBrains_Mono, Playfair_Display, Source_Sans_3 } from "next/font/googl
 import "./globals.css";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
-import { BRAND_DESCRIPTION, BRAND_MEANING, BRAND_NAME } from "@/content/brand";
+import {
+  BRAND_DESCRIPTION,
+  BRAND_MEANING,
+  BRAND_NAME,
+  BRAND_STRAP,
+} from "@/content/brand";
 
 const bodyFont = Source_Sans_3({
   variable: "--font-inter",
@@ -33,10 +38,10 @@ export const metadata: Metadata = {
   },
   applicationName: BRAND_NAME,
   metadataBase: new URL("https://www.thesilacode.com"),
-  description: `${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
+  description: `${BRAND_STRAP} ${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
   openGraph: {
     title: BRAND_NAME,
-    description: `${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
+    description: `${BRAND_STRAP} ${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
     siteName: BRAND_NAME,
     type: "website",
     locale: "en_AU",
@@ -44,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: BRAND_NAME,
-    description: `${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
+    description: `${BRAND_STRAP} ${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
   },
   icons: {
     icon: [{ url: "/icon.svg", type: "image/svg+xml" }],

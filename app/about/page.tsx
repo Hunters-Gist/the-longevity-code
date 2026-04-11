@@ -1,13 +1,13 @@
 import { CtaRail } from "@/components/ui/CtaRail";
 import { PageHero } from "@/components/ui/PageHero";
-import { BRAND_MEANING, BRAND_NAME } from "@/content/brand";
+import { BRAND_NAME } from "@/content/brand";
 import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About",
   description:
-    "The Sila story, mission, and science behind our psychology-backed wellness methodology.",
+    "A structured approach to human performance grounded in psychology and built for real-world application.",
   alternates: {
     canonical: "/about",
   },
@@ -19,7 +19,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About"
         title="The story behind The Sila Code."
-        description={`${BRAND_NAME} was founded at the intersection of psychology, performance, and preventative wellness. ${BRAND_MEANING}`}
+        description={`${BRAND_NAME} is a structured approach to human performance, grounded in psychology and built for real-world application.`}
       />
 
       <section className="py-12 sm:py-16">
@@ -27,15 +27,22 @@ export default function AboutPage() {
           <article className="glass-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">The Sila story</p>
             <h2 className="display-title mt-3 text-[2rem] font-medium sm:mt-4 sm:text-5xl">
-              Psychology translated into practical daily wellness.
+              Where discipline becomes identity.
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">
-              The founder, Cassie, built The Sila Code after studying psychology
-              and seeing how many people understood what they should do, but
-              lacked a structure they could actually sustain. The brand name
-              reflects her Russian heritage and the meaning of Sila - strength.
-              That strength is not performative; it is behavioural, cognitive,
-              and built over time.
+              The Sila Code is a structured approach to human performance,
+              grounded in psychology and built for real-world application.
+              Developed in Victoria, Australia, by the Founder following formal
+              study in psychology and extensive experience across healthcare,
+              disability, and community sectors, it was created to address a
+              clear gap - understanding behaviour does not guarantee change.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
+              Traditional psychological models are essential for diagnosis and
+              classification, including frameworks such as the DSM-5, yet many
+              approaches stop at explanation. The Sila Code translates
+              psychological principles into refined, repeatable systems designed
+              to support clarity, consistency, and long-term wellbeing.
             </p>
             <div className="mt-6 overflow-hidden rounded-[26px] border border-line sm:rounded-[30px] lg:rounded-t-[140px]">
               <Image
@@ -50,13 +57,14 @@ export default function AboutPage() {
           <article className="luxury-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">Mission</p>
             <p className="mt-4 text-sm leading-relaxed text-muted sm:text-base">
-              To bridge the gap between clinical psychology and daily wellness,
-              making science-backed cognitive support accessible to everyone.
+              &ldquo;Sila,&rdquo; meaning strength in Russian, reflects the brand&apos;s
+              philosophy: strength is not performative, but built through
+              disciplined, consistent action over time.
             </p>
             <ul className="mt-5 space-y-2 text-sm text-muted">
-              <li>Assessment-led pathways grounded in behavioural principles</li>
-              <li>Clinically studied ingredient logic, not trend-driven blends</li>
-              <li>Digital support to reinforce consistency over intensity</li>
+              <li>Grounded in psychology and behavioural design</li>
+              <li>Built for real-world execution, not abstract theory</li>
+              <li>Designed to create sustainable change over time</li>
             </ul>
             <div className="mt-6 overflow-hidden rounded-[26px] border border-line sm:rounded-[30px] lg:rounded-t-[140px]">
               <Image
@@ -76,18 +84,21 @@ export default function AboutPage() {
           <article className="glass-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">The science</p>
             <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
-              The Sila Code references neuroscience, behaviour design, and
-              evidence-informed supplementation. Our language remains compliant,
-              measured, and focused on supporting cognitive function, mental
-              clarity, and general wellbeing.
+              Blending neuroscience, behavioural design, and
+              evidence-informed supplementation, The Sila Code offers a measured
+              approach to sustainable change.
             </p>
           </article>
           <article className="luxury-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
-            <p className="eyebrow">The team</p>
+            <p className="eyebrow">The philosophy</p>
             <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
-              We are currently building our advisory board across psychology,
-              formulation science, and preventive health. Team profiles will be
-              published here as we expand.
+              This is not motivation.
+              <br />
+              It is structure.
+              <br />
+              It is practice.
+              <br />
+              It is The Sila Code.
             </p>
           </article>
         </div>

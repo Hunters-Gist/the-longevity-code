@@ -13,7 +13,7 @@ import { ProtocolsSection } from "@/components/sections/ProtocolsSection";
 export const metadata: Metadata = {
   title: "Unlock Your Code",
   description:
-    "Psychology-backed nootropics engineered for focus, mood, and cognitive resilience.",
+    "Where discipline becomes identity. A psychology-informed system for structured, consistent behavioural strength.",
   alternates: {
     canonical: "/",
   },
@@ -31,7 +31,7 @@ export default function Home() {
       "https://www.youtube.com",
     ],
     description:
-      "Psychology-backed nootropics and digital wellness pathways in Australia.",
+      "A structured approach to human performance, grounded in psychology and built for real-world application in Australia.",
   };
 
   return (
