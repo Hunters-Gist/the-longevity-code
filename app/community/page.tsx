@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHero } from "@/components/ui/PageHero";
 import Image from "next/image";
 import { forumGroups, weeklyTopics } from "@/content/community";
+import { getExternalCommunityUrl } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Community",
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default function CommunityPage() {
+  const externalCommunityUrl = getExternalCommunityUrl();
   return (
     <>
       <PageHero
@@ -90,12 +92,21 @@ export default function CommunityPage() {
               The Sila Community is hosted on Skool so members can engage with
               lessons, updates, and discussion in one place.
             </p>
-            <Link
-              href="https://thesilacode.skool.com"
-              className="mt-6 inline-flex min-h-11 items-center rounded-full bg-obsidian px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 hover:bg-terracotta"
-            >
-              Go to the Sila Community
-            </Link>
+            {externalCommunityUrl ? (
+              <Link
+                href={externalCommunityUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                prefetch={false}
+                className="mt-6 inline-flex min-h-11 items-center rounded-full bg-obsidian px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 hover:bg-terracotta"
+              >
+                Go to the Sila Community
+              </Link>
+            ) : (
+              <p className="mt-6 inline-flex items-center rounded-full border border-line bg-bone-white/60 px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-muted">
+                Joining link coming soon
+              </p>
+            )}
           </article>
         </div>
       </section>

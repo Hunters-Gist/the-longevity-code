@@ -8,6 +8,7 @@ import {
   SILA_PILLARS,
   type PillarKey,
 } from "@/content/sila";
+import { communityHref, getExternalCommunityUrl } from "@/lib/site-config";
 
 const OPTIONS = [
   { label: "Strongly disagree", value: 1 },
@@ -343,7 +344,11 @@ export function SilaAssessmentClient() {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
-              href="https://thesilacode.skool.com"
+              href={communityHref()}
+              prefetch={false}
+              {...(getExternalCommunityUrl()
+                ? { target: "_blank", rel: "noopener noreferrer" }
+                : {})}
               className="inline-flex min-h-11 items-center rounded-full bg-obsidian px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 hover:bg-terracotta"
             >
               Join the free community

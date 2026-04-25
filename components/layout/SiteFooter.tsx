@@ -31,6 +31,7 @@ export function SiteFooter() {
               <Link
                 key={link.href}
                 href={link.href}
+                prefetch={false}
                 className="inline-flex min-h-11 min-w-11 items-center rounded-xl py-1.5 pr-2 text-sm text-foreground/88 transition duration-300 hover:text-terracotta"
               >
                 {link.label}
@@ -44,6 +45,7 @@ export function SiteFooter() {
               <Link
                 key={item.href}
                 href={item.href}
+                prefetch={false}
                 className="inline-flex min-h-11 min-w-11 items-center rounded-xl py-1.5 pr-2 text-sm text-muted transition duration-300 hover:text-terracotta"
               >
                 {item.label}

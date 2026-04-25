@@ -6,6 +6,7 @@ import { redirect } from "next/navigation";
 import { timingSafeEqual } from "node:crypto";
 import { createCheckoutSession, openCustomerPortal } from "@/app/actions/checkout";
 import { isFounding100Enabled, type SilaTierKey } from "@/lib/stripe/pricing";
+import { communityHref } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Membership",
@@ -41,7 +42,7 @@ const TIERS: Tier[] = [
       "Invitations to complimentary live events",
     ],
     cta: "Join Community",
-    ctaHref: "https://thesilacode.skool.com",
+    ctaHref: communityHref(),
   },
   {
     name: "The Code",

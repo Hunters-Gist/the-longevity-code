@@ -54,7 +54,7 @@ export const siteContent = {
       href: "https://www.youtube.com/channel/UCWcHwTJKwtU8VqAK9cI0ctg",
     },
   ],
-  communityUrl: "https://thesilacode.skool.com",
+  communityUrl: "",
   company: "The Sila Code Pty Ltd",
   abn: "58 598 574 674",
   healthDisclaimer: SILA_HEALTH_DISCLAIMER,
