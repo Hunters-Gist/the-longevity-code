@@ -17,7 +17,7 @@ export default function TheCodePage() {
       <PageHero
         eyebrow="Methodology"
         title="The Sila Code"
-        description="A structured approach to human performance, grounded in psychology and built for real-world application across five pillars: Brain, Skin, Body, Longevity, and Rehab."
+        description="A structured approach to human performance, grounded in psychology and built for real-world application across five pillars: Brain, Skin, Body, Longevity, and Recovery."
       />
       <section className="py-12 sm:py-16">
         <div className="section-wrap space-y-4">

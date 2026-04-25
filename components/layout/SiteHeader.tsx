@@ -1,10 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { SignInButton, SignUpButton, UserButton, Show } from "@clerk/nextjs";
 import { siteContent } from "@/content/site";
+import { BrandMark } from "@/components/ui/BrandMark";
 
 export function SiteHeader() {
   const pathname = usePathname();
@@ -24,19 +25,12 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-30 border-b border-line/90 bg-background/90 backdrop-blur-xl">
       <div className="section-wrap flex min-h-16 items-center justify-between py-2.5 sm:min-h-[4.35rem] sm:py-3">
-        <Link href="/" className="flex min-h-11 min-w-0 items-center pr-2">
-          <Image
-            src="/images/hero/the sila code logo.png"
-            alt={`${siteContent.brand.name} logo`}
-            width={362}
-            height={79}
-            priority
-            className="h-auto w-[164px] max-w-full object-contain min-[430px]:w-[186px] sm:w-[220px]"
-          />
+        <Link href="/" className="flex min-h-11 min-w-0 max-w-[54vw] items-center pr-2 sm:max-w-none">
+          <BrandMark />
         </Link>
 
         <nav
-          className="hidden items-center gap-6 xl:flex"
+          className="hidden items-center gap-6 2xl:flex"
           aria-label="Primary navigation"
         >
           {siteContent.nav.map((item) => (
@@ -53,9 +47,30 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <Show when="signed-out">
+            <SignInButton mode="modal">
+              <button
+                type="button"
+                className="ui-caps hidden min-h-11 items-center justify-center rounded-full border border-line px-4 py-2 text-obsidian transition hover:border-terracotta hover:text-terracotta sm:inline-flex"
+              >
+                Sign in
+              </button>
+            </SignInButton>
+          </Show>
+          <Show when="signed-in">
+            <div className="hidden items-center sm:flex">
+              <UserButton
+                appearance={{
+                  elements: {
+                    avatarBox: "h-9 w-9",
+                  },
+                }}
+              />
+            </div>
+          </Show>
           <Link
             href={siteContent.ctas.primary.href}
-            className="ui-caps hidden min-h-11 items-center justify-center rounded-full bg-obsidian px-4 py-2 text-bone-white transition hover:bg-terracotta sm:inline-flex xl:hidden"
+            className="ui-caps hidden min-h-11 items-center justify-center rounded-full bg-obsidian px-4 py-2 text-bone-white transition hover:bg-terracotta sm:inline-flex 2xl:hidden"
           >
             {siteContent.ctas.primary.label}
           </Link>
@@ -64,7 +79,7 @@ export function SiteHeader() {
             aria-controls="mobile-site-menu"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             onClick={() => setMenuOpen((open) => !open)}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-bone-white/85 text-obsidian transition hover:border-terracotta hover:text-terracotta xl:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-bone-white/85 text-obsidian transition hover:border-terracotta hover:text-terracotta 2xl:hidden"
           >
             <span className="sr-only">{menuOpen ? "Close menu" : "Open menu"}</span>
             <span
@@ -90,7 +105,7 @@ export function SiteHeader() {
           </button>
           <Link
             href={siteContent.ctas.primary.href}
-            className="ui-caps hidden min-h-11 items-center justify-center rounded-full bg-obsidian px-4 py-2 text-bone-white transition hover:bg-terracotta xl:inline-flex"
+            className="ui-caps hidden min-h-11 items-center justify-center rounded-full bg-obsidian px-4 py-2 text-bone-white transition hover:bg-terracotta 2xl:inline-flex"
           >
             {siteContent.ctas.primary.label}
           </Link>
@@ -100,7 +115,7 @@ export function SiteHeader() {
       {menuOpen ? (
         <div
           id="mobile-site-menu"
-          className="xl:hidden"
+          className="2xl:hidden"
           aria-label="Mobile navigation menu"
         >
           <button
@@ -142,6 +157,41 @@ export function SiteHeader() {
                 >
                   {siteContent.ctas.secondary.label}
                 </Link>
+                <Link
+                  href={siteContent.ctas.tertiary.href}
+                  onClick={() => setMenuOpen(false)}
+                  className="ui-caps inline-flex min-h-12 items-center justify-center rounded-full border border-line bg-bone-white/60 px-5 text-obsidian transition hover:border-terracotta hover:text-terracotta"
+                >
+                  {siteContent.ctas.tertiary.label}
+                </Link>
+                <Show when="signed-out">
+                  <div className="grid gap-2.5 pt-1 sm:grid-cols-2">
+                    <SignInButton mode="modal">
+                      <button
+                        type="button"
+                        onClick={() => setMenuOpen(false)}
+                        className="ui-caps inline-flex min-h-12 items-center justify-center rounded-full border border-line bg-bone-white/60 px-5 text-obsidian transition hover:border-terracotta hover:text-terracotta"
+                      >
+                        Sign in
+                      </button>
+                    </SignInButton>
+                    <SignUpButton mode="modal">
+                      <button
+                        type="button"
+                        onClick={() => setMenuOpen(false)}
+                        className="ui-caps inline-flex min-h-12 items-center justify-center rounded-full border border-line bg-bone-white/60 px-5 text-obsidian transition hover:border-terracotta hover:text-terracotta"
+                      >
+                        Create account
+                      </button>
+                    </SignUpButton>
+                  </div>
+                </Show>
+                <Show when="signed-in">
+                  <div className="flex items-center justify-between rounded-full border border-line bg-bone-white/60 px-4 py-2">
+                    <span className="ui-caps text-muted">Signed in</span>
+                    <UserButton />
+                  </div>
+                </Show>
               </div>
             </div>
           </div>

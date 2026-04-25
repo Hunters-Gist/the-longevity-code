@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { BLOG_POSTS } from "@/content/sila";
 import { PageHero } from "@/components/ui/PageHero";
 import Image from "next/image";
+import { absoluteUrl, siteConfig } from "@/lib/site-config";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -43,29 +44,62 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   const imageByCategory = {
-    brain:
-      "/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp",
-    skin:
-      "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
-    body: "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
-    longevity: "/images/hero/a-person-walking-down-a-path-in-the-woods.jpg",
-    rehab: "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
+    brain: "/images/hero/image.jpg",
+    skin: "/images/journal/skin-aging.svg",
+    body: "/images/journal/recovery-debt.svg",
+    longevity: "/images/journal/longevity-strategy.svg",
+    rehab: "/images/journal/recovery-debt.svg",
   } as const;
 
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: post.title,
     description: post.excerpt,
-    datePublished: post.publishedOn,
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": absoluteUrl(`/blog/${post.slug}`),
+    },
     author: {
       "@type": "Organization",
       name: "The Sila Code",
+      url: siteConfig.url,
     },
     publisher: {
       "@type": "Organization",
       name: "The Sila Code Pty Ltd",
+      logo: {
+        "@type": "ImageObject",
+        url: absoluteUrl("/og-image.png"),
+      },
     },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: absoluteUrl("/"),
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Journal",
+        item: absoluteUrl("/blog"),
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: absoluteUrl(`/blog/${post.slug}`),
+      },
+    ],
   };
 
   return (
@@ -74,6 +108,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(articleSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       <PageHero

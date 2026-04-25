@@ -9,19 +9,19 @@ export function AssessmentSection() {
         <SectionHeading
           eyebrow="Assessment"
           title="Begin with the Sila Assessment."
-          description="A 15-question onboarding flow designed around validated psychological frameworks to generate your Sila Score."
+          description="A 15-question educational self-reflection flow designed to generate your Sila Score."
         />
 
         <div className={`${sectionPatterns.compactGrid} lg:grid-cols-[1.15fr_0.85fr]`}>
           <article className={`luxury-card ${sectionPatterns.cardFrame} md:p-7`}>
             <p className="eyebrow">Assessment flow</p>
             <h3 className="display-title mt-2.5 max-w-[13ch] text-[1.64rem] font-medium leading-[1.06] sm:mt-3 sm:max-w-none sm:text-[2.1rem] md:text-[2.5rem]">
-              Your Sila Score in under 12 minutes.
+              Your Sila Score in about 5 minutes.
             </h3>
             <ul className="mt-4 space-y-3 text-[0.94rem] text-muted sm:mt-5 sm:text-sm">
               <li>01. Pillar-by-pillar mental wellness intake</li>
               <li>02. Stress and resilience score mapping</li>
-              <li>03. Personalized pathway recommendation</li>
+              <li>03. Personalised pathway recommendation</li>
             </ul>
             <Link
               href="/assessment"
@@ -39,10 +39,10 @@ export function AssessmentSection() {
               so recommendations are targeted, measurable, and sustainable.
             </p>
             <Link
-              href="/protocols"
+              href="/subscribe"
               className="ui-caps mt-6 inline-flex min-h-12 w-full items-center justify-center rounded-full border border-line bg-bone-white/82 px-5 text-obsidian transition duration-300 hover:border-sage/70 hover:text-terracotta focus-visible:ring-2 focus-visible:ring-sage focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:mt-7 sm:w-auto"
             >
-              See protocols
+              See Membership
             </Link>
           </article>
         </div>

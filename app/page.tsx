@@ -9,6 +9,7 @@ import { MembershipSection } from "@/components/sections/MembershipSection";
 import { PhilosophySection } from "@/components/sections/PhilosophySection";
 import { PillarsSection } from "@/components/sections/PillarsSection";
 import { ProtocolsSection } from "@/components/sections/ProtocolsSection";
+import { absoluteUrl, siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Unlock Your Code",
@@ -19,16 +20,26 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+type HomeProps = {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+};
+
+export default async function Home({ searchParams }: HomeProps) {
+  const params = searchParams ? await searchParams : {};
+  const cta = params.cta;
+  const ctaSuccess = cta === "success";
+  const ctaInvalid = cta === "invalid";
+
   const organisationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "The Sila Code Pty Ltd",
-    url: "https://www.thesilacode.com",
+    url: siteConfig.url,
+    logo: absoluteUrl("/og-image.png"),
     sameAs: [
-      "https://www.instagram.com",
-      "https://www.tiktok.com",
-      "https://www.youtube.com",
+      "https://www.instagram.com/thesilacode",
+      "https://www.tiktok.com/@thesilacode",
+      "https://www.youtube.com/channel/UCWcHwTJKwtU8VqAK9cI0ctg",
     ],
     description:
       "A structured approach to human performance, grounded in psychology and built for real-world application in Australia.",
@@ -42,6 +53,23 @@ export default function Home() {
           __html: JSON.stringify(organisationSchema),
         }}
       />
+      {ctaSuccess || ctaInvalid ? (
+        <div className="section-wrap pt-4">
+          <div
+            role="status"
+            aria-live="polite"
+            className={`rounded-2xl border px-4 py-3 text-sm ${
+              ctaSuccess
+                ? "border-sage/40 bg-sage/10 text-heading"
+                : "border-terracotta/40 bg-terracotta/10 text-heading"
+            }`}
+          >
+            {ctaSuccess
+              ? "Thank you — you're on the list. Keep an eye on your inbox."
+              : "Please enter a valid email address."}
+          </div>
+        </div>
+      ) : null}
       <HeroSection />
       <PhilosophySection />
       <div className="border-y border-line/70 bg-bone-white/45">

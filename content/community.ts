@@ -32,10 +32,10 @@ export type MerchProduct = {
 export const forumGroups: ForumGroup[] = [
   {
     slug: "peptides",
-    title: "Peptides",
+    title: "Peptides (Education)",
     summary:
-      "Evidence-aware conversations on peptide protocols, sourcing quality, and practical expectations.",
-    outcomes: ["Recovery", "Body composition", "Longevity goals"],
+      "Member-led, education-only discussion on peptides in the longevity conversation. No medical advice, no sourcing, no product sales — general information only.",
+    outcomes: ["General education", "Literature discussion", "Questions to raise with your clinician"],
   },
   {
     slug: "aging",

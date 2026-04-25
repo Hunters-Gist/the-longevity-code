@@ -42,7 +42,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "brand-architecture",
     readTime: "8 min read",
     publishedOn: "April 2026",
-    image: "/images/hero/windows-241bwQl2uWE-unsplash-scaled.webp",
+    image: "/images/journal/longevity-strategy.svg",
     sections: [
       {
         heading: "From Name to Philosophy",
@@ -50,7 +50,7 @@ export const learnArticles: LearnArticle[] = [
       },
       {
         heading: "The Five Pillars",
-        body: "Every recommendation maps to Brain, Skin, Body, Longevity, or Rehab. This creates a coherent framework for product design, educational content, and customer journeys rather than disconnected wellness messaging.",
+        body: "Every recommendation maps to Brain, Skin, Body, Longevity, or Recovery. This creates a coherent framework for product design, educational content, and customer journeys rather than disconnected wellness messaging.",
       },
     ],
   },
@@ -62,7 +62,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "product-stack",
     readTime: "7 min read",
     publishedOn: "April 2026",
-    image: "/images/hero/photo-1559757148-5c350d0d3c56.jpeg",
+    image: "/images/hero/image.jpg",
     sections: [
       {
         heading: "Ingredient Logic",
@@ -82,7 +82,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "launch-operations",
     readTime: "9 min read",
     publishedOn: "April 2026",
-    image: "/images/hero/a-person-walking-down-a-path-in-the-woods.jpg",
+    image: "/images/journal/recovery-debt.svg",
     sections: [
       {
         heading: "Funnel Before Scale",

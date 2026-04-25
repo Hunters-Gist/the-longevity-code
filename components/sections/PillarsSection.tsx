@@ -11,7 +11,7 @@ export function PillarsSection() {
         <SectionHeading
           eyebrow="Core Pillars"
           title="The five pillars of Sila."
-          description="Every product, lesson, and recommendation maps back to Brain, Skin, Body, Longevity, or Rehab."
+          description="Every product, lesson, and recommendation maps back to Brain, Skin, Body, Longevity, or Recovery."
         />
         <div className="vine-line mt-5 sm:mt-6" aria-hidden="true" />
 

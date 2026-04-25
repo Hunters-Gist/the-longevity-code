@@ -1,58 +1,123 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/ui/PageHero";
-import Image from "next/image";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { timingSafeEqual } from "node:crypto";
+import { createCheckoutSession, openCustomerPortal } from "@/app/actions/checkout";
+import { isFounding100Enabled, type SilaTierKey } from "@/lib/stripe/pricing";
 
 export const metadata: Metadata = {
-  title: "Subscribe",
+  title: "Membership",
   description:
-    "Compare Sila membership tiers and access member-only online courses.",
+    "Private-practice membership across five tiers — from free community access to lifetime Founding 100 seats and the invitation-only Inner Circle.",
   alternates: {
     canonical: "/subscribe",
   },
 };
 
-const TIERS = [
+type Tier = {
+  name: string;
+  price: string;
+  priceNote?: string;
+  positioning: string;
+  rows: string[];
+  cta: string;
+  ctaHref?: string;
+  stripeTier?: SilaTierKey;
+  featured?: boolean;
+  invitationOnly?: boolean;
+};
+
+const TIERS: Tier[] = [
   {
-    name: "Community (Free)",
-    price: "$0/month",
+    name: "Community",
+    price: "Free",
+    positioning: "Begin the work.",
     rows: [
-      "Sila Community access: Yes",
-      "Weekly content drops: Yes",
-      "Full course library: No",
-      "Monthly masterclass: No",
-      "Ebooks: Free only",
-      "Monthly Sila Focus supply: No",
+      "Full access to the Sila Community on Skool",
+      "Weekly editorial drops across the five pillars",
+      "The Sila Assessment and personalised Sila Score",
+      "Invitations to complimentary live events",
     ],
+    cta: "Join Community",
+    ctaHref: "https://thesilacode.skool.com",
   },
   {
-    name: "The Code (Digital)",
-    price: "$29/month",
+    name: "The Code",
+    price: "A$149 / month",
+    priceNote: "or A$1,490 / year — save A$298",
+    positioning: "The private practice.",
     rows: [
-      "Sila Community access: Yes",
-      "Weekly content drops: Yes",
-      "Full course library: Yes",
-      "Monthly masterclass: Yes",
-      "Ebooks: All access",
-      "Monthly Sila Focus supply: No",
+      "The full Sila course library and new releases",
+      "Monthly founder masterclass and member Q&A",
+      "Priority community access and member-only drops",
+      "Digital library of every Sila ebook and protocol",
+      "Full Sila Assessment progression and pillar reviews",
     ],
+    cta: "Become a Member",
+    stripeTier: "the_code_monthly",
   },
   {
     name: "The Code + Capsule",
-    price: "$69/month",
+    price: "A$349 / month",
+    priceNote: "or A$3,490 / year — save A$698",
+    positioning: "The concierge tier.",
     rows: [
-      "Sila Community access: Yes",
-      "Weekly content drops: Yes",
-      "Full course library: Yes",
-      "Monthly masterclass: Yes",
-      "Ebooks: All access",
-      "Monthly Sila Focus supply: Yes (auto-shipped)",
+      "Everything in The Code",
+      "Monthly delivery of Sila Focus — your cognitive formula",
+      "Quarterly 1:1 check-in call with a Sila practitioner",
+      "Early access to new formulations and retreats",
+      "Concierge support on WhatsApp, Mon–Fri",
     ],
+    cta: "Join the Capsule",
+    stripeTier: "capsule_monthly",
+    featured: true,
+  },
+  {
+    name: "Founding 100",
+    price: "A$4,900 one-time",
+    priceNote: "Waitlist-only while operations, legal, and fulfilment are finalised.",
+    positioning: "Founding waitlist.",
+    rows: [
+      "Lifetime access details will be confirmed before any payment is accepted",
+      "Founder recognition and priority access once the release is ready",
+      "Private retreat and formulation input subject to final operating terms",
+      "No public checkout while the release flag is disabled",
+      "Join the waitlist for first access to confirmed deliverables",
+    ],
+    cta: "Join the Waitlist",
+    stripeTier: "founding_100",
+  },
+  {
+    name: "Inner Circle",
+    price: "A$25,000 / year",
+    priceNote: "By invitation only.",
+    positioning: "Concierge advisory.",
+    rows: [
+      "12-month private advisory with the founder",
+      "Bespoke behavioural and longevity protocols",
+      "Two private retreats in Australia per year",
+      "Direct-line access: WhatsApp and private events",
+      "All lower-tier benefits, included by default",
+    ],
+    cta: "Request an Invitation",
+    ctaHref:
+      "mailto:contact@thesilacode.com?subject=Inner%20Circle%20Application",
+    invitationOnly: true,
   },
 ];
+
+async function startCheckout(formData: FormData) {
+  "use server";
+  const tier = String(formData.get("tier") ?? "") as SilaTierKey;
+  await createCheckoutSession(tier);
+}
+
+async function launchPortal() {
+  "use server";
+  await openCustomerPortal();
+}
 
 const MEMBER_COURSES = [
   {
@@ -66,7 +131,7 @@ const MEMBER_COURSES = [
     title: "Pillar Deep Dives",
     level: "Member Core",
     summary:
-      "Target the Brain, Skin, Body, Longevity, and Rehab pillars with structured modules and downloadable guides.",
+      "Target the Brain, Skin, Body, Longevity, and Recovery pillars with structured modules and downloadable guides.",
     access: "Digital + Capsule members",
   },
   {
@@ -192,49 +257,187 @@ export default async function SubscribePage({ searchParams }: SubscribePageProps
   const memberError = params["member-error"] === "invalid";
   const memberLocked = params["member-error"] === "locked";
   const memberUnavailable = params["member-error"] === "unavailable";
+  const checkoutStatus = params.checkout;
+  const portalStatus = params.portal;
+  const foundingEnabled = isFounding100Enabled();
 
   return (
     <>
       <PageHero
-        eyebrow="Subscribe"
-        title="Membership tiers built for momentum."
-        description="Start with free community access and progress into digital or capsule-backed support."
+        eyebrow="Membership"
+        title="Five tiers. One standard."
+        description="The Sila Code is a lifestyle, not a subscription box. Each tier is a private practice — choose the depth of support that meets your ambition."
       />
       <section className="py-12 sm:py-16">
         <div className="section-wrap space-y-6">
-          <article className="glass-card overflow-hidden rounded-[24px] border border-line">
-            <Image
-              src="/images/hero/windows-241bwQl2uWE-unsplash-scaled.webp"
-              alt="Subscription lifestyle visual"
-              width={1600}
-              height={1100}
-              className="h-52 w-full object-cover object-[center_40%] transition duration-700 ease-out hover:scale-105 sm:h-60"
-            />
-          </article>
-          <div className="grid gap-4 lg:grid-cols-3">
-            {TIERS.map((tier, index) => (
-              <article
-                key={tier.name}
-                className={`glass-card rounded-[24px] p-6 transition duration-500 hover:-translate-y-1 ${
-                  index === 1 ? "lg:-translate-y-4" : ""
-                }`}
+          {checkoutStatus === "success" ? (
+            <div
+              role="status"
+              aria-live="polite"
+              className="rounded-2xl border border-sage/40 bg-sage/10 px-4 py-3 text-sm text-heading"
+            >
+              Thank you — your membership is being provisioned. You will receive a confirmation
+              email within a few minutes.
+            </div>
+          ) : null}
+          {checkoutStatus === "cancelled" ? (
+            <div
+              role="status"
+              aria-live="polite"
+              className="rounded-2xl border border-terracotta/40 bg-terracotta/10 px-4 py-3 text-sm text-heading"
+            >
+              Checkout was cancelled. No payment was taken — you can try again below.
+            </div>
+          ) : null}
+          {checkoutStatus === "unavailable" ? (
+            <div
+              role="status"
+              aria-live="polite"
+              className="rounded-2xl border border-line bg-bone-white/75 px-4 py-3 text-sm text-heading"
+            >
+              Membership checkout is activating for the first cohort. Please try again shortly — or
+              contact us at{" "}
+              <a
+                href="mailto:contact@thesilacode.com"
+                className="underline decoration-sage/60 underline-offset-4 hover:text-terracotta"
               >
-                <p className="eyebrow">{tier.name}</p>
-                <h2 className="mt-3 font-mono text-3xl text-terracotta">{tier.price}</h2>
-                <ul className="mt-4 space-y-2 text-sm text-muted">
-                  {tier.rows.map((row) => (
-                    <li key={row}>{row}</li>
-                  ))}
-                </ul>
-                <button
-                  type="button"
-                  className="mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-full bg-obsidian px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 hover:bg-terracotta"
+                contact@thesilacode.com
+              </a>
+              .
+            </div>
+          ) : null}
+          {portalStatus === "missing-customer" ? (
+            <div
+              role="status"
+              aria-live="polite"
+              className="rounded-2xl border border-line bg-bone-white/75 px-4 py-3 text-sm text-heading"
+            >
+              We couldn’t find an active subscription on your account yet. Join a tier below, or
+              email us if you believe this is an error.
+            </div>
+          ) : null}
+          <div className="grid gap-4 lg:grid-cols-3">
+            {TIERS.map((tier) => {
+              const foundingDisabled =
+                tier.stripeTier === "founding_100" && !foundingEnabled;
+              const foundingActive =
+                tier.stripeTier === "founding_100" && foundingEnabled;
+              const displayedRows = foundingActive
+                ? [
+                    "Lifetime access to The Code + Capsule at today’s rate",
+                    "Founder recognition inside the community",
+                    "Private invitation to the inaugural Sila retreat",
+                    "Direct input into formulations and programming",
+                    "All future tier benefits, included by default",
+                  ]
+                : tier.rows;
+              const displayedCta = foundingActive ? "Claim a Founding Seat" : tier.cta;
+              const displayedPriceNote = foundingActive
+                ? "Capped at 100 members. Closes forever."
+                : tier.priceNote;
+              const displayedPositioning = foundingActive
+                ? "Lifetime ownership."
+                : tier.positioning;
+              const ctaClasses = `mt-6 inline-flex min-h-11 w-full items-center justify-center rounded-full px-5 text-[11px] font-semibold uppercase tracking-[0.14em] transition duration-300 ${
+                tier.featured
+                  ? "bg-bone-white text-obsidian hover:bg-terracotta hover:text-bone-white"
+                  : "bg-obsidian text-bone-white hover:bg-terracotta"
+              }`;
+              return (
+                <article
+                  key={tier.name}
+                  className={`glass-card rounded-[24px] p-6 transition duration-500 hover:-translate-y-1 ${
+                    tier.featured
+                      ? "border border-line-strong bg-obsidian text-bone-white shadow-[0_24px_50px_-28px_rgba(10,18,15,0.7)] lg:-translate-y-4 hover:border-terracotta/60"
+                      : ""
+                  }`}
                 >
-                  Choose plan
-                </button>
-              </article>
-            ))}
+                  <p className={`eyebrow ${tier.featured ? "text-sage/85" : ""}`}>
+                    {displayedPositioning}
+                  </p>
+                  <h2
+                    className={`mt-3 display-title text-2xl leading-tight sm:text-[1.85rem] ${
+                      tier.featured ? "text-bone-white" : "text-heading"
+                    }`}
+                  >
+                    {tier.name}
+                  </h2>
+                  <p
+                    className={`mt-3 font-mono text-2xl ${
+                      tier.featured ? "text-bone-white" : "text-terracotta"
+                    }`}
+                  >
+                    {tier.price}
+                  </p>
+                  {displayedPriceNote ? (
+                    <p
+                      className={`mt-1 text-xs ${
+                        tier.featured ? "text-bone-white/70" : "text-muted"
+                      }`}
+                    >
+                      {displayedPriceNote}
+                    </p>
+                  ) : null}
+                  <ul
+                    className={`mt-4 space-y-2 text-sm ${
+                      tier.featured ? "text-bone-white/85" : "text-muted"
+                    }`}
+                  >
+                    {displayedRows.map((row) => (
+                      <li key={row}>— {row}</li>
+                    ))}
+                  </ul>
+                  {foundingDisabled ? (
+                    <Link href="/contact" className={ctaClasses}>
+                      {displayedCta}
+                    </Link>
+                  ) : tier.stripeTier ? (
+                    <form action={startCheckout}>
+                      <input type="hidden" name="tier" value={tier.stripeTier} />
+                      <button type="submit" className={ctaClasses}>
+                        {displayedCta}
+                      </button>
+                    </form>
+                  ) : tier.ctaHref ? (
+                    <Link
+                      href={tier.ctaHref}
+                      className={ctaClasses}
+                      {...(tier.ctaHref.startsWith("http")
+                        ? { target: "_blank", rel: "noreferrer" }
+                        : {})}
+                    >
+                      {displayedCta}
+                    </Link>
+                  ) : null}
+                  {tier.invitationOnly ? (
+                    <p
+                      className={`mt-3 text-xs ${
+                        tier.featured ? "text-bone-white/65" : "text-muted"
+                      }`}
+                    >
+                      Membership extended on a case-by-case basis.
+                    </p>
+                  ) : null}
+                </article>
+              );
+            })}
           </div>
+          <article className="luxury-card flex flex-wrap items-center justify-between gap-3 rounded-[24px] p-6">
+            <div>
+              <p className="eyebrow">Existing member?</p>
+              <p className="mt-2 text-sm text-muted">
+                Manage your plan, update your card, or view invoices in the secure Stripe portal.
+              </p>
+            </div>
+            <form action={launchPortal}>
+              <button
+                type="submit"
+                className="inline-flex min-h-11 items-center rounded-full border border-line bg-bone-white/80 px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition duration-300 hover:border-terracotta hover:text-terracotta"
+              >
+                Manage membership
+              </button>
+            </form>
+          </article>
 
           <article
             id="member-courses"
@@ -325,20 +528,6 @@ export default async function SubscribePage({ searchParams }: SubscribePageProps
                 </form>
               </div>
             )}
-          </article>
-
-          <article className="luxury-card rounded-[24px] p-6">
-            <p className="eyebrow">Founding member callout</p>
-            <h3 className="mt-3 text-2xl text-heading">
-              The first 100 members lock in $49/month for life.
-            </h3>
-            <p className="mt-2 text-sm text-muted">
-              This launch price never increases once secured.
-            </p>
-            <div className="mt-4 h-2 rounded-full bg-surface">
-              <div className="h-full w-[68%] rounded-full bg-sage" />
-            </div>
-            <p className="mt-2 font-mono text-xs text-muted">32 founding spots remaining</p>
           </article>
 
           <div className="flex flex-wrap gap-3">

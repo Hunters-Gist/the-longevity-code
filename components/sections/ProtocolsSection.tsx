@@ -45,7 +45,11 @@ export function ProtocolsSection() {
               </p>
               <div className="mt-5 sm:mt-6">
                 <ActionButton
-                  href={`/protocols/${protocol.slug}`}
+                  href={
+                    protocol.slug === "sila-assessment"
+                      ? "/assessment"
+                      : "/subscribe"
+                  }
                   variant={index === 2 ? "primary" : "secondary"}
                   className={`relative sm:w-full xl:w-full ${
                     index === 2
@@ -53,7 +57,7 @@ export function ProtocolsSection() {
                       : ""
                   }`}
                 >
-                  Learn More
+                  {protocol.slug === "sila-assessment" ? "Start Assessment" : "View Tier"}
                 </ActionButton>
               </div>
             </li>

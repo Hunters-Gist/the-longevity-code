@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BLOG_POSTS, SILA_PILLARS } from "@/content/sila";
 import { PageHero } from "@/components/ui/PageHero";
-import Image from "next/image";
+import { SafeImage } from "@/components/ui/SafeImage";
 
 export const metadata: Metadata = {
   title: "The Sila Journal",
   description:
-    "Psychology-backed wellness content across Brain, Skin, Body, Longevity, and Rehab.",
+    "Psychology-backed wellness content across Brain, Skin, Body, Longevity, and Recovery.",
   alternates: {
     canonical: "/blog",
   },
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const coverImages = [
-    "/images/hero/windows-241bwQl2uWE-unsplash-scaled.webp",
-    "/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp",
-    "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
-    "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
-    "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
+    "/images/hero/image.jpg",
+    "/images/journal/skin-aging.svg",
+    "/images/journal/recovery-debt.svg",
+    "/images/journal/longevity-strategy.svg",
+    "/images/hero/image.jpg",
   ];
 
   return (
@@ -51,11 +51,12 @@ export default function BlogPage() {
                 }`}
               >
                 <div className="mb-4 overflow-hidden rounded-[20px] border border-line">
-                  <Image
+                  <SafeImage
                     src={coverImages[index % coverImages.length]}
                     alt={`Journal cover image for ${post.title}`}
                     width={900}
                     height={620}
+                    fallbackLabel="Sila journal visual"
                     className="h-44 w-full object-cover object-[center_40%] transition duration-700 ease-out hover:scale-105"
                   />
                 </div>

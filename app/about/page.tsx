@@ -46,7 +46,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-6 overflow-hidden rounded-[26px] border border-line sm:rounded-[30px] lg:rounded-t-[140px]">
               <Image
-                src="/images/hero/premium_photo-1681882038701-96b1874e3ea8.avif"
+                src="/images/hero/image.jpg"
                 alt="Founder story editorial portrait"
                 width={900}
                 height={620}
@@ -68,7 +68,7 @@ export default function AboutPage() {
             </ul>
             <div className="mt-6 overflow-hidden rounded-[26px] border border-line sm:rounded-[30px] lg:rounded-t-[140px]">
               <Image
-                src="/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp"
+                src="/images/hero/Gemini_Generated_Image_e7iko4e7iko4e7ik.png"
                 alt="Mission strategy editorial visual"
                 width={900}
                 height={620}
@@ -84,8 +84,8 @@ export default function AboutPage() {
           <article className="glass-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
             <p className="eyebrow">The science</p>
             <p className="mt-3 text-sm leading-relaxed text-muted sm:text-base">
-              Blending neuroscience, behavioural design, and
-              evidence-informed supplementation, The Sila Code offers a measured
+              Blending behavioural design, evidence-informed wellness practice,
+              and psychology-led methodology, The Sila Code offers a measured
               approach to sustainable change.
             </p>
           </article>
@@ -100,6 +100,36 @@ export default function AboutPage() {
               <br />
               It is The Sila Code.
             </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="pb-4 pt-4 sm:pt-6">
+        <div className="section-wrap">
+          <article className="luxury-card rounded-[24px] p-5 sm:rounded-[28px] sm:p-9">
+            <p className="eyebrow">Credentials</p>
+            <h2 className="display-title mt-3 text-2xl font-medium sm:text-[2rem]">
+              Built on formal academic training.
+            </h2>
+            <ul className="mt-4 grid gap-3 text-sm leading-relaxed text-muted sm:grid-cols-2 sm:text-base">
+              <li>
+                <span className="font-semibold text-heading">Bachelor of Psychology</span> — formal
+                academic training in psychological theory, research methods, and behavioural
+                science.
+              </li>
+              <li>
+                <span className="font-semibold text-heading">Bachelor of Social Science</span> —
+                background in community context, behaviour change, and applied social systems.
+              </li>
+              <li>
+                Experience across healthcare, disability, and community sectors — applied practice
+                with real people, real outcomes, real accountability.
+              </li>
+              <li>
+                The Sila Code content is educational. It does not diagnose, treat, or replace
+                clinical care. Always consult your healthcare professional for individual concerns.
+              </li>
+            </ul>
           </article>
         </div>
         <div className="vine-line mt-6 sm:mt-8" aria-hidden="true" />

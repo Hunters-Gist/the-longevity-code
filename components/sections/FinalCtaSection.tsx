@@ -1,5 +1,6 @@
 import { homeContent } from "@/content/homepage";
 import { ActionButton } from "@/components/ui/ActionButton";
+import { captureFinalCtaEmail } from "@/app/actions/leads";
 
 export function FinalCtaSection() {
   return (
@@ -16,13 +17,19 @@ export function FinalCtaSection() {
             {homeContent.finalCta.subheading}
           </p>
 
-          <form className="relative mt-6 flex flex-col gap-2.5 sm:mt-7 sm:gap-3 md:flex-row">
+          <form
+            action={captureFinalCtaEmail}
+            className="relative mt-6 flex flex-col gap-2.5 sm:mt-7 sm:gap-3 md:flex-row"
+          >
             <label htmlFor="email-capture" className="sr-only">
               Email address
             </label>
             <input
               id="email-capture"
+              name="email"
               type="email"
+              required
+              autoComplete="email"
               placeholder={homeContent.finalCta.emailPlaceholder}
               className="min-h-12 min-w-0 flex-1 rounded-full border border-bone-white/20 bg-bone-white/10 px-5 text-sm text-bone-white placeholder:text-bone-white/55 focus:border-sage focus:outline-none"
             />

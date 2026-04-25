@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
 import { BLOG_POSTS } from "@/content/sila";
+import { absoluteUrl } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.thesilacode.com";
   const coreRoutes = [
     "",
     "/about",
@@ -18,17 +18,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/legal/terms",
     "/legal/privacy",
     "/legal/disclaimer",
+    "/legal/refund",
+    "/legal/shipping",
+    "/legal/subscription",
+    "/legal/research",
+    "/legal/assessment",
+    "/legal/support",
   ];
 
   return [
     ...coreRoutes.map((route) => ({
-      url: `${baseUrl}${route}`,
+      url: absoluteUrl(route),
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
       priority: route === "" ? 1 : 0.7,
     })),
     ...BLOG_POSTS.map((post) => ({
-      url: `${baseUrl}/blog/${post.slug}`,
+      url: absoluteUrl(`/blog/${post.slug}`),
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.6,

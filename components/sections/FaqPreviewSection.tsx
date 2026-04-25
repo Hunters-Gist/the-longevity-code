@@ -16,7 +16,7 @@ const faqs = [
   {
     question: "Do you offer educational content updates?",
     answer:
-      "Yes. Journal / Learn content is part of the ecosystem and expands alongside protocols and membership.",
+      "Yes. The Journal expands weekly alongside membership, covering the five pillars and behavioural science.",
   },
 ];
 

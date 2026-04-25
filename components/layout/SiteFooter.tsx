@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { siteContent } from "@/content/site";
+import { BrandMark } from "@/components/ui/BrandMark";
 
 export function SiteFooter() {
   return (
@@ -8,13 +8,7 @@ export function SiteFooter() {
       <div className="section-wrap grid gap-10 md:grid-cols-[1fr_auto] md:items-start">
         <div>
           <Link href="/" className="inline-flex min-h-11 items-center">
-            <Image
-              src="/images/hero/the sila code logo.png"
-              alt={`${siteContent.brand.name} logo`}
-              width={362}
-              height={79}
-              className="h-auto w-[184px] max-w-full object-contain sm:w-[222px]"
-            />
+            <BrandMark />
           </Link>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-muted">
             {siteContent.brand.strap}
@@ -33,7 +27,7 @@ export function SiteFooter() {
         <div className="grid gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-[auto_auto]">
           <nav className="space-y-1.5" aria-label="Footer navigation">
             <p className="ui-caps text-muted">Navigate</p>
-            {siteContent.nav.map((link) => (
+            {siteContent.footerNav.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}

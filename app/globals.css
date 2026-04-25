@@ -51,6 +51,12 @@
   --shadow-medium: 0 10px 15px -3px rgba(45, 58, 49, 0.05);
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
 body {
   background:
     radial-gradient(circle at 12% -18%, rgba(140, 154, 132, 0.22), transparent 42%),
@@ -78,7 +84,9 @@ h4 {
 
 .site-shell {
   position: relative;
-  overflow: hidden;
+  max-width: 100%;
+  overflow-x: clip;
+  overflow-y: visible;
   isolation: isolate;
 }
 

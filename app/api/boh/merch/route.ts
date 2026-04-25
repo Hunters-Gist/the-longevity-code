@@ -4,10 +4,19 @@ import {
   deleteMerchProduct,
   getMerchProducts,
 } from "@/lib/merchCatalog";
+import {
+  adminAuthResponse,
+  adminMethodNotAllowed,
+  requireAdmin,
+} from "@/lib/auth/admin";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
+  const authResult = await requireAdmin();
+  const authResponse = adminAuthResponse(authResult);
+  if (authResponse) return authResponse;
+
   const products = await getMerchProducts();
   return Response.json(products, {
     headers: {
@@ -17,6 +26,10 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  const authResult = await requireAdmin();
+  const authResponse = adminAuthResponse(authResult);
+  if (authResponse) return authResponse;
+
   try {
     const body = (await request.json()) as Partial<{
       name: string;
@@ -45,6 +58,10 @@ export async function POST(request: Request) {
 }
 
 export async function DELETE(request: Request) {
+  const authResult = await requireAdmin();
+  const authResponse = adminAuthResponse(authResult);
+  if (authResponse) return authResponse;
+
   const { searchParams } = new URL(request.url);
   const id = searchParams.get("id") ?? "";
 
@@ -54,4 +71,12 @@ export async function DELETE(request: Request) {
   }
 
   return Response.json({ ok: true });
+}
+
+export function PUT() {
+  return adminMethodNotAllowed(["GET", "POST", "DELETE"]);
+}
+
+export function PATCH() {
+  return adminMethodNotAllowed(["GET", "POST", "DELETE"]);
 }

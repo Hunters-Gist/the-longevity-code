@@ -3,7 +3,6 @@ import Link from "next/link";
 import { PageHero } from "@/components/ui/PageHero";
 import Image from "next/image";
 import { forumGroups, weeklyTopics } from "@/content/community";
-import { buildCommunityInsightsSnapshot } from "@/lib/communityAnalytics";
 
 export const metadata: Metadata = {
   title: "Community",
@@ -15,14 +14,12 @@ export const metadata: Metadata = {
 };
 
 export default function CommunityPage() {
-  const analyticsPreview = buildCommunityInsightsSnapshot();
-
   return (
     <>
       <PageHero
         eyebrow="Community"
         title="The Sila Community"
-        description="A members-first forum where people can share what works for illness support, mental health, beauty goals, and everyday wellbeing."
+        description="A members-first forum for peer conversation across wellbeing, behaviour change, and healthy longevity — hosted on Skool, moderated by The Sila Code team."
       />
       <section className="py-12 sm:py-16">
         <div className="section-wrap space-y-4">
@@ -32,7 +29,7 @@ export default function CommunityPage() {
             </h2>
             <div className="mt-4 overflow-hidden rounded-[24px] border border-line lg:rounded-t-[140px] lg:rounded-b-[30px]">
               <Image
-                src="/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif"
+                src="/images/journal/recovery-debt.svg"
                 alt="Community wellbeing banner"
                 width={1600}
                 height={1100}
@@ -40,10 +37,11 @@ export default function CommunityPage() {
               />
             </div>
             <ul className="mt-4 grid gap-2 text-sm text-muted sm:grid-cols-2">
-              <li>Community groups for peptides, aging, supplements, and psychology</li>
-              <li>Skin care and new product forums with member-led feedback</li>
-              <li>Peer support on mental health and real-world wellness results</li>
-              <li>AI-prioritised weekly topics based on member demand signals</li>
+              <li>Discussion groups on wellbeing, behaviour design, and longevity lifestyle</li>
+              <li>Skin and new product forums with member-led feedback</li>
+              <li>Peer support across everyday habits and recovery</li>
+              <li>Weekly topics prioritised by member conversation, curated by the team</li>
+              <li>General educational discussion only — not medical advice</li>
             </ul>
           </article>
           <article className="glass-card rounded-[24px] p-6 sm:p-8">
@@ -85,41 +83,6 @@ export default function CommunityPage() {
                 </li>
               ))}
             </ul>
-          </article>
-          <article className="glass-card rounded-[24px] p-6 sm:p-8">
-            <h3 className="display-title text-2xl text-heading">
-              Autonomous BOH analytics preview
-            </h3>
-            <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">
-              Live intelligence tracks what members discuss most, what outcomes they
-              are chasing, and what your next weekly drop should focus on.
-            </p>
-            <div className="mt-4 grid gap-3 sm:grid-cols-3">
-              <div className="rounded-[16px] border border-line bg-bone-white/80 p-4">
-                <p className="ui-caps text-muted">Active now</p>
-                <p className="mt-1 text-2xl font-semibold text-heading">
-                  {analyticsPreview.activeMembersNow}
-                </p>
-              </div>
-              <div className="rounded-[16px] border border-line bg-bone-white/80 p-4">
-                <p className="ui-caps text-muted">Weekly posts</p>
-                <p className="mt-1 text-2xl font-semibold text-heading">
-                  {analyticsPreview.weeklyPosts}
-                </p>
-              </div>
-              <div className="rounded-[16px] border border-line bg-bone-white/80 p-4">
-                <p className="ui-caps text-muted">Weekly comments</p>
-                <p className="mt-1 text-2xl font-semibold text-heading">
-                  {analyticsPreview.weeklyComments}
-                </p>
-              </div>
-            </div>
-            <Link
-              href="/boh"
-              className="mt-6 inline-flex min-h-11 items-center rounded-full border border-sage/70 bg-bone-white px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition duration-300 hover:border-terracotta hover:text-terracotta"
-            >
-              Open BOH dashboard
-            </Link>
           </article>
           <article className="luxury-card rounded-[24px] p-6 sm:p-8">
             <h3 className="display-title text-2xl text-heading">Join via Skool</h3>

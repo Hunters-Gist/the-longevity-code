@@ -1,0 +1,1672 @@
+G, here’s the final master index file: **00_The_Sila_Code_Master_Index.md**.
+
+Save location later:
+
+```text id="x7qpq9"
+/Users/gerardgrenville/Downloads/Chat GPT/00_The_Sila_Code_Master_Index.md
+```
+
+````markdown id="seku9i"
+# 00_The_Sila_Code_Master_Index.md
+
+# The Sila Code Master Index
+
+## 1. Purpose Of This Master Index
+
+This document explains how to use the complete strategy library for The Sila Code.
+
+The goal is to give Claude, Cursor, or any other AI tool a clear operating system for understanding the brand, building the website, creating content, designing offers, planning retreats, and making strategic decisions.
+
+This index connects all 10 core files into one working knowledge base.
+
+The Sila Code should be treated as a premium self-optimisation ecosystem, not a generic wellness brand.
+
+## 2. Core Brand Summary
+
+The Sila Code is a premium health, wellness, longevity, performance, aesthetics, recovery, mindset, and lifestyle brand.
+
+It exists to help people upgrade their body, mind, appearance, energy, confidence, discipline, recovery, and future through a structured modern framework.
+
+The brand should feel like:
+
+**Luxury pharmaceutical branding meets neuroscience, longevity, self-mastery, and high-performance lifestyle design.**
+
+The brand should be:
+
+- Premium
+- Intelligent
+- Structured
+- Responsible
+- Direct
+- Aspirational
+- Compliance-aware
+- Lifestyle-led
+- Method-first
+- Trust-first
+
+The brand should not become:
+
+- A cheap supplement store
+- A dodgy peptide shop
+- A fake guru brand
+- A generic wellness blog
+- A soft yoga retreat brand
+- A reckless medical claims brand
+- A shallow biohacking page
+
+## 3. North Star Positioning
+
+Use this as the main brand position:
+
+> The Sila Code is a premium lifestyle framework for people who want to become stronger, sharper, healthier, more attractive, and more capable across every part of life.
+
+Alternative strategic version:
+
+> The Sila Code is a premium self-optimisation ecosystem built around the body, mind, appearance, recovery, performance, longevity, and lifestyle.
+
+## 4. Core Brand Pillars
+
+Everything The Sila Code creates should connect back to one or more of these six pillars:
+
+| Pillar | Meaning |
+|---|---|
+| Longevity | Living better for longer |
+| Performance | Energy, strength, focus, discipline, and execution |
+| Recovery | Sleep, nervous system regulation, restoration, and capacity |
+| Aesthetics | Appearance, grooming, skin, posture, confidence, and physical presence |
+| Mind | Clarity, emotional regulation, identity, self-command, and standards |
+| Lifestyle | Routines, environment, nutrition, community, habits, and daily systems |
+
+## 5. The Sila Code Method
+
+The method should be used across the website, content, products, retreats, and programs.
+
+| Stage | Purpose |
+|---|---|
+| Assess | Understand the current baseline |
+| Reset | Remove friction, chaos, poor inputs, and low-standard routines |
+| Rebuild | Create stronger habits, systems, routines, and standards |
+| Optimise | Add advanced tools, tracking, education, and support |
+| Integrate | Make the upgrade sustainable in normal life |
+
+This method is the strategic spine of the brand.
+
+## 6. File Library Overview
+
+The complete strategy library includes:
+
+| File | Role |
+|---|---|
+| 01_The_Sila_Code_Brand_Brief.md | Core brand identity and positioning |
+| 02_Website_Strategy.md | Website structure, conversion path, and user journey |
+| 03_Product_Ecosystem.md | Product architecture and commercial strategy |
+| 04_Retreat_Strategy.md | Retreat positioning, structure, and execution strategy |
+| 05_Target_Customer.md | Customer segments, personas, motivations, objections |
+| 06_Competitor_Research.md | Competitive landscape and differentiation |
+| 07_Compliance_Guardrails.md | Health, product, retreat, and marketing safety rules |
+| 08_Visual_Identity.md | Brand colours, typography, UI, logo, imagery, and design direction |
+| 09_Content_Strategy.md | Social, journal, email, YouTube, and content funnel strategy |
+| 10_Launch_Roadmap.md | Launch phases, priorities, metrics, and execution plan |
+
+## 7. How Claude Should Use Each File
+
+## 01_The_Sila_Code_Brand_Brief.md
+
+Use this file whenever making decisions about:
+
+- Brand positioning
+- Mission
+- Vision
+- Brand voice
+- Brand values
+- Messaging
+- Taglines
+- Core pillars
+- Brand identity
+- What The Sila Code is and is not
+
+This is the primary source of truth for the brand.
+
+## 02_Website_Strategy.md
+
+Use this file whenever working on:
+
+- Website sitemap
+- Homepage structure
+- Page sections
+- Conversion goals
+- User journey
+- Lead capture
+- Mobile UX
+- SEO structure
+- Website copy
+- Website build prompts
+
+This is the primary source of truth for the website.
+
+## 03_Product_Ecosystem.md
+
+Use this file whenever working on:
+
+- Product categories
+- First paid offer
+- Digital products
+- Physical products
+- Product naming
+- Product page copy
+- Product funnels
+- Membership ideas
+- Product compliance
+- Offer ladder
+
+This is the primary source of truth for products and commercial offers.
+
+## 04_Retreat_Strategy.md
+
+Use this file whenever working on:
+
+- Retreat positioning
+- Retreat structure
+- Retreat schedules
+- Retreat application forms
+- Retreat safety
+- Retreat pricing
+- Retreat content
+- Retreat customer journey
+- Retreat follow-up
+- Retreat page copy
+
+This is the primary source of truth for retreats.
+
+## 05_Target_Customer.md
+
+Use this file whenever working on:
+
+- Customer personas
+- Messaging
+- Objections
+- Customer pain points
+- Customer desires
+- Segmentation
+- Email targeting
+- Sales copy
+- Landing page copy
+- Product fit
+- Retreat fit
+
+This is the primary source of truth for audience understanding.
+
+## 06_Competitor_Research.md
+
+Use this file whenever working on:
+
+- Differentiation
+- Market positioning
+- Competitor analysis
+- Category strategy
+- Brand moat
+- Messaging against the market
+- Offer differentiation
+- Website differentiation
+
+This is the primary source of truth for competitive strategy.
+
+## 07_Compliance_Guardrails.md
+
+Use this file whenever creating:
+
+- Website copy
+- Product copy
+- Retreat copy
+- Ads
+- Emails
+- Social posts
+- Testimonials
+- Health-related content
+- Supplement-related content
+- Peptide-related content
+- Practitioner-related content
+- Legal disclaimers
+
+This is the primary source of truth for safety, trust, and risk reduction.
+
+## 08_Visual_Identity.md
+
+Use this file whenever working on:
+
+- Website design
+- Logo concepts
+- Colour palette
+- Typography
+- UI components
+- Imagery
+- Photography
+- Social media templates
+- Product packaging
+- Retreat assets
+- Design prompts for Cursor or Canva
+
+This is the primary source of truth for visual style.
+
+## 09_Content_Strategy.md
+
+Use this file whenever working on:
+
+- Journal articles
+- Instagram posts
+- TikTok scripts
+- YouTube videos
+- Email newsletters
+- Founder content
+- Content calendars
+- SEO clusters
+- Lead magnets
+- Social funnels
+- Content repurposing
+
+This is the primary source of truth for content and distribution.
+
+## 10_Launch_Roadmap.md
+
+Use this file whenever working on:
+
+- Launch planning
+- Execution priorities
+- Roadmaps
+- MVP decisions
+- Build sequence
+- Validation
+- Metrics
+- Weekly execution
+- First offers
+- First retreat
+- First content launch
+
+This is the primary source of truth for execution.
+
+## 8. Recommended Claude Project Description
+
+Use this in the Claude Project Description field:
+
+```text
+The Sila Code is a premium health, wellness, longevity, performance, aesthetics, recovery, mindset, and self-optimisation brand.
+
+It is being built as a modern lifestyle ecosystem for people who want to upgrade their body, mind, appearance, habits, energy, confidence, discipline, recovery, and future.
+
+The brand will include education, retreats, products, protocols, content, community, and transformation pathways.
+
+The Sila Code should feel like luxury pharmaceutical branding meets neuroscience, longevity, self-mastery, and high-performance lifestyle design.
+
+The goal is to build The Sila Code into a serious premium business with strong brand positioning, a high-converting website, responsible compliance-aware messaging, a content engine, product pathways, and retreat experiences.
+
+The brand must be premium, intelligent, structured, responsible, and conversion-focused. It must avoid reckless health claims, generic wellness clichés, fake guru language, and cheap supplement-store energy.
+````
+
+## 9. Recommended Claude Project Instructions
+
+Use this in the Claude Project Instructions field:
+
+```text
+You are the strategic operating partner for building The Sila Code into a premium health, wellness, longevity, performance, aesthetics, recovery, mindset, and self-optimisation brand.
+
+Act like a premium brand strategist, website architect, conversion copywriter, UX strategist, wellness market researcher, compliance-aware product planner, retreat strategist, startup operator, and luxury wellness creative director.
+
+Always use the uploaded strategy files as the source of truth.
+
+Core objective:
+Help build The Sila Code into a credible, premium, high-converting, legally careful, emotionally powerful, commercially viable lifestyle brand.
+
+The Sila Code should feel like luxury pharmaceutical branding meets neuroscience, longevity, self-mastery, and high-performance lifestyle design.
+
+The brand should not sound like:
+- A cheap supplement store
+- A dodgy peptide reseller
+- A fake guru brand
+- A generic wellness blog
+- A shallow biohacking page
+- A medical clinic pretending to be a lifestyle brand
+
+The brand should sound:
+- Premium
+- Clear
+- Direct
+- Intelligent
+- Modern
+- Aspirational
+- Responsible
+- Science-backed
+- Structured
+- Confident
+
+Always use the six pillars:
+- Longevity
+- Performance
+- Recovery
+- Aesthetics
+- Mind
+- Lifestyle
+
+Always use the core method:
+- Assess
+- Reset
+- Rebuild
+- Optimise
+- Integrate
+
+When creating website, content, product, retreat, or sales copy, keep health-related language educational, lifestyle-focused, responsible, and compliance-aware.
+
+Do not make medical claims, therapeutic claims, prescription-product claims, peptide claims, disease claims, guaranteed result claims, or claims that imply diagnosis, treatment, cure, reversal, or prevention.
+
+Use careful wording such as:
+- Designed to support
+- Built around
+- Evidence-informed
+- Practitioner-guided
+- Lifestyle-focused
+- Educational
+- May support
+- General wellbeing
+- Consult a qualified professional
+- Requires legal review
+
+Avoid:
+- Cures
+- Treats
+- Reverses disease
+- Fixes hormones
+- Heals trauma
+- Guaranteed results
+- Miracle protocol
+- Peptide stack
+- Prescription access
+- Clinically proven unless properly sourced and reviewed
+
+Preferred visual direction:
+Dark clinical luxury. Use near black, deep navy, charcoal, bone white, muted gold, steel grey, and optional icy blue highlights. Keep layouts minimal, premium, editorial, structured, and high contrast.
+
+When producing output, prefer:
+- Strategic diagnosis
+- Clear recommendations
+- Tables
+- Frameworks
+- Page structures
+- Website copy
+- Cursor prompts
+- Execution roadmaps
+- Content calendars
+- Customer journey maps
+- Offer ladders
+- SOPs
+- Checklists
+- Risk notes
+- Practical next actions
+
+Default response structure:
+1. Strategic diagnosis
+2. Recommended direction
+3. Practical output
+4. Execution steps
+5. Risks or weak points
+6. Next action
+
+Be direct and critical. If an idea is weak, say why and improve it. Do not flatter. Do not produce generic wellness advice. Build this like a serious premium business.
+```
+
+## 10. Recommended Cursor Master Build Prompt
+
+Use this when asking Cursor to build the website:
+
+```text
+You are building the production-ready V1 website for The Sila Code.
+
+The Sila Code is a premium self-optimisation, wellness, longevity, recovery, performance, aesthetics, mindset, and lifestyle brand.
+
+The website should feel like luxury pharmaceutical branding meets neuroscience, longevity, and high-performance lifestyle design.
+
+Build with:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Component-based architecture
+- Mobile-first responsive design
+- SEO-friendly metadata
+- Clean reusable data files
+- Accessible navigation
+- Premium dark clinical-luxury visual system
+
+Visual direction:
+- Near black #0A0A0F
+- Deep navy #101C2E
+- Charcoal #171A1F
+- Bone white #F4EFE6
+- Muted gold #C9A96E
+- Steel grey #8D949E
+- Optional icy blue #9FC7D9
+- Editorial spacing
+- Minimal cards
+- Subtle borders
+- Strong typography
+- No clutter
+- No cheap wellness template styling
+
+Core brand pillars:
+- Longevity
+- Performance
+- Recovery
+- Aesthetics
+- Mind
+- Lifestyle
+
+Core method:
+- Assess
+- Reset
+- Rebuild
+- Optimise
+- Integrate
+
+Build these pages:
+1. Homepage
+2. About
+3. The Code
+4. Programs
+5. Retreats
+6. Products
+7. Journal
+8. Apply
+9. Contact
+10. Disclaimer
+11. Privacy Policy
+12. Terms of Use
+
+Homepage sections:
+1. Hero
+2. What is The Sila Code
+3. The Six Pillars
+4. Who it is for
+5. The Method
+6. Retreat teaser
+7. Product teaser
+8. Journal teaser
+9. Trust and responsibility
+10. Waitlist CTA
+11. Footer
+
+Forms:
+- Waitlist form
+- Retreat interest form
+- Product interest form
+- Contact form
+
+Important compliance:
+Do not make medical claims, therapeutic claims, prescription-product claims, peptide claims, disease claims, guaranteed result claims, or claims that imply diagnosis, treatment, cure, reversal, or prevention.
+
+Keep all health language lifestyle-focused, educational, responsible, and compliance-aware.
+
+The website must feel premium, serious, trustworthy, and conversion-focused.
+
+After building, provide:
+- Summary of what was built
+- File structure
+- Setup instructions
+- Environment variables needed
+- What still needs real assets, legal review, and integrations
+```
+
+## 11. Strategic Build Order
+
+Claude and Cursor should follow this order:
+
+| Step | Action                                   |
+| ---: | ---------------------------------------- |
+|    1 | Lock brand positioning                   |
+|    2 | Lock visual identity                     |
+|    3 | Build V1 website                         |
+|    4 | Set up waitlist capture                  |
+|    5 | Set up retreat interest capture          |
+|    6 | Set up product interest capture          |
+|    7 | Publish first journal articles           |
+|    8 | Launch social content                    |
+|    9 | Build self-assessment                    |
+|   10 | Validate Foundation Protocol             |
+|   11 | Validate Foundation Reset retreat        |
+|   12 | Build email nurture system               |
+|   13 | Launch first digital product             |
+|   14 | Prepare first retreat application funnel |
+|   15 | Scale based on real demand               |
+
+## 12. First Website Version
+
+The first website should include:
+
+* Homepage
+* About
+* The Code
+* Programs
+* Retreats
+* Products
+* Journal
+* Apply
+* Contact
+* Disclaimer
+* Privacy Policy
+* Terms of Use
+
+The first website should not include:
+
+* Full ecommerce store
+* Peptide sales
+* Prescription pathways
+* Aggressive medical claims
+* Overcomplicated member dashboard
+* Too many services
+* Unreviewed product claims
+* Fake testimonials
+* Before-and-after claims
+
+## 13. First Launch Funnel
+
+Recommended first funnel:
+
+```text
+Social content
+→ Website
+→ Self-assessment or waitlist
+→ Email capture
+→ Six Pillars education
+→ Foundation Protocol interest
+→ Retreat interest
+→ Community or product interest
+```
+
+## 14. First Lead Magnet
+
+Primary lead magnet:
+
+# The Sila Code Self-Assessment
+
+Scores users across:
+
+* Longevity
+* Performance
+* Recovery
+* Aesthetics
+* Mind
+* Lifestyle
+
+Gives users:
+
+* Strongest pillar
+* Weakest pillar
+* Result archetype
+* Recommended next step
+* Email follow-up
+
+## 15. First Paid Product
+
+Primary first paid product:
+
+# The Foundation Protocol
+
+A 30 day digital self-optimisation protocol built around:
+
+* Six Pillars self-assessment
+* Morning routine
+* Evening routine
+* Sleep structure
+* Training structure
+* Nutrition principles
+* Recovery checklist
+* Aesthetic standard audit
+* Mind and discipline exercises
+* Weekly review
+* Habit tracker
+* 30 day integration plan
+
+## 16. First Retreat Offer
+
+Primary first retreat:
+
+# The Foundation Reset
+
+A premium 3 night or 4 day self-optimisation retreat designed to help guests recover, refocus, rebuild standards, and leave with a stronger personal operating system.
+
+Recommended first version:
+
+* 8 to 14 guests
+* Premium nature-connected venue
+* Application only
+* Strong food
+* Movement
+* Recovery
+* Reflection
+* Workshops
+* Retreat workbook
+* 30 day integration plan
+
+## 17. Content Priorities
+
+First 5 journal articles:
+
+1. What Is The Sila Code?
+2. The Six Pillars Of Self-Optimisation
+3. Why Recovery Is The Missing Piece In Performance
+4. How To Build A Better Personal Operating System
+5. Why Looking Better Starts With Living Better
+
+First 5 founder videos:
+
+1. Why I Am Building The Sila Code
+2. What The Sila Code Actually Is
+3. The Six Pillars Explained
+4. Why Recovery Is Infrastructure
+5. What A Sila Code Retreat Will Be
+
+First newsletter:
+
+# The Code Notes
+
+Newsletter format:
+
+1. One sharp idea
+2. One practical action
+3. One weekly standard
+4. One recommended resource
+5. One CTA
+
+## 18. Visual Identity Rules
+
+Use:
+
+* Near black
+* Deep navy
+* Charcoal
+* Bone white
+* Muted gold
+* Steel grey
+* Optional icy blue
+* Premium serif headings
+* Clean sans-serif body
+* Minimal layouts
+* Editorial spacing
+* Fine-line icons
+* Scientific motifs
+* Cinematic imagery
+* Dark clinical luxury
+
+Avoid:
+
+* Cheap gradients
+* Generic wellness photos
+* Bright supplement colours
+* Overuse of gold
+* Busy layouts
+* Fake luxury
+* Stock medical imagery
+* Overly masculine aggression
+* Soft beige wellness branding
+* Loud biohacker aesthetics
+
+## 19. Compliance Rules
+
+Always follow these rules:
+
+Do not claim to:
+
+* Diagnose
+* Treat
+* Cure
+* Reverse disease
+* Prevent disease
+* Guarantee results
+* Replace medical care
+* Replace therapy
+* Fix hormones
+* Heal trauma
+* Reverse aging
+* Sell or provide prescription products without legal review
+
+Use safer language:
+
+* Designed to support
+* Helps structure
+* Lifestyle-focused
+* Education-focused
+* Evidence-informed
+* Practitioner-guided, where true
+* May support
+* General wellbeing
+* Consult a qualified professional
+* Requires legal review
+
+High-risk areas needing review:
+
+* Peptides
+* Hormones
+* Prescription medicines
+* Supplements
+* Therapeutic goods
+* Research-use products
+* Practitioner pathways
+* Health claims
+* Before-and-after content
+* Testimonials
+* Paid ads
+* Retreat waivers and safety documents
+
+## 20. Strategic Decision Rules
+
+Use these rules when making decisions:
+
+| Question                                              | Decision Rule                   |
+| ----------------------------------------------------- | ------------------------------- |
+| Does this support the six pillars?                    | If no, cut or revise it         |
+| Does this make the brand more premium?                | If no, improve it               |
+| Does this create compliance risk?                     | If yes, soften or review        |
+| Does this clarify the customer journey?               | If no, simplify                 |
+| Does this help lead capture?                          | If no, check if it is necessary |
+| Does this make the brand look like a supplement shop? | If yes, change direction        |
+| Does this build trust?                                | If no, rethink it               |
+| Does this help launch faster?                         | If no, delay it                 |
+| Does this validate demand?                            | If no, do not overbuild it      |
+| Does this feel like The Sila Code?                    | If no, reject it                |
+
+## 21. What To Build First
+
+Build first:
+
+1. Brand strategy
+2. Website V1
+3. Waitlist
+4. Self-assessment
+5. Journal
+6. Email system
+7. Social content
+8. Foundation Protocol
+9. Retreat interest funnel
+10. Product interest funnel
+
+Do not build first:
+
+* Full ecommerce
+* Complex app
+* Membership platform
+* Regulated products
+* Peptide store
+* Prescription pathway
+* Massive retreat
+* Expensive inventory
+* Overcomplicated dashboard
+
+## 22. Current Best Strategic Direction
+
+The best direction right now is:
+
+1. Launch The Sila Code as a premium self-optimisation brand.
+2. Lead with the Six Pillars and The Sila Code Method.
+3. Build a high-trust, premium website.
+4. Capture emails through waitlist and self-assessment.
+5. Validate demand for Foundation Protocol.
+6. Validate demand for Foundation Reset retreat.
+7. Keep product claims conservative.
+8. Use content to build authority.
+9. Add regulated or practitioner-guided pathways only after legal review.
+10. Scale based on real user demand.
+
+## 23. Master Summary
+
+The Sila Code should become a serious premium lifestyle ecosystem for people who want to upgrade how they look, feel, perform, recover, age, think, and live.
+
+The brand should be method-first, not product-first.
+
+It should sell structure before products.
+
+It should sell trust before claims.
+
+It should build the audience before overbuilding the offer stack.
+
+It should make people feel like they have found a serious system for becoming better.
+
+The operating principle:
+
+**Build the system. Launch the signal. Validate the demand. Scale what proves itself.**
+
+```
+
+**Approve this final master index, G?**
+```
+G, here’s the final master index file: **00_The_Sila_Code_Master_Index.md**.
+
+Save location later:
+
+```text id="x7qpq9"
+/Users/gerardgrenville/Downloads/Chat GPT/00_The_Sila_Code_Master_Index.md
+```
+
+````markdown id="seku9i"
+# 00_The_Sila_Code_Master_Index.md
+
+# The Sila Code Master Index
+
+## 1. Purpose Of This Master Index
+
+This document explains how to use the complete strategy library for The Sila Code.
+
+The goal is to give Claude, Cursor, or any other AI tool a clear operating system for understanding the brand, building the website, creating content, designing offers, planning retreats, and making strategic decisions.
+
+This index connects all 10 core files into one working knowledge base.
+
+The Sila Code should be treated as a premium self-optimisation ecosystem, not a generic wellness brand.
+
+## 2. Core Brand Summary
+
+The Sila Code is a premium health, wellness, longevity, performance, aesthetics, recovery, mindset, and lifestyle brand.
+
+It exists to help people upgrade their body, mind, appearance, energy, confidence, discipline, recovery, and future through a structured modern framework.
+
+The brand should feel like:
+
+**Luxury pharmaceutical branding meets neuroscience, longevity, self-mastery, and high-performance lifestyle design.**
+
+The brand should be:
+
+- Premium
+- Intelligent
+- Structured
+- Responsible
+- Direct
+- Aspirational
+- Compliance-aware
+- Lifestyle-led
+- Method-first
+- Trust-first
+
+The brand should not become:
+
+- A cheap supplement store
+- A dodgy peptide shop
+- A fake guru brand
+- A generic wellness blog
+- A soft yoga retreat brand
+- A reckless medical claims brand
+- A shallow biohacking page
+
+## 3. North Star Positioning
+
+Use this as the main brand position:
+
+> The Sila Code is a premium lifestyle framework for people who want to become stronger, sharper, healthier, more attractive, and more capable across every part of life.
+
+Alternative strategic version:
+
+> The Sila Code is a premium self-optimisation ecosystem built around the body, mind, appearance, recovery, performance, longevity, and lifestyle.
+
+## 4. Core Brand Pillars
+
+Everything The Sila Code creates should connect back to one or more of these six pillars:
+
+| Pillar | Meaning |
+|---|---|
+| Longevity | Living better for longer |
+| Performance | Energy, strength, focus, discipline, and execution |
+| Recovery | Sleep, nervous system regulation, restoration, and capacity |
+| Aesthetics | Appearance, grooming, skin, posture, confidence, and physical presence |
+| Mind | Clarity, emotional regulation, identity, self-command, and standards |
+| Lifestyle | Routines, environment, nutrition, community, habits, and daily systems |
+
+## 5. The Sila Code Method
+
+The method should be used across the website, content, products, retreats, and programs.
+
+| Stage | Purpose |
+|---|---|
+| Assess | Understand the current baseline |
+| Reset | Remove friction, chaos, poor inputs, and low-standard routines |
+| Rebuild | Create stronger habits, systems, routines, and standards |
+| Optimise | Add advanced tools, tracking, education, and support |
+| Integrate | Make the upgrade sustainable in normal life |
+
+This method is the strategic spine of the brand.
+
+## 6. File Library Overview
+
+The complete strategy library includes:
+
+| File | Role |
+|---|---|
+| 01_The_Sila_Code_Brand_Brief.md | Core brand identity and positioning |
+| 02_Website_Strategy.md | Website structure, conversion path, and user journey |
+| 03_Product_Ecosystem.md | Product architecture and commercial strategy |
+| 04_Retreat_Strategy.md | Retreat positioning, structure, and execution strategy |
+| 05_Target_Customer.md | Customer segments, personas, motivations, objections |
+| 06_Competitor_Research.md | Competitive landscape and differentiation |
+| 07_Compliance_Guardrails.md | Health, product, retreat, and marketing safety rules |
+| 08_Visual_Identity.md | Brand colours, typography, UI, logo, imagery, and design direction |
+| 09_Content_Strategy.md | Social, journal, email, YouTube, and content funnel strategy |
+| 10_Launch_Roadmap.md | Launch phases, priorities, metrics, and execution plan |
+
+## 7. How Claude Should Use Each File
+
+## 01_The_Sila_Code_Brand_Brief.md
+
+Use this file whenever making decisions about:
+
+- Brand positioning
+- Mission
+- Vision
+- Brand voice
+- Brand values
+- Messaging
+- Taglines
+- Core pillars
+- Brand identity
+- What The Sila Code is and is not
+
+This is the primary source of truth for the brand.
+
+## 02_Website_Strategy.md
+
+Use this file whenever working on:
+
+- Website sitemap
+- Homepage structure
+- Page sections
+- Conversion goals
+- User journey
+- Lead capture
+- Mobile UX
+- SEO structure
+- Website copy
+- Website build prompts
+
+This is the primary source of truth for the website.
+
+## 03_Product_Ecosystem.md
+
+Use this file whenever working on:
+
+- Product categories
+- First paid offer
+- Digital products
+- Physical products
+- Product naming
+- Product page copy
+- Product funnels
+- Membership ideas
+- Product compliance
+- Offer ladder
+
+This is the primary source of truth for products and commercial offers.
+
+## 04_Retreat_Strategy.md
+
+Use this file whenever working on:
+
+- Retreat positioning
+- Retreat structure
+- Retreat schedules
+- Retreat application forms
+- Retreat safety
+- Retreat pricing
+- Retreat content
+- Retreat customer journey
+- Retreat follow-up
+- Retreat page copy
+
+This is the primary source of truth for retreats.
+
+## 05_Target_Customer.md
+
+Use this file whenever working on:
+
+- Customer personas
+- Messaging
+- Objections
+- Customer pain points
+- Customer desires
+- Segmentation
+- Email targeting
+- Sales copy
+- Landing page copy
+- Product fit
+- Retreat fit
+
+This is the primary source of truth for audience understanding.
+
+## 06_Competitor_Research.md
+
+Use this file whenever working on:
+
+- Differentiation
+- Market positioning
+- Competitor analysis
+- Category strategy
+- Brand moat
+- Messaging against the market
+- Offer differentiation
+- Website differentiation
+
+This is the primary source of truth for competitive strategy.
+
+## 07_Compliance_Guardrails.md
+
+Use this file whenever creating:
+
+- Website copy
+- Product copy
+- Retreat copy
+- Ads
+- Emails
+- Social posts
+- Testimonials
+- Health-related content
+- Supplement-related content
+- Peptide-related content
+- Practitioner-related content
+- Legal disclaimers
+
+This is the primary source of truth for safety, trust, and risk reduction.
+
+## 08_Visual_Identity.md
+
+Use this file whenever working on:
+
+- Website design
+- Logo concepts
+- Colour palette
+- Typography
+- UI components
+- Imagery
+- Photography
+- Social media templates
+- Product packaging
+- Retreat assets
+- Design prompts for Cursor or Canva
+
+This is the primary source of truth for visual style.
+
+## 09_Content_Strategy.md
+
+Use this file whenever working on:
+
+- Journal articles
+- Instagram posts
+- TikTok scripts
+- YouTube videos
+- Email newsletters
+- Founder content
+- Content calendars
+- SEO clusters
+- Lead magnets
+- Social funnels
+- Content repurposing
+
+This is the primary source of truth for content and distribution.
+
+## 10_Launch_Roadmap.md
+
+Use this file whenever working on:
+
+- Launch planning
+- Execution priorities
+- Roadmaps
+- MVP decisions
+- Build sequence
+- Validation
+- Metrics
+- Weekly execution
+- First offers
+- First retreat
+- First content launch
+
+This is the primary source of truth for execution.
+
+## 8. Recommended Claude Project Description
+
+Use this in the Claude Project Description field:
+
+```text
+The Sila Code is a premium health, wellness, longevity, performance, aesthetics, recovery, mindset, and self-optimisation brand.
+
+It is being built as a modern lifestyle ecosystem for people who want to upgrade their body, mind, appearance, habits, energy, confidence, discipline, recovery, and future.
+
+The brand will include education, retreats, products, protocols, content, community, and transformation pathways.
+
+The Sila Code should feel like luxury pharmaceutical branding meets neuroscience, longevity, self-mastery, and high-performance lifestyle design.
+
+The goal is to build The Sila Code into a serious premium business with strong brand positioning, a high-converting website, responsible compliance-aware messaging, a content engine, product pathways, and retreat experiences.
+
+The brand must be premium, intelligent, structured, responsible, and conversion-focused. It must avoid reckless health claims, generic wellness clichés, fake guru language, and cheap supplement-store energy.
+````
+
+## 9. Recommended Claude Project Instructions
+
+Use this in the Claude Project Instructions field:
+
+```text
+You are the strategic operating partner for building The Sila Code into a premium health, wellness, longevity, performance, aesthetics, recovery, mindset, and self-optimisation brand.
+
+Act like a premium brand strategist, website architect, conversion copywriter, UX strategist, wellness market researcher, compliance-aware product planner, retreat strategist, startup operator, and luxury wellness creative director.
+
+Always use the uploaded strategy files as the source of truth.
+
+Core objective:
+Help build The Sila Code into a credible, premium, high-converting, legally careful, emotionally powerful, commercially viable lifestyle brand.
+
+The Sila Code should feel like luxury pharmaceutical branding meets neuroscience, longevity, self-mastery, and high-performance lifestyle design.
+
+The brand should not sound like:
+- A cheap supplement store
+- A dodgy peptide reseller
+- A fake guru brand
+- A generic wellness blog
+- A shallow biohacking page
+- A medical clinic pretending to be a lifestyle brand
+
+The brand should sound:
+- Premium
+- Clear
+- Direct
+- Intelligent
+- Modern
+- Aspirational
+- Responsible
+- Science-backed
+- Structured
+- Confident
+
+Always use the six pillars:
+- Longevity
+- Performance
+- Recovery
+- Aesthetics
+- Mind
+- Lifestyle
+
+Always use the core method:
+- Assess
+- Reset
+- Rebuild
+- Optimise
+- Integrate
+
+When creating website, content, product, retreat, or sales copy, keep health-related language educational, lifestyle-focused, responsible, and compliance-aware.
+
+Do not make medical claims, therapeutic claims, prescription-product claims, peptide claims, disease claims, guaranteed result claims, or claims that imply diagnosis, treatment, cure, reversal, or prevention.
+
+Use careful wording such as:
+- Designed to support
+- Built around
+- Evidence-informed
+- Practitioner-guided
+- Lifestyle-focused
+- Educational
+- May support
+- General wellbeing
+- Consult a qualified professional
+- Requires legal review
+
+Avoid:
+- Cures
+- Treats
+- Reverses disease
+- Fixes hormones
+- Heals trauma
+- Guaranteed results
+- Miracle protocol
+- Peptide stack
+- Prescription access
+- Clinically proven unless properly sourced and reviewed
+
+Preferred visual direction:
+Dark clinical luxury. Use near black, deep navy, charcoal, bone white, muted gold, steel grey, and optional icy blue highlights. Keep layouts minimal, premium, editorial, structured, and high contrast.
+
+When producing output, prefer:
+- Strategic diagnosis
+- Clear recommendations
+- Tables
+- Frameworks
+- Page structures
+- Website copy
+- Cursor prompts
+- Execution roadmaps
+- Content calendars
+- Customer journey maps
+- Offer ladders
+- SOPs
+- Checklists
+- Risk notes
+- Practical next actions
+
+Default response structure:
+1. Strategic diagnosis
+2. Recommended direction
+3. Practical output
+4. Execution steps
+5. Risks or weak points
+6. Next action
+
+Be direct and critical. If an idea is weak, say why and improve it. Do not flatter. Do not produce generic wellness advice. Build this like a serious premium business.
+```
+
+## 10. Recommended Cursor Master Build Prompt
+
+Use this when asking Cursor to build the website:
+
+```text
+You are building the production-ready V1 website for The Sila Code.
+
+The Sila Code is a premium self-optimisation, wellness, longevity, recovery, performance, aesthetics, mindset, and lifestyle brand.
+
+The website should feel like luxury pharmaceutical branding meets neuroscience, longevity, and high-performance lifestyle design.
+
+Build with:
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Component-based architecture
+- Mobile-first responsive design
+- SEO-friendly metadata
+- Clean reusable data files
+- Accessible navigation
+- Premium dark clinical-luxury visual system
+
+Visual direction:
+- Near black #0A0A0F
+- Deep navy #101C2E
+- Charcoal #171A1F
+- Bone white #F4EFE6
+- Muted gold #C9A96E
+- Steel grey #8D949E
+- Optional icy blue #9FC7D9
+- Editorial spacing
+- Minimal cards
+- Subtle borders
+- Strong typography
+- No clutter
+- No cheap wellness template styling
+
+Core brand pillars:
+- Longevity
+- Performance
+- Recovery
+- Aesthetics
+- Mind
+- Lifestyle
+
+Core method:
+- Assess
+- Reset
+- Rebuild
+- Optimise
+- Integrate
+
+Build these pages:
+1. Homepage
+2. About
+3. The Code
+4. Programs
+5. Retreats
+6. Products
+7. Journal
+8. Apply
+9. Contact
+10. Disclaimer
+11. Privacy Policy
+12. Terms of Use
+
+Homepage sections:
+1. Hero
+2. What is The Sila Code
+3. The Six Pillars
+4. Who it is for
+5. The Method
+6. Retreat teaser
+7. Product teaser
+8. Journal teaser
+9. Trust and responsibility
+10. Waitlist CTA
+11. Footer
+
+Forms:
+- Waitlist form
+- Retreat interest form
+- Product interest form
+- Contact form
+
+Important compliance:
+Do not make medical claims, therapeutic claims, prescription-product claims, peptide claims, disease claims, guaranteed result claims, or claims that imply diagnosis, treatment, cure, reversal, or prevention.
+
+Keep all health language lifestyle-focused, educational, responsible, and compliance-aware.
+
+The website must feel premium, serious, trustworthy, and conversion-focused.
+
+After building, provide:
+- Summary of what was built
+- File structure
+- Setup instructions
+- Environment variables needed
+- What still needs real assets, legal review, and integrations
+```
+
+## 11. Strategic Build Order
+
+Claude and Cursor should follow this order:
+
+| Step | Action                                   |
+| ---: | ---------------------------------------- |
+|    1 | Lock brand positioning                   |
+|    2 | Lock visual identity                     |
+|    3 | Build V1 website                         |
+|    4 | Set up waitlist capture                  |
+|    5 | Set up retreat interest capture          |
+|    6 | Set up product interest capture          |
+|    7 | Publish first journal articles           |
+|    8 | Launch social content                    |
+|    9 | Build self-assessment                    |
+|   10 | Validate Foundation Protocol             |
+|   11 | Validate Foundation Reset retreat        |
+|   12 | Build email nurture system               |
+|   13 | Launch first digital product             |
+|   14 | Prepare first retreat application funnel |
+|   15 | Scale based on real demand               |
+
+## 12. First Website Version
+
+The first website should include:
+
+* Homepage
+* About
+* The Code
+* Programs
+* Retreats
+* Products
+* Journal
+* Apply
+* Contact
+* Disclaimer
+* Privacy Policy
+* Terms of Use
+
+The first website should not include:
+
+* Full ecommerce store
+* Peptide sales
+* Prescription pathways
+* Aggressive medical claims
+* Overcomplicated member dashboard
+* Too many services
+* Unreviewed product claims
+* Fake testimonials
+* Before-and-after claims
+
+## 13. First Launch Funnel
+
+Recommended first funnel:
+
+```text
+Social content
+→ Website
+→ Self-assessment or waitlist
+→ Email capture
+→ Six Pillars education
+→ Foundation Protocol interest
+→ Retreat interest
+→ Community or product interest
+```
+
+## 14. First Lead Magnet
+
+Primary lead magnet:
+
+# The Sila Code Self-Assessment
+
+Scores users across:
+
+* Longevity
+* Performance
+* Recovery
+* Aesthetics
+* Mind
+* Lifestyle
+
+Gives users:
+
+* Strongest pillar
+* Weakest pillar
+* Result archetype
+* Recommended next step
+* Email follow-up
+
+## 15. First Paid Product
+
+Primary first paid product:
+
+# The Foundation Protocol
+
+A 30 day digital self-optimisation protocol built around:
+
+* Six Pillars self-assessment
+* Morning routine
+* Evening routine
+* Sleep structure
+* Training structure
+* Nutrition principles
+* Recovery checklist
+* Aesthetic standard audit
+* Mind and discipline exercises
+* Weekly review
+* Habit tracker
+* 30 day integration plan
+
+## 16. First Retreat Offer
+
+Primary first retreat:
+
+# The Foundation Reset
+
+A premium 3 night or 4 day self-optimisation retreat designed to help guests recover, refocus, rebuild standards, and leave with a stronger personal operating system.
+
+Recommended first version:
+
+* 8 to 14 guests
+* Premium nature-connected venue
+* Application only
+* Strong food
+* Movement
+* Recovery
+* Reflection
+* Workshops
+* Retreat workbook
+* 30 day integration plan
+
+## 17. Content Priorities
+
+First 5 journal articles:
+
+1. What Is The Sila Code?
+2. The Six Pillars Of Self-Optimisation
+3. Why Recovery Is The Missing Piece In Performance
+4. How To Build A Better Personal Operating System
+5. Why Looking Better Starts With Living Better
+
+First 5 founder videos:
+
+1. Why I Am Building The Sila Code
+2. What The Sila Code Actually Is
+3. The Six Pillars Explained
+4. Why Recovery Is Infrastructure
+5. What A Sila Code Retreat Will Be
+
+First newsletter:
+
+# The Code Notes
+
+Newsletter format:
+
+1. One sharp idea
+2. One practical action
+3. One weekly standard
+4. One recommended resource
+5. One CTA
+
+## 18. Visual Identity Rules
+
+Use:
+
+* Near black
+* Deep navy
+* Charcoal
+* Bone white
+* Muted gold
+* Steel grey
+* Optional icy blue
+* Premium serif headings
+* Clean sans-serif body
+* Minimal layouts
+* Editorial spacing
+* Fine-line icons
+* Scientific motifs
+* Cinematic imagery
+* Dark clinical luxury
+
+Avoid:
+
+* Cheap gradients
+* Generic wellness photos
+* Bright supplement colours
+* Overuse of gold
+* Busy layouts
+* Fake luxury
+* Stock medical imagery
+* Overly masculine aggression
+* Soft beige wellness branding
+* Loud biohacker aesthetics
+
+## 19. Compliance Rules
+
+Always follow these rules:
+
+Do not claim to:
+
+* Diagnose
+* Treat
+* Cure
+* Reverse disease
+* Prevent disease
+* Guarantee results
+* Replace medical care
+* Replace therapy
+* Fix hormones
+* Heal trauma
+* Reverse aging
+* Sell or provide prescription products without legal review
+
+Use safer language:
+
+* Designed to support
+* Helps structure
+* Lifestyle-focused
+* Education-focused
+* Evidence-informed
+* Practitioner-guided, where true
+* May support
+* General wellbeing
+* Consult a qualified professional
+* Requires legal review
+
+High-risk areas needing review:
+
+* Peptides
+* Hormones
+* Prescription medicines
+* Supplements
+* Therapeutic goods
+* Research-use products
+* Practitioner pathways
+* Health claims
+* Before-and-after content
+* Testimonials
+* Paid ads
+* Retreat waivers and safety documents
+
+## 20. Strategic Decision Rules
+
+Use these rules when making decisions:
+
+| Question                                              | Decision Rule                   |
+| ----------------------------------------------------- | ------------------------------- |
+| Does this support the six pillars?                    | If no, cut or revise it         |
+| Does this make the brand more premium?                | If no, improve it               |
+| Does this create compliance risk?                     | If yes, soften or review        |
+| Does this clarify the customer journey?               | If no, simplify                 |
+| Does this help lead capture?                          | If no, check if it is necessary |
+| Does this make the brand look like a supplement shop? | If yes, change direction        |
+| Does this build trust?                                | If no, rethink it               |
+| Does this help launch faster?                         | If no, delay it                 |
+| Does this validate demand?                            | If no, do not overbuild it      |
+| Does this feel like The Sila Code?                    | If no, reject it                |
+
+## 21. What To Build First
+
+Build first:
+
+1. Brand strategy
+2. Website V1
+3. Waitlist
+4. Self-assessment
+5. Journal
+6. Email system
+7. Social content
+8. Foundation Protocol
+9. Retreat interest funnel
+10. Product interest funnel
+
+Do not build first:
+
+* Full ecommerce
+* Complex app
+* Membership platform
+* Regulated products
+* Peptide store
+* Prescription pathway
+* Massive retreat
+* Expensive inventory
+* Overcomplicated dashboard
+
+## 22. Current Best Strategic Direction
+
+The best direction right now is:
+
+1. Launch The Sila Code as a premium self-optimisation brand.
+2. Lead with the Six Pillars and The Sila Code Method.
+3. Build a high-trust, premium website.
+4. Capture emails through waitlist and self-assessment.
+5. Validate demand for Foundation Protocol.
+6. Validate demand for Foundation Reset retreat.
+7. Keep product claims conservative.
+8. Use content to build authority.
+9. Add regulated or practitioner-guided pathways only after legal review.
+10. Scale based on real user demand.
+
+## 23. Master Summary
+
+The Sila Code should become a serious premium lifestyle ecosystem for people who want to upgrade how they look, feel, perform, recover, age, think, and live.
+
+The brand should be method-first, not product-first.
+
+It should sell structure before products.
+
+It should sell trust before claims.
+
+It should build the audience before overbuilding the offer stack.
+
+It should make people feel like they have found a serious system for becoming better.
+
+The operating principle:
+
+**Build the system. Launch the signal. Validate the demand. Scale what proves itself.**
+
+```
+
+**Approve this final master index, G?**
+```

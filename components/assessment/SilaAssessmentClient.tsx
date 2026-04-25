@@ -49,7 +49,10 @@ function getPillarRecommendations(lowestPillar: PillarKey) {
 export function SilaAssessmentClient() {
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [email, setEmail] = useState("");
+  const [marketingConsent, setMarketingConsent] = useState(false);
   const [showResults, setShowResults] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const answeredCount = Object.keys(answers).length;
   const isComplete = answeredCount === ASSESSMENT_QUESTIONS.length;
@@ -109,12 +112,44 @@ export function SilaAssessmentClient() {
   const radarValues = SILA_PILLARS.map((pillar) => scores.scoreByPillar[pillar.key]);
   const radarPoints = toRadarPoints(radarValues, 92, 120);
 
-  const onSubmitEmail = (event: React.FormEvent<HTMLFormElement>) => {
+  const onSubmitEmail = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!isComplete || !email.trim()) {
+    if (!isComplete || !email.trim() || isSubmitting || showResults) {
       return;
     }
-    setShowResults(true);
+
+    setIsSubmitting(true);
+    setSubmitError("");
+
+    try {
+      const response = await fetch("/api/assessment/capture", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email.trim(),
+          answers,
+          scoreByPillar: scores.scoreByPillar,
+          overallScore: scores.overall,
+          lowestPillar: scores.lowest,
+          sourceRoute: "/assessment",
+          marketingConsent,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Assessment capture failed.");
+      }
+
+      setShowResults(true);
+    } catch {
+      setSubmitError(
+        "We could not save your assessment yet. Please check your email and try again.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -149,12 +184,14 @@ export function SilaAssessmentClient() {
                   <button
                     key={option.value}
                     type="button"
-                    onClick={() =>
+                    onClick={() => {
+                      setShowResults(false);
+                      setSubmitError("");
                       setAnswers((previous) => ({
                         ...previous,
                         [question.id]: option.value,
-                      }))
-                    }
+                      }));
+                    }}
                     className={`min-h-11 rounded-xl border px-3 text-xs uppercase tracking-[0.12em] transition ${
                       checked
                         ? "border-sage bg-sage/14 text-obsidian"
@@ -175,26 +212,59 @@ export function SilaAssessmentClient() {
         <h3 className="mt-3 text-2xl text-heading sm:text-3xl">
           Enter your email to unlock your personalised Sila Score and recommendations.
         </h3>
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">
+          Your assessment is an educational self-reflection tool. It is not medical advice,
+          diagnosis, treatment, or a substitute for practitioner guidance.
+        </p>
         <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+          <label htmlFor="assessmentEmail" className="sr-only">
+            Email address
+          </label>
           <input
+            id="assessmentEmail"
             type="email"
             required
             value={email}
-            onChange={(event) => setEmail(event.target.value)}
+            onChange={(event) => {
+              setEmail(event.target.value);
+              setShowResults(false);
+              setSubmitError("");
+            }}
             placeholder="your@email.com"
             className="h-12 flex-1 rounded-full border border-line bg-bone-white px-5 text-sm text-obsidian placeholder:text-muted focus:border-sage focus:outline-none"
           />
           <button
             type="submit"
-            disabled={!isComplete}
+            disabled={!isComplete || isSubmitting || showResults}
             className="h-12 rounded-full bg-obsidian px-6 text-[11px] font-semibold uppercase tracking-[0.14em] text-bone-white transition duration-300 enabled:hover:bg-terracotta disabled:cursor-not-allowed disabled:opacity-50"
           >
-            Reveal my score
+            {isSubmitting ? "Saving..." : showResults ? "Score unlocked" : "Reveal my score"}
           </button>
         </div>
+        <label className="mt-4 flex gap-3 text-sm leading-relaxed text-muted">
+          <input
+            type="checkbox"
+            checked={marketingConsent}
+            onChange={(event) => setMarketingConsent(event.target.checked)}
+            className="mt-1 h-4 w-4 rounded border-line text-obsidian"
+          />
+          <span>
+            I agree to receive educational Sila Code updates. I can unsubscribe at any time.
+          </span>
+        </label>
         {!isComplete ? (
           <p className="mt-3 text-xs text-muted">
             Complete all 15 questions to unlock your full score.
+          </p>
+        ) : null}
+        {submitError ? (
+          <p role="alert" className="mt-3 rounded-xl border border-terracotta/40 bg-terracotta/10 px-4 py-3 text-sm text-heading">
+            {submitError}
+          </p>
+        ) : null}
+        {showResults ? (
+          <p role="status" className="mt-3 rounded-xl border border-sage/40 bg-sage/10 px-4 py-3 text-sm text-heading">
+            Your assessment has been saved. Your results are unlocked below.
           </p>
         ) : null}
       </form>
@@ -288,7 +358,7 @@ export function SilaAssessmentClient() {
               href="/subscribe"
               className="inline-flex min-h-11 items-center rounded-full border border-sage/70 bg-bone-white/75 px-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-obsidian transition duration-300 hover:border-terracotta hover:text-terracotta"
             >
-              Start The Code ($29/mo)
+              View Membership
             </Link>
           </div>
         </section>

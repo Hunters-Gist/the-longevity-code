@@ -20,7 +20,12 @@ export type BlogPost = {
   title: string;
   excerpt: string;
   category: PillarKey;
+  /** Human-readable date shown in the UI. */
   publishedOn: string;
+  /** ISO 8601 date used in structured data and machine-readable metadata. */
+  publishedAt: string;
+  /** ISO 8601 date used for Article schema `dateModified`. */
+  updatedAt: string;
   readTime: string;
   sections: { heading: string; body: string }[];
 };
@@ -63,9 +68,9 @@ export const SILA_PILLARS: Pillar[] = [
   },
   {
     key: "rehab",
-    name: "Rehab",
-    focus: "Mental resilience, rewiring habits",
-    consumerLanguage: "Rewire your path",
+    name: "Recovery",
+    focus: "Mental resilience, habit recalibration",
+    consumerLanguage: "Reset your path",
     accent: "#C27B66",
     href: "/the-code#rehab",
   },
@@ -157,15 +162,17 @@ export const BLOG_POSTS: BlogPost[] = [
       "A practical framework for cognitive wellness that blends behavioural psychology, supplementation, and everyday execution.",
     category: "rehab",
     publishedOn: "April 2026",
+    publishedAt: "2026-04-01",
+    updatedAt: "2026-04-20",
     readTime: "7 min read",
     sections: [
       {
         heading: "Why we built The Sila Code",
-        body: "The Sila Code was designed for people who want structure, not noise. We combine psychology-led behavioural principles with clinically studied ingredients to support consistent progress across five key areas of wellbeing.",
+    body: "The Sila Code was designed for people who want structure, not noise. We combine psychology-led behavioural principles with carefully selected wellness tools to support consistent progress across five key areas of wellbeing.",
       },
       {
         heading: "Why five pillars",
-        body: "Brain, Skin, Body, Longevity, and Rehab reflect how modern wellbeing actually behaves. When one pillar is neglected, performance in the others often drops. The framework helps users identify the first lever to pull, then build momentum from there.",
+        body: "Brain, Skin, Body, Longevity, and Recovery reflect how modern wellbeing actually behaves. When one pillar is neglected, performance in the others often drops. The framework helps users identify the first lever to pull, then build momentum from there.",
       },
     ],
   },
@@ -176,6 +183,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "How one ingredient supports alpha brainwave activity for clearer focus without the overstimulated crash.",
     category: "brain",
     publishedOn: "April 2026",
+    publishedAt: "2026-04-05",
+    updatedAt: "2026-04-20",
     readTime: "6 min read",
     sections: [
       {
@@ -195,6 +204,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "A look at bioavailability, brain support pathways, and why ingredient quality matters more than label hype.",
     category: "brain",
     publishedOn: "April 2026",
+    publishedAt: "2026-04-08",
+    updatedAt: "2026-04-20",
     readTime: "8 min read",
     sections: [
       {
@@ -214,6 +225,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "What your pillar-by-pillar profile means, and how to turn your lowest score into your strongest growth lever.",
     category: "longevity",
     publishedOn: "April 2026",
+    publishedAt: "2026-04-12",
+    updatedAt: "2026-04-20",
     readTime: "5 min read",
     sections: [
       {
@@ -233,6 +246,8 @@ export const BLOG_POSTS: BlogPost[] = [
       "Small, repeatable actions that improve consistency, reduce decision fatigue, and support long-term cognitive performance.",
     category: "rehab",
     publishedOn: "April 2026",
+    publishedAt: "2026-04-15",
+    updatedAt: "2026-04-20",
     readTime: "6 min read",
     sections: [
       {
@@ -254,5 +269,5 @@ export const PILLAR_INSIGHTS: Record<PillarKey, string> = {
   longevity:
     "Your Longevity score suggests stronger long-term prevention habits could improve your baseline.",
   rehab:
-    "Your Rehab score suggests resilience rituals and stress recovery systems may need reinforcement.",
+    "Your Recovery score suggests resilience rituals and stress recovery systems may need reinforcement.",
 };

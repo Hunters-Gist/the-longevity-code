@@ -7,8 +7,8 @@ const heroStats = [
   { label: "Pillars", value: "5", extraClassName: "" },
   { label: "Questions", value: "15", extraClassName: "" },
   {
-    label: "Core Tiers",
-    value: "3",
+    label: "Minutes",
+    value: "5",
     extraClassName: "col-span-2 min-[430px]:col-span-1",
   },
 ] as const;
@@ -17,7 +17,7 @@ export function HeroSection() {
   return (
     <section className="relative pt-2 sm:pt-4 md:pt-5">
       <div className="section-wrap">
-        <div className="luxury-panel grain-overlay relative overflow-hidden rounded-[24px] p-4 sm:rounded-[30px] sm:p-6 md:rounded-[34px] md:p-7 lg:p-10 xl:p-12">
+        <div className="hero-container luxury-panel grain-overlay relative overflow-hidden rounded-[24px] p-4 sm:rounded-[30px] sm:p-6 md:rounded-[34px] md:p-7 lg:p-10 xl:p-12">
           <div className="ambient-orb pointer-events-none absolute -left-16 top-14 h-48 w-48 rounded-full bg-sage/30 sm:top-18 sm:h-56 sm:w-56" />
           <div className="ambient-orb pointer-events-none absolute -right-18 top-10 h-56 w-56 rounded-full bg-terracotta/20 [animation-delay:1.8s] sm:-right-20 sm:top-12 sm:h-64 sm:w-64" />
           <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(45,58,49,0.05),transparent_24%,transparent_72%,rgba(194,123,102,0.06))]" />
@@ -29,8 +29,8 @@ export function HeroSection() {
             </p>
           </div>
 
-          <div className="relative mt-6 grid items-end gap-6 sm:mt-8 sm:gap-8 md:mt-9 md:grid-cols-[1fr_1fr] md:items-start md:gap-7 lg:gap-9 xl:grid-cols-[1.03fr_0.97fr] xl:gap-11">
-            <div className="pb-1">
+          <div className="relative mt-6 grid min-w-0 items-end gap-6 sm:mt-8 sm:gap-8 md:mt-9 lg:gap-9 xl:gap-11">
+            <div className="min-w-0 pb-1">
               <h1 className="display-title relative z-10 max-w-[10.5ch] text-[1.88rem] font-semibold leading-[1.03] text-heading min-[430px]:text-[2.06rem] sm:max-w-[12ch] sm:text-[2.56rem] md:max-w-none md:text-[3.05rem] lg:text-[3.35rem] xl:-mr-8 xl:text-[4.35rem]">
                 {homeContent.hero.heading}
               </h1>
@@ -42,12 +42,15 @@ export function HeroSection() {
                 {homeContent.hero.supporting}
               </p>
               <div className="mt-6 grid gap-2.5 sm:mt-7 sm:flex sm:flex-wrap sm:gap-3">
-                <ActionButton href="/assessment">
-                  {homeContent.hero.ctas[0].label}
-                </ActionButton>
-                <ActionButton href="/protocols" variant="secondary">
-                  {homeContent.hero.ctas[1].label}
-                </ActionButton>
+                {homeContent.hero.ctas.map((cta, index) => (
+                  <ActionButton
+                    key={cta.href}
+                    href={cta.href}
+                    variant={index === 0 ? "primary" : "secondary"}
+                  >
+                    {cta.label}
+                  </ActionButton>
+                ))}
               </div>
 
               <ul className="mt-6 grid max-w-xl grid-cols-2 gap-2.5 min-[430px]:grid-cols-3 sm:mt-7 sm:gap-3">
@@ -67,12 +70,13 @@ export function HeroSection() {
               </ul>
             </div>
 
-            <div className="relative min-h-80 overflow-hidden rounded-[22px] border border-line-strong bg-bone-white/82 sm:min-h-96 sm:rounded-[30px] md:min-h-92 lg:min-h-124 lg:rounded-[32px] xl:-ml-2 xl:rounded-t-[120px] xl:rounded-b-[34px]">
+            <div className="relative min-h-80 min-w-0 max-w-full overflow-hidden rounded-[22px] border border-line-strong bg-bone-white/82 sm:min-h-96 sm:rounded-[30px] md:min-h-92 lg:min-h-124 lg:rounded-[32px] xl:-ml-2 xl:rounded-t-[120px] xl:rounded-b-[34px]">
               <Image
-                src="/images/hero/SILA%20HERO.png"
-                alt="The Sila Code product hero bottle"
+                src="/images/hero/image.jpg"
+                alt="The Sila Code neural identity visual"
                 fill
-                preload
+                priority
+                fetchPriority="high"
                 sizes="(max-width: 767px) 100vw, (max-width: 1199px) 52vw, 48vw"
                 className="object-cover object-[center_40%] transition duration-700 ease-out md:hover:scale-105"
               />
@@ -95,15 +99,15 @@ export function HeroSection() {
               <div className="absolute bottom-3 right-3 hidden w-32 rounded-2xl border border-line bg-bone-white/90 p-1.5 shadow-[0_18px_34px_-24px_rgba(10,18,15,0.45)] backdrop-blur-sm sm:block md:w-36 md:rounded-3xl md:p-2">
                 <div className="relative h-24 overflow-hidden rounded-xl border border-line/70 md:h-28 md:rounded-2xl">
                   <Image
-                    src="/images/hero/unsplash-image-98Elr-LIvD8.webp"
-                    alt="Editorial wellness image"
+                    src="/images/hero/Hero image.png"
+                    alt="The Sila Code product hero bottle"
                     fill
                     sizes="160px"
                     className="object-cover object-[center_34%]"
                   />
                 </div>
                 <p className="mt-2 text-[8px] uppercase tracking-[0.2em] text-muted md:text-[9px] md:tracking-[0.22em]">
-                  Brand emblem
+                  The five pillars of Sila
                 </p>
               </div>
             </div>

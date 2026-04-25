@@ -36,12 +36,13 @@ export const homeContent = {
     eyebrow: BRAND_NAME,
     heading: "Where discipline becomes identity.",
     subheading:
-      "Beyond insight, The Sila Code is built for execution through structure, consistency, and environment design.",
+      "A high-performance health, behaviour, and longevity system for ambitious men and women who want better energy, discipline, recovery, appearance, and long-term performance.",
     supporting:
-      "Start with the 15-question Sila Assessment, receive your Sila Score, and follow a practical pathway that compounds behavioural strength over time.",
+      "Start with the 15-question Sila Assessment, then choose the education, membership, and product pathway that fits your current performance goals.",
     ctas: [
       { label: "Take the Sila Assessment", href: "/assessment" },
-      { label: "Explore Programs", href: "/protocols" },
+      { label: "Join Membership", href: "/subscribe" },
+      { label: "Shop Products", href: "/shop" },
     ],
   },
   pillars: [
@@ -66,43 +67,43 @@ export const homeContent = {
       icon: "shield",
     },
     {
-      title: "Rehab",
-      copy: "Rewire your path with practical mental resilience education and a recovery-conscious support ecosystem.",
+      title: "Recovery",
+      copy: "Reset your path with practical mental resilience education and a recovery-conscious support ecosystem.",
       icon: "rehab",
     },
   ] as Pillar[],
   protocols: [
     {
       name: "Community",
-      summary: "Free access to weekly education, pillar-based guidance, and the Sila Assessment.",
+      summary: "Free access to the Sila Community on Skool, weekly education, and the Sila Assessment.",
       cta: "Join Free",
     },
     {
-      name: "The Code Digital",
-      summary: "Full digital course library, monthly masterclasses, and practical implementation tools.",
+      name: "The Code",
+      summary: "A$149/month for the full course library, monthly masterclasses, and member-only practice tools.",
       cta: "View Tier",
     },
     {
-      name: "Code + Capsule",
-      summary: "Digital access plus monthly delivery of The Sila Code nootropic capsule stack.",
+      name: "The Code + Capsule",
+      summary: "A$349/month for digital access, monthly Sila Focus delivery, and quarterly 1:1 concierge support.",
       cta: "View Tier",
     },
     {
-      name: "Founding Member",
-      summary: "Launch-only locked pricing, early product access, and long-term loyalty advantages.",
-      cta: "View Tier",
+      name: "Founding 100",
+      summary: "A capped lifetime seat for future-ready members. Currently waitlist-only unless the Founding 100 release flag is enabled.",
+      cta: "Join Waitlist",
     },
     {
-      name: "Executive Track",
-      summary: "A high-touch pathway for performance leaders requiring deeper strategy and oversight.",
-      cta: "Apply",
+      name: "Inner Circle",
+      summary: "A$25,000/year. 12-month private advisory and two retreats. By invitation only.",
+      cta: "Request Invite",
     },
   ] as Protocol[],
   process: [
     {
       title: "Take the Sila Assessment",
       description:
-        "Complete a 15-question onboarding flow based on validated stress and wellness frameworks.",
+        "Complete a 15-question educational self-reflection flow across the five Sila pillars.",
     },
     {
       title: "Receive Your Sila Score",
@@ -112,7 +113,7 @@ export const homeContent = {
     {
       title: "Choose Your Pathway",
       description:
-        "Enter Community, The Code Digital, Code + Capsule, or Founding Member based on your needs.",
+        "Prioritise the assessment first, then choose membership education or products based on your goals.",
     },
     {
       title: "Track and Compound",
@@ -125,27 +126,7 @@ export const homeContent = {
     body: `${BRAND_NAME} translates psychological principles into refined, repeatable systems designed for real-world application. ${BRAND_MEANING} This is where insight becomes disciplined practice and behaviour becomes sustainable over time.`,
     callout: "This is not motivation. It is structure. It is practice. It is The Sila Code.",
   },
-  journal: [
-    {
-      category: "Longevity Strategy",
-      title: "How Thoughtful Adults Can Think About Longevity",
-      excerpt: "Why prevention beats correction and how to build a realistic long-term framework.",
-      image: "/images/hero/a-person-walking-down-a-path-in-the-woods.jpg",
-    },
-    {
-      category: "Recovery Science",
-      title: "Recovery Debt, Burnout, and the Cost of Chronic Output",
-      excerpt: "Recognize hidden fatigue markers and close the recovery gap before it compounds.",
-      image: "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
-    },
-    {
-      category: "Skin + Longevity",
-      title: "Skin Aging Beyond Surface-Level Fixes",
-      excerpt: "A systems view of skin health, stress, inflammation, and repair capacity.",
-      image:
-        "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
-    },
-  ] as JournalItem[],
+  journal: [] as JournalItem[],
   finalCta: {
     heading: "Start your Sila journey.",
     subheading:

@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "What is the Sila Assessment?",
     answer:
-      "It is a free 15-question onboarding flow that scores you across Brain, Skin, Body, Longevity, and Rehab to guide your best-fit pathway.",
+      "It is a free 15-question educational self-reflection flow that scores you across Brain, Skin, Body, Longevity, and Recovery to guide your best-fit pathway.",
   },
   {
     question: "What does 'Sila' mean?",
@@ -30,12 +30,17 @@ const faqs = [
   {
     question: "What are the membership tiers?",
     answer:
-      "Community is free, The Code Digital is $29/month, Code + Capsule is $69/month, and Founding Member is a launch-only $49/month locked offer.",
+      "Community is free. The Code (Digital) is A$149/month or A$1,490/year. The Code + Capsule is A$349/month or A$3,490/year and includes monthly Sila Focus delivery. Founding 100 is release-gated until fulfilment and operating terms are finalised. Inner Circle is an invitation-only annual advisory.",
   },
   {
-    question: "How is compliance handled for product claims?",
+    question: "Do you ship internationally?",
     answer:
-      "We use compliant Australian wellness language such as supports cognitive function, helps maintain mental clarity, and supports general wellbeing.",
+      "Yes. Sila Focus ships Australia-wide and internationally. Checkout displays shipping costs and any applicable taxes before payment.",
+  },
+  {
+    question: "How is compliance handled for product language?",
+    answer:
+      "We use conservative Australian wellness language — supports focus, helps maintain general wellbeing, supports mental clarity — and avoid therapeutic claims. Sila Focus is a wellness supplement, not a medicine.",
   },
 ];
 
@@ -71,7 +76,7 @@ export default function FaqPage() {
         <div className="section-wrap grid gap-3 sm:gap-4">
           <article className="glass-card overflow-hidden rounded-[22px] border border-line sm:rounded-[24px]">
             <Image
-              src="/images/hero/photo-1559757148-5c350d0d3c56.jpeg"
+              src="/images/hero/Gemini_Generated_Image_e7iko4e7iko4e7ik.png"
               alt="FAQ knowledge banner"
               width={1600}
               height={1100}
@@ -90,11 +95,11 @@ export default function FaqPage() {
             <p className="eyebrow">Knowledge asset rail</p>
             <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
               {[
-                "/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp",
-                "/images/hero/gorgeous-face-stock-photo-royalty-free-image-1724235229.avif",
-                "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
-                "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
-                "/images/hero/windows-241bwQl2uWE-unsplash-scaled.webp",
+                "/images/hero/image.jpg",
+                "/images/journal/skin-aging.svg",
+                "/images/journal/recovery-debt.svg",
+                "/images/journal/longevity-strategy.svg",
+                "/images/hero/image.jpg",
               ].map((imagePath, index) => (
                   <div
                     key={imagePath}

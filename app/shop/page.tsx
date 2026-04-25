@@ -51,7 +51,7 @@ export default function ShopPage() {
               </div>
               <div className="overflow-hidden rounded-[28px] border border-line lg:rounded-t-[180px] lg:rounded-b-[34px]">
                 <Image
-                  src="/images/hero/premium_photo-1679938885972-180ed418f466.avif"
+                  src="/images/hero/Hero image.png"
                   alt="Sila Focus product lifestyle visual"
                   width={1600}
                   height={1100}
