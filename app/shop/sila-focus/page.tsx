@@ -117,9 +117,9 @@ export default function SilaFocusPage() {
             <p className="eyebrow">Product gallery</p>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
               {[
+                "/images/hero/SILA HERO.png",
                 "/images/hero/Hero image.png",
-                "/images/hero/Gemini_Generated_Image_e7iko4e7iko4e7ik.png",
-                "/images/hero/image.jpg",
+                "/images/hero/photo-1559757148-5c350d0d3c56.jpeg",
               ].map((src, index) => (
                 <div
                   key={src}

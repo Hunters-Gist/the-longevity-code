@@ -62,7 +62,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "product-stack",
     readTime: "7 min read",
     publishedOn: "April 2026",
-    image: "/images/hero/image.jpg",
+    image: "/images/hero/SILA HERO.png",
     sections: [
       {
         heading: "Ingredient Logic",

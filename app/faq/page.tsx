@@ -1,6 +1,5 @@
 import { PageHero } from "@/components/ui/PageHero";
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "FAQ",
@@ -74,15 +73,6 @@ export default function FaqPage() {
 
       <section className="py-12 sm:py-16">
         <div className="section-wrap grid gap-3 sm:gap-4">
-          <article className="glass-card overflow-hidden rounded-[22px] border border-line sm:rounded-[24px]">
-            <Image
-              src="/images/hero/Gemini_Generated_Image_e7iko4e7iko4e7ik.png"
-              alt="FAQ knowledge banner"
-              width={1600}
-              height={1100}
-              className="h-44 w-full object-cover object-[center_38%] transition duration-700 ease-out hover:scale-105 sm:h-56"
-            />
-          </article>
           {faqs.map((faq) => (
             <article key={faq.question} className="glass-card rounded-[22px] p-5 sm:rounded-[24px] sm:p-7">
               <h2 className="display-title text-[1.8rem] font-medium sm:text-3xl">{faq.question}</h2>
@@ -91,31 +81,6 @@ export default function FaqPage() {
               </p>
             </article>
           ))}
-          <article className="luxury-card rounded-[22px] p-5 sm:rounded-[24px] sm:p-7">
-            <p className="eyebrow">Knowledge asset rail</p>
-            <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
-              {[
-                "/images/hero/image.jpg",
-                "/images/journal/skin-aging.svg",
-                "/images/journal/recovery-debt.svg",
-                "/images/journal/longevity-strategy.svg",
-                "/images/hero/image.jpg",
-              ].map((imagePath, index) => (
-                  <div
-                    key={imagePath}
-                    className="flex h-20 items-center justify-center rounded-2xl border border-line bg-bone-white/80"
-                  >
-                    <Image
-                      src={imagePath}
-                      alt={`FAQ topic visual ${index + 1}`}
-                      width={180}
-                      height={120}
-                      className="h-full w-full object-cover object-center opacity-80"
-                    />
-                  </div>
-                ))}
-            </div>
-          </article>
         </div>
       </section>
     </>

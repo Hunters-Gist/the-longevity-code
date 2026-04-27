@@ -72,8 +72,8 @@ export function HeroSection() {
 
             <div className="relative min-h-80 min-w-0 max-w-full overflow-hidden rounded-[22px] border border-line-strong bg-bone-white/82 sm:min-h-96 sm:rounded-[30px] md:min-h-92 lg:min-h-124 lg:rounded-[32px] xl:-ml-2 xl:rounded-t-[120px] xl:rounded-b-[34px]">
               <Image
-                src="/images/hero/image.jpg"
-                alt="The Sila Code neural identity visual"
+                src="/images/hero/SILA HERO.png"
+                alt="Sila Focus product bottle in a premium clinical setting"
                 fill
                 priority
                 fetchPriority="high"
@@ -99,15 +99,15 @@ export function HeroSection() {
               <div className="absolute bottom-3 right-3 hidden w-32 rounded-2xl border border-line bg-bone-white/90 p-1.5 shadow-[0_18px_34px_-24px_rgba(10,18,15,0.45)] backdrop-blur-sm sm:block md:w-36 md:rounded-3xl md:p-2">
                 <div className="relative h-24 overflow-hidden rounded-xl border border-line/70 md:h-28 md:rounded-2xl">
                   <Image
-                    src="/images/hero/Hero image.png"
-                    alt="The Sila Code product hero bottle"
+                    src="/images/hero/unsplash-image-98Elr-LIvD8.webp"
+                    alt="Editorial wellness detail"
                     fill
                     sizes="160px"
                     className="object-cover object-[center_34%]"
                   />
                 </div>
                 <p className="mt-2 text-[8px] uppercase tracking-[0.2em] text-muted md:text-[9px] md:tracking-[0.22em]">
-                  The five pillars of Sila
+                  Brand emblem
                 </p>
               </div>
             </div>

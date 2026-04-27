@@ -44,11 +44,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   const imageByCategory = {
-    brain: "/images/hero/image.jpg",
-    skin: "/images/journal/skin-aging.svg",
-    body: "/images/journal/recovery-debt.svg",
-    longevity: "/images/journal/longevity-strategy.svg",
-    rehab: "/images/journal/recovery-debt.svg",
+    brain:
+      "/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp",
+    skin:
+      "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
+    body: "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
+    longevity: "/images/hero/a-person-walking-down-a-path-in-the-woods.jpg",
+    rehab: "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
   } as const;
 
   const articleSchema = {
