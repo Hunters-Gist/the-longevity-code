@@ -23,14 +23,14 @@ export function SiteHeader() {
   }, [menuOpen]);
 
   return (
-    <header className="sticky top-0 z-30 border-b border-line/90 bg-background/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-30 border-b border-line/70 bg-background/82 backdrop-blur-xl">
       <div className="section-wrap flex min-h-16 items-center justify-between py-2.5 sm:min-h-[4.35rem] sm:py-3">
         <Link href="/" className="flex min-h-11 min-w-0 max-w-[54vw] items-center pr-2 sm:max-w-none">
           <BrandMark />
         </Link>
 
         <nav
-          className="hidden items-center gap-6 2xl:flex"
+          className="hidden items-center gap-5 xl:flex 2xl:gap-6"
           aria-label="Primary navigation"
         >
           {siteContent.nav.map((item) => (
@@ -70,7 +70,7 @@ export function SiteHeader() {
           </Show>
           <Link
             href={siteContent.ctas.primary.href}
-            className="ui-caps hidden min-h-11 items-center justify-center rounded-full bg-obsidian px-4 py-2 text-bone-white transition hover:bg-terracotta sm:inline-flex 2xl:hidden"
+            className="ui-caps hidden min-h-11 items-center justify-center rounded-full bg-obsidian px-4 py-2 text-bone-white transition hover:bg-terracotta sm:inline-flex xl:hidden"
           >
             {siteContent.ctas.primary.label}
           </Link>
@@ -79,7 +79,7 @@ export function SiteHeader() {
             aria-controls="mobile-site-menu"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             onClick={() => setMenuOpen((open) => !open)}
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-bone-white/85 text-obsidian transition hover:border-terracotta hover:text-terracotta 2xl:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-bone-white/85 text-obsidian transition hover:border-terracotta hover:text-terracotta xl:hidden"
           >
             <span className="sr-only">{menuOpen ? "Close menu" : "Open menu"}</span>
             <span
@@ -105,7 +105,7 @@ export function SiteHeader() {
           </button>
           <Link
             href={siteContent.ctas.primary.href}
-            className="ui-caps hidden min-h-11 items-center justify-center rounded-full bg-obsidian px-4 py-2 text-bone-white transition hover:bg-terracotta 2xl:inline-flex"
+            className="ui-caps hidden min-h-11 items-center justify-center rounded-sm border border-terracotta/60 bg-obsidian px-4 py-2 text-bone-white transition hover:bg-terracotta xl:inline-flex"
           >
             {siteContent.ctas.primary.label}
           </Link>
@@ -115,7 +115,7 @@ export function SiteHeader() {
       {menuOpen ? (
         <div
           id="mobile-site-menu"
-          className="2xl:hidden"
+          className="xl:hidden"
           aria-label="Mobile navigation menu"
         >
           <button

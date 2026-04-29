@@ -4,7 +4,7 @@ import { captureFinalCtaEmail } from "@/app/actions/leads";
 
 export function FinalCtaSection() {
   return (
-    <section className="pb-16 pt-12 sm:pb-20 sm:pt-14 md:pb-24 lg:pb-26 lg:pt-16">
+    <section id="waitlist" className="pb-16 pt-12 sm:pb-20 sm:pt-14 md:pb-24 lg:pb-26 lg:pt-16">
       <div className="section-wrap">
         <div className="grain-overlay relative overflow-hidden rounded-[24px] border border-line-strong bg-obsidian px-4 py-5 text-bone-white shadow-[0_28px_55px_-28px_rgba(10,18,15,0.7)] sm:rounded-[30px] sm:px-7 sm:py-8 md:px-8 md:py-9 lg:rounded-[34px] lg:px-10 lg:py-10">
           <div className="ambient-orb pointer-events-none absolute -left-18 top-0 h-56 w-56 rounded-full bg-terracotta/28" />

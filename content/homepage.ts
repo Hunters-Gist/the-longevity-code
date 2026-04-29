@@ -34,15 +34,14 @@ export const homeContent = {
   ],
   hero: {
     eyebrow: BRAND_NAME,
-    heading: "Where discipline becomes identity.",
+    heading: "The modern code for upgrading yourself.",
     subheading:
-      "A high-performance health, behaviour, and longevity system for ambitious men and women who want better energy, discipline, recovery, appearance, and long-term performance.",
+      "A premium self-optimisation system built around longevity, recovery, performance, aesthetics, mind, and lifestyle.",
     supporting:
-      "Start with the 15-question Sila Assessment, then choose the education, membership, and product pathway that fits your current performance goals.",
+      "Upgrade how you recover, think, look, perform, and live through structured education, products, community, and future retreat experiences.",
     ctas: [
-      { label: "Take the Sila Assessment", href: "/assessment" },
-      { label: "Join Membership", href: "/subscribe" },
-      { label: "Shop Products", href: "/shop" },
+      { label: "Join the Waitlist", href: "/#waitlist" },
+      { label: "Explore The Code", href: "/the-code" },
     ],
   },
   pillars: [
@@ -128,11 +127,11 @@ export const homeContent = {
   },
   journal: [] as JournalItem[],
   finalCta: {
-    heading: "Start your Sila journey.",
+    heading: "Join the Sila waitlist.",
     subheading:
-      "Get your Sila Score, unlock the right tier, and build measurable momentum in brain, body, and longevity.",
+      "Get early access to product releases, courses, retreat updates, and the next evolution of The Sila Code.",
     emailPlaceholder: "Enter your email",
-    primary: "Join the Community",
+    primary: "Join the Waitlist",
     secondary: "Take the Assessment",
   },
   footer: {

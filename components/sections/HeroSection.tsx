@@ -1,116 +1,77 @@
-import Image from "next/image";
+import Link from "next/link";
 import { homeContent } from "@/content/homepage";
-import { ActionButton } from "@/components/ui/ActionButton";
 import { BRAND_STRAP } from "@/content/brand";
-
-const heroStats = [
-  { label: "Pillars", value: "5", extraClassName: "" },
-  { label: "Questions", value: "15", extraClassName: "" },
-  {
-    label: "Minutes",
-    value: "5",
-    extraClassName: "col-span-2 min-[430px]:col-span-1",
-  },
-] as const;
 
 export function HeroSection() {
   return (
-    <section className="relative pt-2 sm:pt-4 md:pt-5">
-      <div className="section-wrap">
-        <div className="hero-container luxury-panel grain-overlay relative overflow-hidden rounded-[24px] p-4 sm:rounded-[30px] sm:p-6 md:rounded-[34px] md:p-7 lg:p-10 xl:p-12">
-          <div className="ambient-orb pointer-events-none absolute -left-16 top-14 h-48 w-48 rounded-full bg-sage/30 sm:top-18 sm:h-56 sm:w-56" />
-          <div className="ambient-orb pointer-events-none absolute -right-18 top-10 h-56 w-56 rounded-full bg-terracotta/20 [animation-delay:1.8s] sm:-right-20 sm:top-12 sm:h-64 sm:w-64" />
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(120deg,rgba(45,58,49,0.05),transparent_24%,transparent_72%,rgba(194,123,102,0.06))]" />
+    <section className="relative px-3 pt-3 sm:px-4 sm:pt-4">
+      <div className="relative mx-auto min-h-[calc(100svh-5rem)] max-w-[1500px] overflow-hidden rounded-[28px] border border-bone-white/12 bg-obsidian text-bone-white shadow-[0_34px_70px_-34px_rgba(10,18,15,0.72)] sm:rounded-[36px] lg:min-h-[760px]">
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/hero/SILA HERO.png"
+          aria-hidden="true"
+        >
+          <source src="/videos/sila-hero-mountain-sunrise.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,18,15,0.88)_0%,rgba(10,18,15,0.64)_42%,rgba(10,18,15,0.24)_100%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(194,123,102,0.24),transparent_34%),radial-gradient(circle_at_72%_0%,rgba(220,207,194,0.2),transparent_38%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-44 bg-linear-to-t from-obsidian via-obsidian/64 to-transparent" />
 
-          <div className="relative border-b border-line pb-3.5 sm:pb-5">
-            <p className="eyebrow">{homeContent.hero.eyebrow}</p>
-            <p className="mt-2 text-[10px] uppercase tracking-[0.2em] text-muted/90 sm:text-xs sm:tracking-[0.22em]">
+        <div className="relative flex min-h-[calc(100svh-5rem)] flex-col justify-between p-5 sm:p-8 lg:min-h-[760px] lg:p-10 xl:p-12">
+          <div className="max-w-5xl pt-10 sm:pt-16 lg:pt-24">
+            <p className="text-[0.68rem] uppercase tracking-[0.32em] text-sage sm:text-xs">
+              {homeContent.hero.eyebrow}
+            </p>
+            <p className="mt-3 text-[0.66rem] uppercase tracking-[0.28em] text-bone-white/62 sm:text-xs">
               {BRAND_STRAP}
             </p>
+            <h1 className="display-title mt-8 max-w-[12ch] text-[3rem] font-semibold uppercase leading-[0.98] tracking-[0.08em] text-bone-white min-[430px]:text-[3.6rem] sm:text-[5rem] md:text-[6rem] lg:text-[6.8rem] xl:text-[7.4rem]">
+              {homeContent.hero.heading}
+            </h1>
+            <p className="mt-6 max-w-xl text-[1rem] leading-relaxed text-bone-white/78 sm:text-lg">
+              {homeContent.hero.subheading}
+            </p>
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-bone-white/62 sm:text-base">
+              {homeContent.hero.supporting}
+            </p>
+            <div className="mt-8 grid gap-3 sm:flex sm:flex-wrap">
+              {homeContent.hero.ctas.map((cta, index) => (
+                <Link
+                  key={cta.href}
+                  href={cta.href}
+                  className={`ui-caps inline-flex min-h-12 items-center justify-center rounded-sm border px-6 transition duration-300 ${
+                    index === 0
+                      ? "border-terracotta bg-terracotta text-bone-white hover:bg-bone-white hover:text-obsidian"
+                      : "border-bone-white/32 bg-obsidian/20 text-bone-white hover:border-terracotta hover:text-terracotta"
+                  }`}
+                >
+                  {cta.label}
+                </Link>
+              ))}
+            </div>
           </div>
 
-          <div className="relative mt-6 grid min-w-0 items-end gap-6 sm:mt-8 sm:gap-8 md:mt-9 lg:gap-9 xl:gap-11">
-            <div className="min-w-0 pb-1">
-              <h1 className="display-title relative z-10 max-w-[10.5ch] text-[1.88rem] font-semibold leading-[1.03] text-heading min-[430px]:text-[2.06rem] sm:max-w-[12ch] sm:text-[2.56rem] md:max-w-none md:text-[3.05rem] lg:text-[3.35rem] xl:-mr-8 xl:text-[4.35rem]">
-                {homeContent.hero.heading}
-              </h1>
-              <div className="vine-line mt-4 sm:mt-5" aria-hidden="true" />
-              <p className="mt-4 max-w-[35ch] text-[0.98rem] leading-relaxed text-foreground sm:mt-5 sm:max-w-xl sm:text-[1.04rem] md:text-[1.1rem]">
-                {homeContent.hero.subheading}
-              </p>
-              <p className="mt-3.5 max-w-[40ch] text-[0.92rem] leading-relaxed text-muted sm:mt-4 sm:max-w-xl sm:text-[0.96rem]">
-                {homeContent.hero.supporting}
-              </p>
-              <div className="mt-6 grid gap-2.5 sm:mt-7 sm:flex sm:flex-wrap sm:gap-3">
-                {homeContent.hero.ctas.map((cta, index) => (
-                  <ActionButton
-                    key={cta.href}
-                    href={cta.href}
-                    variant={index === 0 ? "primary" : "secondary"}
-                  >
-                    {cta.label}
-                  </ActionButton>
-                ))}
-              </div>
-
-              <ul className="mt-6 grid max-w-xl grid-cols-2 gap-2.5 min-[430px]:grid-cols-3 sm:mt-7 sm:gap-3">
-                {heroStats.map((stat) => (
-                  <li
-                    key={stat.label}
-                    className={`rounded-2xl border border-line/80 bg-bone-white/78 px-4 py-3 sm:px-3.5 sm:py-3 ${stat.extraClassName}`}
-                  >
-                    <p className="text-[10px] uppercase tracking-[0.2em] text-muted sm:tracking-[0.22em]">
-                      {stat.label}
-                    </p>
-                    <p className="mt-1 text-lg font-medium text-obsidian sm:text-xl">
-                      {stat.value}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="relative min-h-80 min-w-0 max-w-full overflow-hidden rounded-[22px] border border-line-strong bg-bone-white/82 sm:min-h-96 sm:rounded-[30px] md:min-h-92 lg:min-h-124 lg:rounded-[32px] xl:-ml-2 xl:rounded-t-[120px] xl:rounded-b-[34px]">
-              <Image
-                src="/images/hero/SILA HERO.png"
-                alt="Sila Focus product bottle in a premium clinical setting"
-                fill
-                priority
-                fetchPriority="high"
-                sizes="(max-width: 767px) 100vw, (max-width: 1199px) 52vw, 48vw"
-                className="object-cover object-[center_40%] transition duration-700 ease-out md:hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-linear-to-t from-bone-white/88 via-bone-white/26 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-3 sm:p-4 md:p-5">
-                <div className="rounded-2xl border border-line bg-bone-white/86 p-3.5 backdrop-blur-sm sm:p-4 md:p-5">
-                  <p className="text-[10px] uppercase tracking-[0.2em] text-sage/95 sm:tracking-[0.24em]">
-                    Psychology-backed nootropic platform
+          <div className="mt-12 border-t border-bone-white/18 pt-4">
+            <ul className="grid gap-px overflow-hidden rounded-2xl border border-bone-white/12 bg-bone-white/10 md:grid-cols-5">
+              {homeContent.pillars.map((pillar) => (
+                <li key={pillar.title} className="bg-obsidian/54 p-4 backdrop-blur-sm">
+                  <p className="text-[0.65rem] uppercase tracking-[0.22em] text-terracotta">
+                    {pillar.title}
                   </p>
-                  <p className="mt-2 max-w-sm text-[13px] leading-relaxed text-foreground/86 sm:text-sm">
-                    Focus, mood stability, and cognitive resilience in one cohesive system.
+                  <p className="mt-2 text-sm leading-relaxed text-bone-white/68">
+                    {pillar.copy}
                   </p>
-                </div>
-              </div>
-
-              <div className="absolute right-3 top-3 rounded-full border border-line bg-bone-white/84 px-3 py-1.5 text-[9px] uppercase tracking-[0.18em] text-muted/90 backdrop-blur-sm sm:right-4 sm:top-4 sm:px-3.5 sm:py-1.5 sm:text-[10px] sm:tracking-[0.22em]">
-                Sila means strength
-              </div>
-
-              <div className="absolute bottom-3 right-3 hidden w-32 rounded-2xl border border-line bg-bone-white/90 p-1.5 shadow-[0_18px_34px_-24px_rgba(10,18,15,0.45)] backdrop-blur-sm sm:block md:w-36 md:rounded-3xl md:p-2">
-                <div className="relative h-24 overflow-hidden rounded-xl border border-line/70 md:h-28 md:rounded-2xl">
-                  <Image
-                    src="/images/hero/unsplash-image-98Elr-LIvD8.webp"
-                    alt="Editorial wellness detail"
-                    fill
-                    sizes="160px"
-                    className="object-cover object-[center_34%]"
-                  />
-                </div>
-                <p className="mt-2 text-[8px] uppercase tracking-[0.2em] text-muted md:text-[9px] md:tracking-[0.22em]">
-                  Brand emblem
-                </p>
-              </div>
-            </div>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-4 text-[0.62rem] uppercase tracking-[0.28em] text-bone-white/48">
+              Evidence-informed wellness / structured self-optimisation / future retreats
+            </p>
           </div>
         </div>
       </div>

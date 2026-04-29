@@ -9,12 +9,13 @@ import { MembershipSection } from "@/components/sections/MembershipSection";
 import { PhilosophySection } from "@/components/sections/PhilosophySection";
 import { PillarsSection } from "@/components/sections/PillarsSection";
 import { ProtocolsSection } from "@/components/sections/ProtocolsSection";
+import { RetreatsSection } from "@/components/sections/RetreatsSection";
 import { absoluteUrl, siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Unlock Your Code",
+  title: "The Modern Code for Upgrading Yourself",
   description:
-    "Where discipline becomes identity. A psychology-informed system for structured, consistent behavioural strength.",
+    "The Sila Code is a premium self-optimisation system built around longevity, recovery, performance, aesthetics, mind, and lifestyle.",
   alternates: {
     canonical: "/",
   },
@@ -72,6 +73,7 @@ export default async function Home({ searchParams }: HomeProps) {
       ) : null}
       <HeroSection />
       <PhilosophySection />
+      <RetreatsSection />
       <div className="border-y border-line/70 bg-bone-white/45">
         <PillarsSection />
         <HowItWorksSection />
