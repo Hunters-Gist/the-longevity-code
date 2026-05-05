@@ -30,7 +30,7 @@ export function ProtocolsSection() {
                   index === 2 ? "bg-terracotta/28 group-hover:bg-terracotta/38" : "bg-teal/18 group-hover:bg-teal/28"
                 }`}
               />
-              <p className={`eyebrow relative ${index === 2 ? "text-sage/85" : "text-sage/90"}`}>
+              <p className="eyebrow relative">
                 {index === 2 ? "Featured pathway" : "Pathway"}
               </p>
               <h3

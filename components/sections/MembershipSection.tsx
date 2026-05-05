@@ -24,7 +24,7 @@ export function MembershipSection() {
             <p className="ui-caps mt-4 text-muted/85">Digital practice</p>
           </article>
           <article className={`border border-line-strong bg-obsidian text-bone-white shadow-[0_24px_50px_-28px_rgba(10,18,15,0.75)] ${sectionPatterns.cardFrame}`}>
-            <p className="eyebrow text-sage/90">The concierge tier</p>
+            <p className="eyebrow">The concierge tier</p>
             <h3 className="display-title mt-2.5 text-[1.52rem] font-medium leading-[1.07] text-bone-white sm:text-[1.75rem]">
               The Code + Capsule
             </h3>
