@@ -75,12 +75,12 @@ export default async function Home({ searchParams }: HomeProps) {
       <HeroSection />
       <PhilosophySection />
       <RetreatsSection />
-      <div className="border-y border-line/70 bg-bone-white/45">
+      <div className="section-blend bg-bone-white/45">
         <PillarsSection />
         <HowItWorksSection />
       </div>
       <ProtocolsSection />
-      <div className="border-y border-line/70 bg-bone-white/45">
+      <div className="section-blend bg-bone-white/45">
         <AssessmentSection />
         <MembershipSection />
       </div>

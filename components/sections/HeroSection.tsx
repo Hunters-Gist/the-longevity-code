@@ -5,7 +5,7 @@ import { brandAssets } from "@/lib/brand/assets";
 
 export function HeroSection() {
   return (
-    <section className="relative -mt-px min-h-[calc(100svh-4.35rem)] overflow-hidden bg-obsidian text-bone-white lg:min-h-[820px]">
+    <section className="section-blend-bottom relative -mt-px min-h-[calc(100svh-4.35rem)] overflow-hidden bg-obsidian text-bone-white lg:min-h-[820px]">
       <video
         className="absolute inset-0 h-full w-full object-cover"
         autoPlay
@@ -20,11 +20,11 @@ export function HeroSection() {
       </video>
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,18,15,0.9)_0%,rgba(10,18,15,0.68)_44%,rgba(10,18,15,0.18)_100%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(194,123,102,0.22),transparent_34%),radial-gradient(circle_at_72%_0%,rgba(220,207,194,0.18),transparent_38%)]" />
-      <div className="absolute inset-x-0 bottom-0 h-56 bg-linear-to-t from-obsidian via-obsidian/64 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-72 bg-linear-to-t from-obsidian via-obsidian/64 to-transparent sm:h-80" />
 
       <div className="section-wrap relative flex min-h-[calc(100svh-4.35rem)] flex-col justify-between py-12 sm:py-16 lg:min-h-[820px] lg:py-20">
         <div className="max-w-5xl pt-8 sm:pt-14 lg:pt-20">
-            <p className="text-[0.68rem] uppercase tracking-[0.32em] text-sage sm:text-xs">
+            <p className="text-[0.68rem] uppercase tracking-[0.32em] text-burnt-orange sm:text-xs">
               {homeContent.hero.eyebrow}
             </p>
             <p className="mt-3 text-[0.66rem] uppercase tracking-[0.28em] text-bone-white/62 sm:text-xs">

@@ -9,7 +9,7 @@ export function FinalCtaSection() {
         <div className="grain-overlay relative overflow-hidden rounded-[24px] border border-line-strong bg-obsidian px-4 py-5 text-bone-white shadow-[0_28px_55px_-28px_rgba(10,18,15,0.7)] sm:rounded-[30px] sm:px-7 sm:py-8 md:px-8 md:py-9 lg:rounded-[34px] lg:px-10 lg:py-10">
           <div className="ambient-orb pointer-events-none absolute -left-18 top-0 h-56 w-56 rounded-full bg-terracotta/28" />
           <div className="ambient-orb pointer-events-none absolute -right-12 bottom-3 h-52 w-52 rounded-full bg-sage/28 [animation-delay:2.1s]" />
-          <p className="eyebrow relative text-sage">Final Step</p>
+          <p className="eyebrow relative">Final Step</p>
           <h2 className="display-title relative mt-2.5 max-w-[12ch] text-[1.9rem] font-semibold leading-[1.05] text-bone-white sm:mt-3 sm:max-w-none sm:text-[2.45rem] md:text-[2.9rem] lg:text-[3.55rem]">
             {homeContent.finalCta.heading}
           </h2>

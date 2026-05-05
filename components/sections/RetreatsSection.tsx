@@ -16,7 +16,7 @@ export function RetreatsSection() {
           <div className="ambient-orb pointer-events-none absolute -right-16 bottom-6 h-60 w-60 rounded-full bg-sage/28 [animation-delay:1.6s]" />
           <div className="relative grid gap-8 lg:grid-cols-[1fr_0.92fr] lg:items-end">
             <div>
-              <p className="eyebrow text-sage">Retreats</p>
+              <p className="eyebrow">Retreats</p>
               <h2 className="display-title mt-3 max-w-[12ch] text-[2.25rem] font-semibold leading-[1.02] text-bone-white sm:text-5xl lg:text-6xl">
                 Reset your system. Rebuild your standards.
               </h2>
