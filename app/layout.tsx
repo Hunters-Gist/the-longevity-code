@@ -11,6 +11,7 @@ import {
   BRAND_STRAP,
 } from "@/content/brand";
 import { assertProductionEnvironment } from "@/lib/env/production";
+import { brandAssets } from "@/lib/brand/assets";
 import { absoluteUrl, siteConfig } from "@/lib/site-config";
 
 assertProductionEnvironment();
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     images: [
       {
-        url: absoluteUrl("/og-image.png"),
+        url: absoluteUrl(brandAssets.heroPoster),
         width: 1200,
         height: 630,
         alt: `${BRAND_NAME} — ${BRAND_STRAP}`,
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: BRAND_NAME,
     description: `${BRAND_STRAP} ${BRAND_DESCRIPTION} ${BRAND_MEANING}`,
-    images: [absoluteUrl("/og-image.png")],
+    images: [absoluteUrl(brandAssets.heroPoster)],
   },
   manifest: "/site.webmanifest",
   icons: {

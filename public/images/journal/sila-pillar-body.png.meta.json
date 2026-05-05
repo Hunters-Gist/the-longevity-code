@@ -1,0 +1,10 @@
+{
+  "id": "sila-pillar-body",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:40:17.639Z",
+  "usage": "Body pillar journal and article cover",
+  "prompt": "Restrained performance recovery scene, silhouette of a person stretching or moving in a premium dark recovery space, no visible face, burnt orange rim light, sage shadow, disciplined and refined, no gym influencer aesthetic, no shirtless transformation imagery.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}

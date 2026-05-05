@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BLOG_POSTS, SILA_PILLARS } from "@/content/sila";
 import { PageHero } from "@/components/ui/PageHero";
 import { SafeImage } from "@/components/ui/SafeImage";
+import { blogCoverImages } from "@/lib/brand/assets";
 
 export const metadata: Metadata = {
   title: "The Sila Journal",
@@ -14,13 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const coverImages = [
-    "/images/hero/windows-241bwQl2uWE-unsplash-scaled.webp",
-    "/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp",
-    "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
-    "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
-    "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
-  ];
+  const coverImages = blogCoverImages;
 
   return (
     <>

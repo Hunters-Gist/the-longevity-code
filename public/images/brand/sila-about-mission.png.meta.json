@@ -1,0 +1,10 @@
+{
+  "id": "sila-about-mission",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:41:25.425Z",
+  "usage": "About page mission visual",
+  "prompt": "Premium mission visual for a self-optimisation system, architectural retreat corridor with morning light, lone silhouette from behind, calm strength, dark obsidian and bone palette, tasteful burnt orange glow, disciplined and refined, no face focus, no text.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}

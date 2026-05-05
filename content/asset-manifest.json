@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "sharedNegativePrompt": "No generic wellness stock photo, no smiling face-forward model, no before-and-after body transformation, no hospital scene, no pills as medical cure, no syringe, no exaggerated muscles, no influencer gym aesthetic, no crypto neon style, no cheap supplement ad, no text, no logo recreation, no watermark.",
+  "assets": [
+    {
+      "id": "sila-hero-poster",
+      "phase": "phase-1",
+      "usage": "Homepage hero video poster",
+      "outputPath": "public/images/brand/sila-hero-poster.png",
+      "aspectRatio": "16:9",
+      "imageSize": "1K",
+      "prompt": "Wide cinematic alpine mountain sunrise landscape for a premium self-optimisation brand, one lone human silhouette seen from behind standing on a ridge, disciplined ascent, dark obsidian rock foreground, burnt orange dawn light, subtle sage atmosphere, clinical luxury mood, refined editorial composition, no visible face, no objects in the foreground.",
+      "negativePrompt": "No bottle, no supplement, no product, no jar, no capsule, no tabletop, no studio still life."
+    },
+    {
+      "id": "sila-pillar-brain",
+      "phase": "phase-1",
+      "usage": "Brain pillar journal and article cover",
+      "outputPath": "public/images/journal/sila-pillar-brain.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Pure abstract neural architecture for a premium longevity and performance journal, dark botanical-black background, subtle burnt orange signal lines, sage and bone highlights, scientific but not medical, elegant editorial texture, no literal brain scan, no objects, no product photography, no text.",
+      "negativePrompt": "No bottle, no supplement, no product, no jar, no capsule, no tabletop, no studio still life."
+    },
+    {
+      "id": "sila-pillar-skin",
+      "phase": "phase-1",
+      "usage": "Skin pillar journal and article cover",
+      "outputPath": "public/images/journal/sila-pillar-skin.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Premium abstract editorial visual suggesting cellular renewal and skin vitality, warm burnt orange side light, dark stone and translucent glass texture, botanical shadows, bone and sage palette, calm clinical luxury, no face-focused beauty model, no product packaging, no label, no text.",
+      "negativePrompt": "No bottle with label, no serum bottle, no cosmetic packaging, no readable words, no typography, no product ad."
+    },
+    {
+      "id": "sila-pillar-body",
+      "phase": "phase-1",
+      "usage": "Body pillar journal and article cover",
+      "outputPath": "public/images/journal/sila-pillar-body.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Restrained performance recovery scene, silhouette of a person stretching or moving in a premium dark recovery space, no visible face, burnt orange rim light, sage shadow, disciplined and refined, no gym influencer aesthetic, no shirtless transformation imagery."
+    },
+    {
+      "id": "sila-pillar-longevity",
+      "phase": "phase-1",
+      "usage": "Longevity pillar journal and article cover",
+      "outputPath": "public/images/journal/sila-pillar-longevity.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Long-horizon vitality visual, quiet trail leading toward a premium retreat-like landscape at first light, dark foreground, muted sage trees, burnt orange sunrise, calm authority, disciplined optimism, no visible faces, no text."
+    },
+    {
+      "id": "sila-pillar-recovery",
+      "phase": "phase-1",
+      "usage": "Recovery pillar journal and article cover",
+      "outputPath": "public/images/journal/sila-pillar-recovery.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Quiet recovery ritual in a premium retreat setting, hands near journal and warm tea beside stone and water, subtle human presence only, dark clinical-luxury palette, burnt orange candle-like light, sage shadows, restorative but disciplined, no text."
+    },
+    {
+      "id": "sila-about-story",
+      "phase": "phase-1",
+      "usage": "About page Sila story visual",
+      "outputPath": "public/images/brand/sila-about-story.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Editorial environment suggesting psychology, behavioural design, discipline, and practice, premium desk with notebook, structured diagrams without readable text, dark wood or stone, burnt orange side light, sage accents, clinical luxury, no portrait, no text."
+    },
+    {
+      "id": "sila-about-mission",
+      "phase": "phase-1",
+      "usage": "About page mission visual",
+      "outputPath": "public/images/brand/sila-about-mission.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Premium mission visual for a self-optimisation system, architectural retreat corridor with morning light, lone silhouette from behind, calm strength, dark obsidian and bone palette, tasteful burnt orange glow, disciplined and refined, no face focus, no text."
+    },
+    {
+      "id": "sila-shop-hero",
+      "phase": "phase-1",
+      "usage": "Shop featured product visual",
+      "outputPath": "public/images/shop/sila-shop-hero.png",
+      "aspectRatio": "3:2",
+      "imageSize": "1K",
+      "prompt": "Premium product-style still life for The Sila Code shop, dark stone surface, minimal supplement bottle shape without readable branding, botanical element, glass, bone label space, burnt orange accent light, clinical-luxury ecommerce composition, no medical claims, no text."
+    },
+    {
+      "id": "sila-focus-primary",
+      "phase": "phase-1",
+      "usage": "Sila Focus product gallery primary",
+      "outputPath": "public/images/shop/sila-focus-primary.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Premium supplement product still life for calm clarity and cognitive stamina, dark obsidian surface, bottle silhouette with blank bone label, burnt orange rim light, sage botanical texture, luxury clinical ecommerce photography, no readable text, no medical claims."
+    },
+    {
+      "id": "sila-focus-ritual",
+      "phase": "phase-1",
+      "usage": "Sila Focus product gallery ritual",
+      "outputPath": "public/images/shop/sila-focus-ritual.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Morning focus ritual scene, hands only, notebook, water glass, capsule container with blank label, premium dark surface, warm burnt orange dawn light, controlled and disciplined mood, no face, no readable text, no medical claim."
+    },
+    {
+      "id": "sila-focus-capsule",
+      "phase": "phase-1",
+      "usage": "Sila Focus product gallery detail",
+      "outputPath": "public/images/shop/sila-focus-capsule.png",
+      "aspectRatio": "4:3",
+      "imageSize": "1K",
+      "prompt": "Macro-inspired premium product detail, neutral capsules near dark stone and glass, abstract botanical shadow, burnt orange highlight, bone and sage accents, luxury clinical still life, no readable text, no medical claim, no cheap supplement ad."
+    }
+  ]
+}

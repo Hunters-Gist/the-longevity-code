@@ -1,0 +1,10 @@
+{
+  "id": "sila-pillar-longevity",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:40:35.857Z",
+  "usage": "Longevity pillar journal and article cover",
+  "prompt": "Long-horizon vitality visual, quiet trail leading toward a premium retreat-like landscape at first light, dark foreground, muted sage trees, burnt orange sunrise, calm authority, disciplined optimism, no visible faces, no text.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}

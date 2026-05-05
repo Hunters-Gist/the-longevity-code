@@ -8,6 +8,7 @@ import {
   shopStatusLabels,
   type ShopOffering,
 } from "@/content/shop";
+import { brandAssets } from "@/lib/brand/assets";
 
 export const metadata: Metadata = {
   title: "Shop",
@@ -116,7 +117,7 @@ export default function ShopPage() {
               </div>
               <div className="overflow-hidden rounded-[28px] border border-line lg:rounded-t-[180px] lg:rounded-b-[34px]">
                 <Image
-                  src="/images/hero/Hero image.png"
+                  src={brandAssets.shopHero}
                   alt="Sila Focus product lifestyle visual"
                   width={1600}
                   height={1100}

@@ -1,0 +1,10 @@
+{
+  "id": "sila-shop-hero",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:41:46.099Z",
+  "usage": "Shop featured product visual",
+  "prompt": "Premium product-style still life for The Sila Code shop, dark stone surface, minimal supplement bottle shape without readable branding, botanical element, glass, bone label space, burnt orange accent light, clinical-luxury ecommerce composition, no medical claims, no text.",
+  "aspectRatio": "3:2",
+  "imageSize": "1K"
+}

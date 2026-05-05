@@ -42,7 +42,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "brand-architecture",
     readTime: "8 min read",
     publishedOn: "April 2026",
-    image: "/images/journal/longevity-strategy.svg",
+    image: "/images/brand/sila-about-story.png",
     sections: [
       {
         heading: "From Name to Philosophy",
@@ -62,7 +62,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "product-stack",
     readTime: "7 min read",
     publishedOn: "April 2026",
-    image: "/images/hero/SILA HERO.png",
+    image: "/images/shop/sila-focus-primary.png",
     sections: [
       {
         heading: "Ingredient Logic",
@@ -82,7 +82,7 @@ export const learnArticles: LearnArticle[] = [
     categorySlug: "launch-operations",
     readTime: "9 min read",
     publishedOn: "April 2026",
-    image: "/images/journal/recovery-debt.svg",
+    image: "/images/brand/sila-hero-poster.png",
     sections: [
       {
         heading: "Funnel Before Scale",

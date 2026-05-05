@@ -4,6 +4,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import Image from "next/image";
 import { forumGroups, weeklyTopics } from "@/content/community";
 import { getExternalCommunityUrl } from "@/lib/site-config";
+import { pillarImageMap } from "@/lib/brand/assets";
 
 export const metadata: Metadata = {
   title: "Community",
@@ -31,7 +32,7 @@ export default function CommunityPage() {
             </h2>
             <div className="mt-4 overflow-hidden rounded-[24px] border border-line lg:rounded-t-[140px] lg:rounded-b-[30px]">
               <Image
-                src="/images/journal/recovery-debt.svg"
+                src={pillarImageMap.rehab}
                 alt="Community wellbeing banner"
                 width={1600}
                 height={1100}

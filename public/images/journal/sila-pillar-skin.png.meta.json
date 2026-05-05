@@ -1,0 +1,10 @@
+{
+  "id": "sila-pillar-skin",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:46:51.751Z",
+  "usage": "Skin pillar journal and article cover",
+  "prompt": "Premium abstract editorial visual suggesting cellular renewal and skin vitality, warm burnt orange side light, dark stone and translucent glass texture, botanical shadows, bone and sage palette, calm clinical luxury, no face-focused beauty model, no product packaging, no label, no text.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}

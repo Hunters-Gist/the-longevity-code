@@ -1,0 +1,10 @@
+{
+  "id": "sila-focus-capsule",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:42:41.691Z",
+  "usage": "Sila Focus product gallery detail",
+  "prompt": "Macro-inspired premium product detail, neutral capsules near dark stone and glass, abstract botanical shadow, burnt orange highlight, bone and sage accents, luxury clinical still life, no readable text, no medical claim, no cheap supplement ad.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}

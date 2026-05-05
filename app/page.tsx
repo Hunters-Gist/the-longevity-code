@@ -11,6 +11,7 @@ import { PillarsSection } from "@/components/sections/PillarsSection";
 import { ProtocolsSection } from "@/components/sections/ProtocolsSection";
 import { RetreatsSection } from "@/components/sections/RetreatsSection";
 import { absoluteUrl, siteConfig } from "@/lib/site-config";
+import { brandAssets } from "@/lib/brand/assets";
 
 export const metadata: Metadata = {
   title: "The Modern Code for Upgrading Yourself",
@@ -36,7 +37,7 @@ export default async function Home({ searchParams }: HomeProps) {
     "@type": "Organization",
     name: "The Sila Code Pty Ltd",
     url: siteConfig.url,
-    logo: absoluteUrl("/og-image.png"),
+    logo: absoluteUrl(brandAssets.logo),
     sameAs: [
       "https://www.instagram.com/thesilacode",
       "https://www.tiktok.com/@thesilacode",

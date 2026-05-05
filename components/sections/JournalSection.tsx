@@ -3,16 +3,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ActionButton } from "@/components/ui/ActionButton";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { sectionPatterns } from "@/components/ui/sectionStyles";
-
-const pillarImageMap: Record<string, string> = {
-  brain:
-    "/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp",
-  skin:
-    "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
-  body: "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
-  longevity: "/images/hero/a-person-walking-down-a-path-in-the-woods.jpg",
-  rehab: "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
-};
+import { brandAssets, pillarImageMap } from "@/lib/brand/assets";
 
 function getPillarName(categoryKey: string) {
   return SILA_PILLARS.find((pillar) => pillar.key === categoryKey)?.name ?? "Journal";
@@ -38,7 +29,7 @@ export function JournalSection() {
             >
               <div className="relative h-44 overflow-hidden border-b border-line sm:h-52 md:h-56">
                 <SafeImage
-                  src={pillarImageMap[entry.category] ?? "/images/hero/SILA HERO.png"}
+                  src={pillarImageMap[entry.category] ?? brandAssets.heroPoster}
                   alt={`Journal cover image for ${entry.title}`}
                   fill
                   fallbackLabel="Sila journal visual"

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SilaAssessmentClient } from "@/components/assessment/SilaAssessmentClient";
 import { PageHero } from "@/components/ui/PageHero";
 import Image from "next/image";
+import { pillarImageMap } from "@/lib/brand/assets";
 
 export const metadata: Metadata = {
   title: "The Sila Assessment",
@@ -25,7 +26,7 @@ export default function AssessmentPage() {
         <div className="section-wrap space-y-4">
           <div className="glass-card overflow-hidden rounded-[26px] border border-line">
             <Image
-              src="/images/journal/recovery-debt.svg"
+              src={pillarImageMap.brain}
               alt="Assessment neuroscience visual"
               width={1600}
               height={1100}

@@ -3,6 +3,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { BRAND_NAME } from "@/content/brand";
 import type { Metadata } from "next";
 import Image from "next/image";
+import { brandAssets } from "@/lib/brand/assets";
 
 export const metadata: Metadata = {
   title: "About",
@@ -46,7 +47,7 @@ export default function AboutPage() {
             </p>
             <div className="mt-6 overflow-hidden rounded-[26px] border border-line sm:rounded-[30px] lg:rounded-t-[140px]">
               <Image
-                src="/images/hero/premium_photo-1681882038701-96b1874e3ea8.avif"
+                src={brandAssets.aboutStory}
                 alt="Founder story editorial portrait"
                 width={900}
                 height={620}
@@ -68,7 +69,7 @@ export default function AboutPage() {
             </ul>
             <div className="mt-6 overflow-hidden rounded-[26px] border border-line sm:rounded-[30px] lg:rounded-t-[140px]">
               <Image
-                src="/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp"
+                src={brandAssets.aboutMission}
                 alt="Mission strategy editorial visual"
                 width={900}
                 height={620}

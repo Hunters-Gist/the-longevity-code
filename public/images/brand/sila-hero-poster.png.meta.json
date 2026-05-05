@@ -1,0 +1,10 @@
+{
+  "id": "sila-hero-poster",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:46:19.605Z",
+  "usage": "Homepage hero video poster",
+  "prompt": "Wide cinematic alpine mountain sunrise landscape for a premium self-optimisation brand, one lone human silhouette seen from behind standing on a ridge, disciplined ascent, dark obsidian rock foreground, burnt orange dawn light, subtle sage atmosphere, clinical luxury mood, refined editorial composition, no visible face, no objects in the foreground.",
+  "aspectRatio": "16:9",
+  "imageSize": "1K"
+}

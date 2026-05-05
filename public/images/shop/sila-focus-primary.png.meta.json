@@ -1,0 +1,10 @@
+{
+  "id": "sila-focus-primary",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:42:03.994Z",
+  "usage": "Sila Focus product gallery primary",
+  "prompt": "Premium supplement product still life for calm clarity and cognitive stamina, dark obsidian surface, bottle silhouette with blank bone label, burnt orange rim light, sage botanical texture, luxury clinical ecommerce photography, no readable text, no medical claims.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}

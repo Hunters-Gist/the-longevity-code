@@ -4,6 +4,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { createCheckoutSession } from "@/app/actions/checkout";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { absoluteUrl } from "@/lib/site-config";
+import { silaFocusGalleryImages } from "@/lib/brand/assets";
 
 export const metadata: Metadata = {
   title: "Sila Focus",
@@ -55,7 +56,7 @@ export default function SilaFocusPage() {
       "@type": "Brand",
       name: "The Sila Code",
     },
-    image: [absoluteUrl("/og-image.png")],
+    image: silaFocusGalleryImages.map((image) => absoluteUrl(image)),
     sku: "SILA-FOCUS-60",
     offers: {
       "@type": "Offer",
@@ -116,11 +117,7 @@ export default function SilaFocusPage() {
           <article className="glass-card rounded-[28px] p-5 sm:p-7">
             <p className="eyebrow">Product gallery</p>
             <div className="mt-4 grid gap-3 sm:grid-cols-3">
-              {[
-                "/images/hero/SILA HERO.png",
-                "/images/hero/Hero image.png",
-                "/images/hero/photo-1559757148-5c350d0d3c56.jpeg",
-              ].map((src, index) => (
+              {silaFocusGalleryImages.map((src, index) => (
                 <div
                   key={src}
                   className={`overflow-hidden border border-line ${

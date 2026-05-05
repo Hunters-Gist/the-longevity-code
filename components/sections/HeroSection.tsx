@@ -1,29 +1,29 @@
 import Link from "next/link";
 import { homeContent } from "@/content/homepage";
 import { BRAND_STRAP } from "@/content/brand";
+import { brandAssets } from "@/lib/brand/assets";
 
 export function HeroSection() {
   return (
-    <section className="relative px-3 pt-3 sm:px-4 sm:pt-4">
-      <div className="relative mx-auto min-h-[calc(100svh-5rem)] max-w-[1500px] overflow-hidden rounded-[28px] border border-bone-white/12 bg-obsidian text-bone-white shadow-[0_34px_70px_-34px_rgba(10,18,15,0.72)] sm:rounded-[36px] lg:min-h-[760px]">
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="/images/hero/SILA HERO.png"
-          aria-hidden="true"
-        >
-          <source src="/videos/sila-hero-mountain-sunrise.mp4" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,18,15,0.88)_0%,rgba(10,18,15,0.64)_42%,rgba(10,18,15,0.24)_100%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(194,123,102,0.24),transparent_34%),radial-gradient(circle_at_72%_0%,rgba(220,207,194,0.2),transparent_38%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-44 bg-linear-to-t from-obsidian via-obsidian/64 to-transparent" />
+    <section className="relative -mt-px min-h-[calc(100svh-4.35rem)] overflow-hidden bg-obsidian text-bone-white lg:min-h-[820px]">
+      <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+          poster={brandAssets.heroPoster}
+        aria-hidden="true"
+      >
+        <source src="/videos/sila-hero-mountain-sunrise.mp4" type="video/mp4" />
+      </video>
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,18,15,0.9)_0%,rgba(10,18,15,0.68)_44%,rgba(10,18,15,0.18)_100%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(194,123,102,0.22),transparent_34%),radial-gradient(circle_at_72%_0%,rgba(220,207,194,0.18),transparent_38%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-56 bg-linear-to-t from-obsidian via-obsidian/64 to-transparent" />
 
-        <div className="relative flex min-h-[calc(100svh-5rem)] flex-col justify-between p-5 sm:p-8 lg:min-h-[760px] lg:p-10 xl:p-12">
-          <div className="max-w-5xl pt-10 sm:pt-16 lg:pt-24">
+      <div className="section-wrap relative flex min-h-[calc(100svh-4.35rem)] flex-col justify-between py-12 sm:py-16 lg:min-h-[820px] lg:py-20">
+        <div className="max-w-5xl pt-8 sm:pt-14 lg:pt-20">
             <p className="text-[0.68rem] uppercase tracking-[0.32em] text-sage sm:text-xs">
               {homeContent.hero.eyebrow}
             </p>
@@ -54,10 +54,10 @@ export function HeroSection() {
                 </Link>
               ))}
             </div>
-          </div>
+        </div>
 
-          <div className="mt-12 border-t border-bone-white/18 pt-4">
-            <ul className="grid gap-px overflow-hidden rounded-2xl border border-bone-white/12 bg-bone-white/10 md:grid-cols-5">
+        <div className="mt-12 border-t border-bone-white/18 pt-4">
+            <ul className="grid gap-px overflow-hidden border border-bone-white/12 bg-bone-white/10 md:grid-cols-5">
               {homeContent.pillars.map((pillar) => (
                 <li key={pillar.title} className="bg-obsidian/54 p-4 backdrop-blur-sm">
                   <p className="text-[0.65rem] uppercase tracking-[0.22em] text-terracotta">
@@ -72,7 +72,6 @@ export function HeroSection() {
             <p className="mt-4 text-[0.62rem] uppercase tracking-[0.28em] text-bone-white/48">
               Evidence-informed wellness / structured self-optimisation / future retreats
             </p>
-          </div>
         </div>
       </div>
     </section>

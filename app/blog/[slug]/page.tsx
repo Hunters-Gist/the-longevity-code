@@ -5,6 +5,7 @@ import { BLOG_POSTS } from "@/content/sila";
 import { PageHero } from "@/components/ui/PageHero";
 import Image from "next/image";
 import { absoluteUrl, siteConfig } from "@/lib/site-config";
+import { brandAssets, pillarImageMap } from "@/lib/brand/assets";
 
 type BlogPostPageProps = {
   params: Promise<{ slug: string }>;
@@ -43,16 +44,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
-  const imageByCategory = {
-    brain:
-      "/images/hero/abstract-polygonal-brain-glowing-dots-lines-network-connections-artificial-intelligence-self-development-concept-267581796.webp",
-    skin:
-      "/images/hero/how-to-fuel-your-skin-for-a-radiant-complexion-9ed1e6a9-6df8-4a4a-b29b-d2ea7d1f05c7.webp",
-    body: "/images/hero/premium_photo-1676815865390-8e3a9336f64b.avif",
-    longevity: "/images/hero/a-person-walking-down-a-path-in-the-woods.jpg",
-    rehab: "/images/hero/Peptides-_Your_Power_Play_for_Reducing_Redness.webp",
-  } as const;
-
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -74,7 +65,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       name: "The Sila Code Pty Ltd",
       logo: {
         "@type": "ImageObject",
-        url: absoluteUrl("/og-image.png"),
+        url: absoluteUrl(brandAssets.logo),
       },
     },
   };
@@ -128,7 +119,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <article className="glass-card rounded-[24px] p-6 sm:p-10">
             <div className="mb-6 overflow-hidden rounded-[24px] border border-line">
               <Image
-                src={imageByCategory[post.category]}
+                src={pillarImageMap[post.category]}
                 alt={`Editorial visual for ${post.title}`}
                 width={900}
                 height={620}

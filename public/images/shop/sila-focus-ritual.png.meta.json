@@ -1,0 +1,10 @@
+{
+  "id": "sila-focus-ritual",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:42:22.927Z",
+  "usage": "Sila Focus product gallery ritual",
+  "prompt": "Morning focus ritual scene, hands only, notebook, water glass, capsule container with blank label, premium dark surface, warm burnt orange dawn light, controlled and disciplined mood, no face, no readable text, no medical claim.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}

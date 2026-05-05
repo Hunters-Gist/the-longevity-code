@@ -1,0 +1,10 @@
+{
+  "id": "sila-about-story",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:41:08.931Z",
+  "usage": "About page Sila story visual",
+  "prompt": "Editorial environment suggesting psychology, behavioural design, discipline, and practice, premium desk with notebook, structured diagrams without readable text, dark wood or stone, burnt orange side light, sage accents, clinical luxury, no portrait, no text.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}

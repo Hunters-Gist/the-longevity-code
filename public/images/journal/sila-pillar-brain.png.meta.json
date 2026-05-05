@@ -1,0 +1,10 @@
+{
+  "id": "sila-pillar-brain",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:46:38.259Z",
+  "usage": "Brain pillar journal and article cover",
+  "prompt": "Pure abstract neural architecture for a premium longevity and performance journal, dark botanical-black background, subtle burnt orange signal lines, sage and bone highlights, scientific but not medical, elegant editorial texture, no literal brain scan, no objects, no product photography, no text.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}

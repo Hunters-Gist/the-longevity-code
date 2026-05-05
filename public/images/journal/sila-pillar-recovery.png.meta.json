@@ -1,0 +1,10 @@
+{
+  "id": "sila-pillar-recovery",
+  "provider": "OpenRouter",
+  "model": "google/gemini-3.1-flash-image-preview",
+  "generatedAt": "2026-04-29T11:40:54.171Z",
+  "usage": "Recovery pillar journal and article cover",
+  "prompt": "Quiet recovery ritual in a premium retreat setting, hands near journal and warm tea beside stone and water, subtle human presence only, dark clinical-luxury palette, burnt orange candle-like light, sage shadows, restorative but disciplined, no text.",
+  "aspectRatio": "4:3",
+  "imageSize": "1K"
+}
