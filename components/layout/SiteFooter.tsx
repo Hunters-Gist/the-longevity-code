@@ -4,7 +4,7 @@ import { BrandMark } from "@/components/ui/BrandMark";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-line/90 py-12 sm:py-14">
+    <footer className="footer-blend py-12 sm:py-14">
       <div className="section-wrap grid gap-10 md:grid-cols-[1fr_auto] md:items-start">
         <div>
           <Link href="/" className="inline-flex min-h-11 items-center">
