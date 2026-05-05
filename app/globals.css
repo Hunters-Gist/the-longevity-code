@@ -7,7 +7,9 @@
   --sila-sage: #8c9a84;
   --sila-clay: #dccfc2;
   --sila-stone: #e6e2da;
-  --sila-terracotta: #c27b66;
+  --sila-burnt-orange: #b65f2a;
+  --sila-terracotta-soft: #c27b66;
+  --sila-terracotta: var(--sila-burnt-orange);
   --sila-moss: #5f6f5f;
   --sila-ink: #243029;
 
@@ -46,6 +48,7 @@
   --color-bone-white: var(--sila-paper);
   --color-plum-shadow: var(--sila-clay);
   --color-ink-blue: var(--sila-ink);
+  --color-burnt-orange: var(--sila-burnt-orange);
   --color-terracotta: var(--sila-terracotta);
   --shadow-soft: 0 4px 6px -1px rgba(45, 58, 49, 0.05);
   --shadow-medium: 0 10px 15px -3px rgba(45, 58, 49, 0.05);
@@ -60,7 +63,7 @@ body {
 body {
   background:
     radial-gradient(circle at 12% -18%, rgba(140, 154, 132, 0.22), transparent 42%),
-    radial-gradient(circle at 86% -10%, rgba(194, 123, 102, 0.16), transparent 36%),
+    radial-gradient(circle at 86% -10%, rgba(182, 95, 42, 0.16), transparent 36%),
     radial-gradient(circle at 72% 122%, rgba(220, 207, 194, 0.32), transparent 50%),
     var(--background);
   color: var(--foreground);
@@ -78,7 +81,7 @@ h4 {
 }
 
 ::selection {
-  background: rgba(194, 123, 102, 0.2);
+  background: rgba(182, 95, 42, 0.2);
   color: var(--sila-forest);
 }
 
@@ -98,7 +101,7 @@ h4 {
   z-index: -2;
   background:
     radial-gradient(circle at 14% 18%, rgba(140, 154, 132, 0.2), transparent 44%),
-    radial-gradient(circle at 76% 10%, rgba(194, 123, 102, 0.14), transparent 34%),
+    radial-gradient(circle at 76% 10%, rgba(182, 95, 42, 0.14), transparent 34%),
     radial-gradient(circle at 52% 44%, rgba(220, 207, 194, 0.32), transparent 46%);
   filter: blur(52px);
 }
@@ -109,7 +112,7 @@ h4 {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at 82% 24%, rgba(194, 123, 102, 0.12), transparent 42%),
+    radial-gradient(circle at 82% 24%, rgba(182, 95, 42, 0.12), transparent 42%),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.72), rgba(249, 248, 244, 0.9)),
     linear-gradient(to right, rgba(45, 58, 49, 0.02) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(45, 58, 49, 0.02) 1px, transparent 1px);
@@ -147,7 +150,7 @@ h4 {
   border: 1px solid var(--line);
   background:
     linear-gradient(142deg, rgba(255, 255, 255, 0.94), rgba(244, 237, 228, 0.96)),
-    radial-gradient(circle at 74% 16%, rgba(194, 123, 102, 0.12), transparent 38%);
+    radial-gradient(circle at 74% 16%, rgba(182, 95, 42, 0.12), transparent 38%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.85),
     0 24px 50px -20px rgba(45, 58, 49, 0.12);

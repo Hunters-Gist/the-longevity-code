@@ -30,6 +30,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 .firecrawl/
+.superpowers/
 
 # env files (can opt-in for committing if needed)
 .env*
